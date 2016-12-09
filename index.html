@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<section class="section">
+  <ol class="questions-list">
+  {% for question in site.data.questions %}
+    <li id="{{forloop.index}}" class="questions-list__item">
+      <strong>{{question.title}}</strong>
+      {% if question.resources.length %}
+      <div>
+        <ul>
+          {% for item in question.resources %}
+          <li><a href="{{item.link}}">{{item.text}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      <ul class="answers-list">
+        {% for item in question.answers %}
+          <li class="answers-list__item"><a href="#{{item.id}}" class="answers-list__link">{{item.answer}}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+  </ol>
+</section>

@@ -1,0 +1,135 @@
+- title: Do you feel safe right now?
+  answers:
+  - answer: "Yes"
+    id: 2
+  - answer: "No"
+    id: 0
+- title: Are you interested in resources for yourself, or for someone else?
+  answers:
+    - answer: Myself
+      id: 3
+    - answer: Someone else
+      id: 3
+- title: Would you like to learn more about
+  answers:
+    - answer: Safety planning
+      id: 4
+    - answer: Counseling and others to talk to
+      id: 0
+    - answer: Medical care
+      id: 0
+    - answer: Economic support
+      id: 0
+    - answer: I’m not sure
+      id: 0
+    - answer: Reporting
+      id: 0
+    - answer: Housing and academic support
+      id: 0
+- title: Are you interested in safety planning resources
+  answers:
+    - answer: On campus
+      id: 5
+    - answer: Off campus
+      id: 0
+- title: Do any of these safety planning resources feel right to you?
+  content: |
+    Text for resource 1
+    Text for resource 2
+    Text for resource 3
+  answers:
+    - answer: No, I’d like to explore options for off campus resource (back to 4)
+      id: 4
+    - answer: No, I’d like to explore other options (back to 3)
+      id: 3
+- title: Do you feel safe right now?
+  answers:
+  - answer: "Yes"
+    id: 2
+  - answer: "No"
+    id: 0
+- title: Are you interested in resources for yourself, or for someone else?
+  answers:
+    - answer: Myself
+      id: 3
+    - answer: Someone else
+      id: 3
+- title: Would you like to learn more about
+  answers:
+    - answer: Safety planning
+      id: 4
+    - answer: Counseling and others to talk to
+      id: 0
+    - answer: Medical care
+      id: 0
+    - answer: Economic support
+      id: 0
+    - answer: I’m not sure
+      id: 0
+    - answer: Reporting
+      id: 0
+    - answer: Housing and academic support
+      id: 0
+- title: Are you interested in safety planning resources
+  answers:
+    - answer: On campus
+      id: 5
+    - answer: Off campus
+      id: 0
+- title: Do any of these safety planning resources feel right to you?
+  content: |
+    Text for resource 1
+    Text for resource 2
+    Text for resource 3
+  answers:
+    - answer: No, I’d like to explore options for off campus resource (back to 4)
+      id: 4
+    - answer: No, I’d like to explore other options (back to 3)
+      id: 3
+- title: Do you feel safe right now?
+  answers:
+  - answer: "Yes"
+    id: 2
+  - answer: "No"
+    id: 0
+- title: Are you interested in resources for yourself, or for someone else?
+  answers:
+    - answer: Myself
+      id: 3
+    - answer: Someone else
+      id: 3
+- title: Would you like to learn more about
+  answers:
+    - answer: Safety planning
+      id: 4
+    - answer: Counseling and others to talk to
+      id: 0
+    - answer: Medical care
+      id: 0
+    - answer: Economic support
+      id: 0
+    - answer: I’m not sure
+      id: 0
+    - answer: Reporting
+      id: 0
+    - answer: Housing and academic support
+      id: 0
+- title: Are you interested in safety planning resources
+  answers:
+    - answer: On campus
+      id: 5
+    - answer: Off campus
+      id: 0
+- title: Do any of these safety planning resources feel right to you?
+  resources:
+    - text: Text for resource 1
+      link: http://www.middlebury.edu
+    - text: Text for resource 2
+      link: http://www.middlebury.edu
+    - text: Text for resource 3
+      link: http://www.middlebury.edu
+  answers:
+    - answer: No, I’d like to explore options for off campus resource (back to 4)
+      id: 4
+    - answer: No, I’d like to explore other options (back to 3)
+      id: 3

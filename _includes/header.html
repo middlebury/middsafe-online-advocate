@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="site-header__logo">
+    <a href="http://www.middlebury.edu">
+      <picture>
+        <source srcset="{{ "/img/middlebury-logo.png" || prepend: site.baseurl }}" media="(min-width: 1024px)" />
+        <source srcset="{{ "/img/middlebury-logo-sm.png" || prepend: site.baseurl }}" />
+        <img src="{{ "/img/middlebury-logo.png" | prepend: site.baseurl }}" alt="Middlebury College"/>
+      </picture>
+    </a>
+  </div>
+  <div class="site-header__title">
+    <h1 class="site-title">MiddSafe Online Advocate</h1>
+  </div>
+</header>

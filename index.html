@@ -6,10 +6,21 @@ layout: default
   <ol class="questions-list">
   {% for question in site.data.questions %}
     <li id="{{forloop.index}}" class="questions-list__item">
-      <strong>{{question.question}}</strong>
+      <div>
+        <span>{{question.question | markdownify}}</span>
+      </div>
+      {% for resource in question.resources %}
+        {{ site.data.resources[resource] | markdownify }}
+      {% endfor %}
       <ul class="answers-list">
         {% for item in question.answers %}
-          <li class="answers-list__item"><a href="#{{item.id}}" class="answers-list__link">{{item.title}}</a></li>
+          <li class="answers-list__item">
+            {% if item.id %}
+              <a href="#{{item.id}}" class="answers-list__link">{{item.title}}</a>
+            {% else %}
+              <span>{{item.title | markdownify }}</span>
+            {% endif %}
+          </li>
         {% endfor %}
       </ul>
     </li>

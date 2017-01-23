@@ -1,4 +1,4 @@
-- question:  Do you feel safe right now?
+- question: Do you feel safe right now?
   id: 1
   answers:
   - title: Yes (go to 2)
@@ -42,66 +42,11 @@
 
 - question: Do any of these resources feel right to you?
   id: 5
+  resources:
+    - dps
+    - middsafe
+    - commonsdean
   answers:
-  - title: |
-      Department of Public Safety
-      Emergency response, safety planning, accommodations, No Contact Order, recording reports, campus and community-based transportation
-      go/dps
-      125 South Main Street
-      Middlebury, VT 05753
-      (802) 443-5911 (emergency)
-      (802) 443-5133 (non-emergency)
-      Not confidential
-
-  - title: |
-      MiddSafe Confidential Advocates
-      Confidential support, information, resource referrals and advocacy
-      24/7 student-run hotline when classes are in session
-      go/middsafe
-      (802) 377-0239
-      Confidential
-
-  - title: |
-      Commons Dean
-      Dean's excuses, room changes, holistic institutional support
-      go/commons
-      Not confidential
-
-      Ann Craig Hanson
-      Dean of Ross Commons
-      003 RCD
-      hanson@middlebury.edu
-      (802) 443-3340
-      Not confidential
-
-      Scott Barnicle
-      Dean of Atwater Commons
-      Allen Hall 1534A
-      sbarnicl@middelbury.edu
-      (802) 443-3310
-      Not confidential
-
-      AJ Place
-      Dean of Brainerd Commons
-      Stewart Hall 216
-      ajplace@middlebury.edu
-      (802) 443-3320
-      Not confidential
-
-      Ian Sutherland
-      Dean of Cook Commons
-      Battell North 150
-      isutherland@middlebury.edu
-      (802) 443-3330
-      Not confidential
-
-      Matt Longman
-      Dean of Wonnacott Commons
-      Battell South 122
-      longman@middlebury.edu
-      (802) 443-3350
-      Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment   at ext. 3350
-      Not confidential
   - title: I'd like to explore safety planning resources off campus (go to 6)
     id: 6
 
@@ -110,33 +55,12 @@
 
 - question: Do any of these resources feel right to you?
   id: 6
+  resources:
+    - middpd
+    - vtsp
+    - womensafe
+    - csac
   answers:
-  - title: |
-      Middlebury Police Department
-      1 Lucius Shaw Ln
-      Middlebury, VT 05753
-      (802) 388-3191
-      Not confidential
-  - title: |
-      Vermont State Police
-      2490 Ethan Allen Hwy
-      New Haven, VT 05472
-      (802) 388-4919
-      Not confidential
-  - title: |
-      WomenSafe
-      Confidential 24 hour support, information, referrals and advocacy for community  member of all genders and sexual orientations
-      http://www.womensafe.net/home/
-      (802) 388-4205
-      Confidential
-  - title: |
-      Counseling Services of Addison County (CSAC)
-      24/7 support for all community members
-      89 Main Street
-      Middlebury, VT 05753
-      (802) 388-7641 (emergency)
-      (802) 388-7641 (non-emergency)
-      Confidential
   - title: I'd like to explore safety planning resources on campus (go back to 5)
     id: 5
   - title: I’d like to explore other options and return to the main menu (go back to 3)
@@ -164,19 +88,10 @@
 
 - question: Do any of these resources feel right to you?
   id: 9
+  resources:
+    - cspchw
+    - ahc
   answers:
-  - title: |
-      Counseling Services at Parton Center for Health and Wellness
-      go/parton
-      Centeno House 3rd Floor
-      (802) 443-5141
-      Confidential
-  - title: |
-      After Hours Counseling
-      Available whenever the Parton counseling office is closed (evenings and   weekends)
-      go/parton
-      (802) 443-5141 (follow the voicemail prompts)
-      Confidential
   - title: I'd like to explore counselors to whom I could speak off campus (go to 10)
     id: 10
   - title: I’d like to explore others to whom I could talk (go back to 7)
@@ -186,15 +101,9 @@
 
 - question: Do any of these resources feel right to you?
   id: 10
+  resources:
+    - csac
   answers:
-  - title: |
-      Counseling Services of Addison County (CSAC)
-      24/7 support for all community members
-      89 Main Street
-      Middlebury, VT 05753
-      (802) 388-7641 (emergency)
-      (802) 388-7641 (non-emergency)
-      Confidential
   - title: I'd like to explore counselors to whom I could speak on campus (go back to   9)
     id: 9
   - title: I’d like to explore others to whom I could talk (go back to 7)
@@ -212,14 +121,9 @@
 
 - question: Do any of these resources feel right to you?
   id: 12
+  resources:
+    - middsafe
   answers:
-  - title: |
-      MiddSafe Confidential Advocates
-      Confidential support, information, resource referrals and advocacy
-      24/7 student-run hotline when classes are in session
-      go/middsafe
-      (802) 377-0239
-      Confidential
   - title: I'd like to explore advocacy resources off campus (go to 13)
     id: 13
   - title: I’d like to explore others to whom I could talk (go back to 7)
@@ -229,28 +133,11 @@
 
 - question: Do any of these resources feel right to you?
   id: 13
+  resources:
+    - womensafe
+    - safespace
+    - rainn
   answers:
-  - title: |
-      WomenSafe
-      Confidential 24 hour support, information, referrals and advocacy for community member of all genders and sexual orientations
-      http://www.womensafe.net/home/
-      (802) 388-4205
-      Confidential
-  - title: |
-      SafeSpace
-      Confidential information, support, referrals and advocacy for LGBTQ survivors.
-      http://www.safespaceonline.org
-      (802) 863-0003
-      Confidential
-  - title: |
-      Rape, Abuse and Incest National Network
-      A nationwide partnership of more than 1,100 local rape treatment hotlines  provides survivors with free, confidential services around the clock. RAINN can
-      transfer callers to local hotlines and shelters closest to their current location.   There is also a chat function available on their website.
-      https://www.rainn.org/index.php
-      (800) 656-4673
-      Confidential
-  - title: I'd like to explore advocacy resources on campus (go back to 12)
-    id: 12
   - title: I’d like to explore others to whom I could talk (go back to 7)
     id: 7
   - title: I’d like to explore other options and return to the main menu (go back to 3)
@@ -261,82 +148,14 @@
 
     Below is a list of some faculty and staff members that might be helpful resources.
   id: 14
+  resources:
+    - commonsdean
+    - ahc
+    - cspchw
+    - barbara_mcall
+    - karen_guttentag
+    - sue_ritter
   answers:
-  - title: |
-      Barbara McCall
-      Director of Health and Wellness Education
-      Service Building 225
-      84 South Service Road
-      Middlebury, VT 05753
-      bmccall@middlebury.edu
-      (802) 443-5361
-      Not confidential
-
-  - title: |
-      Commons Dean
-      Dean's excuses, room changes, holistic institutional support
-      go/commons
-      Not confidential
-
-      Ann Craig Hanson
-      Dean of Ross Commons
-      003 RCD
-      hanson@middlebury.edu
-      (802) 443-3340
-      Not confidential
-
-      Scott Barnicle
-      Dean of Atwater Commons
-      Allen Hall 1534A
-      sbarnicl@middelbury.edu
-      (802) 443-3310
-      Not confidential
-
-      AJ Place
-      Dean of Brainerd Commons
-      Stewart Hall 216
-      ajplace@middlebury.edu
-      (802) 443-3320
-      Not confidential
-
-      Matt Longman
-      Dean of Wonnacott Commons
-      Battell South 122
-      longman@middlebury.edu
-      (802) 443-3350
-      Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment   at ext. 3350
-      Not confidential
-  - title: |
-      Karen Guttentag
-      Associate Dean for Judicial Affairs and Student Life
-      Service Building 219
-      84 South Service Road
-      Middlebury, VT 05753
-      kguttent@middlebury.edu
-      (802) 443-2024
-      Not confidential
-  - title: |
-      Sue Ritter
-      Compliance Officer and Title IX Coordinator
-      Service Building 213
-      84 South Service Road
-      Middlebury, VT 05753
-      sritter@middlebury.edu
-      (8020 443-3289
-      Not confidential
-  - title: another JAO is coming in January---place hold
-  - title: |
-      Counseling Services at Parton Center for Health and Wellness
-      go/parton
-      Centeno House 3rd Floor
-      (802) 443-5141
-      Confidential
-  - title: |
-      After Hours Counseling
-      Available whenever the Parton counseling office is closed (evenings and weekends)
-      go/parton
-      (802) 443-5141 (follow the voicemail prompts)
-      Confidential
   - title: I’d like to explore others to whom I could talk (go back to 7)
     id: 7
   - title: I’d like to explore other options and return to the main menu (go back to 3)
@@ -352,57 +171,9 @@
 
 - question: Does this resource feel right to you?
   id: 16
+  resources:
+    - college_chaplains
   answers:
-  - title: |
-      College Chaplains
-      For individuals of all faiths and beliefs.
-      (802) 443-5626
-      Confidential
-
-      Nalia Boloch
-      Associate Chaplain and Muslim Advisor
-      Scott Center for Spiritual and Religious Life
-      135 South Main Street
-      Middlebury, VT 05753
-      nbaloch@middlebury.edu
-      (802) 443-5986
-      Confidential
-
-      Laurie Jordan
-      Chaplain of the College
-      Scott Center for Spiritual and Religious Life 203
-      135 South Main Street
-      Middlebury, VT 05753
-      ljordan@middlebury.edu
-      (802) 443-5626
-      Confidential
-
-      Ira Schiffer
-      Associate Chaplain Rabbi
-      Scott Center for Spiritual and Religious Life
-      135 South Main Street
-      Middlebury, VT 05753
-      ischiffer@middlebury.edu
-      (802) 443-5762
-      Confidential
-
-      Beau Scurich
-      Associate Chaplain and Muslim Advisor
-      Scott Center for Spiritual and Religious Life
-      135 South Main Street
-      Middlebury, VT 05753
-      bscurich@middlebury.edu
-      (802) 443-5983
-      Confidential
-
-      Mark Orten
-      Dean of Spiritual and Religious Life, Director of Scott Center
-      Scott Center for Spiritual and Religious Life 103
-      135 South Main Street
-      Middlebury, VT 05753
-      orten@middlebury.edu
-      (802) 443-5626
-      Confidential
   - title: I'd like to explore spiritual and pastoral care resources off campus (go to 17)
     id: 17
   - title: I’d like to explore others to whom I could talk (go back to 7)
@@ -412,10 +183,9 @@
 
 - question: Does this resource feel right to you?
   id: 17
+  resources:
+    - local_congregations
   answers:
-  - title: |
-      Local Congregations
-      go/congregations
   - title: I'd like to explore spiritual and pastoral care resources on campus (go back to 16)
     id: 16
   - title: I’d like to explore others to whom I could talk (go back to 7)
@@ -433,13 +203,9 @@
 
 - question: Does this resource feel right to you?
   id: 19
+  resources:
+    - phs
   answers:
-  - title: |
-      Parton Health Services
-      SANE exam, STD testing, evidence collection, injury triage.
-      go/parton
-      (802) 443-5135
-      Confidential
   - title: I'd like to explore medical care off campus (go to 20)
     id: 20
   - title: I’d like to explore other options and return to the main menu (go back to 3)
@@ -447,14 +213,9 @@
 
 - question: Does this resource feel right to you?
   id: 20
+  resources:
+    - pmc
   answers:
-  - title: |
-      Porter Medical Center
-      SANE exam, STD testing, evidence collection, injury triage, hospital resources.
-      115 Porter Drive
-      Middlebury, VT 05753
-      (802) 388-4701
-      Confidential
   - title: I'd like to explore medical care on campus (go back to 19)
     id: 19
   - title: I’d like to explore other options and return to the main menu (go back to 3)
@@ -470,65 +231,12 @@
 
 - question: Do any of these resources feel right to you?
   id: 22
+  resources:
+    - commonsdean
+    - vvcp
+    - sfs
+    - emf
   answers:
-  - title: Emergency Medical Fund
-  - title: |
-      Commons Dean
-      Dean's excuses, room changes, holistic institutional support
-      go/commons
-      Not confidential
-
-      Ann Craig Hanson
-      Dean of Ross Commons
-      003 RCD
-      hanson@middlebury.edu
-      (802) 443-3340
-      Not confidential
-
-      Scott Barnicle
-      Dean of Atwater Commons
-      Allen Hall 1534A
-      sbarnicl@middelbury.edu
-      (802) 443-3310
-      Not confidential
-
-      AJ Place
-      Dean of Brainerd Commons
-      Stewart Hall 216
-      ajplace@middlebury.edu
-      (802) 443-3320
-      Not confidential
-
-      Ian Sutherland
-      Dean of Cook Commons
-      Battell North 150
-      isutherland@middlebury.edu
-      (802) 443-3330
-      Not confidential
-
-      Matt Longman
-      Dean of Wonnacott Commons
-      Battell South 122
-      longman@middlebury.edu
-      (802) 443-3350
-      Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment at ext. 3350
-      Not confidential
-  - title: |
-      Vermont Victims Compensation Program
-      www.ccvs.state.vt.us/compensation
-      Campus contact is Sandy Robinson
-      Managing Nurse Practitioner
-      Centeno House
-      (802) 443-5135
-      Confidential
-  - title: |
-      Student Financial Services
-      Service Building
-      84 South Service Road
-      Middlebury, VT 05753
-      sfs@middlebury.edu
-      (802) 443-5158
-      Not confidential
   - title: I'd like to explore economic support off campus (go to 23)
     id: 23
   - title: I’d like to explore other options and return to the main menu (go back to 3)
@@ -536,18 +244,10 @@
 
 - question: Does this resources feel right to you?
   id: 23
+  resources:
+    - economic_services
+    - womensafe
   answers:
-  - title: |
-      Economic Services
-      (800) 479-6151
-      Emergency help to meet basic needs for health insurance, child care, food and   fuel assistance
-      Not confidential
-  - title: |
-      WomenSafe
-      Confidential 24 hour support, information, referrals and advocacy for community   member of all genders and sexual orientations
-      http://www.womensafe.net/home/
-      (802) 388-4205
-      Confidential
   - title: I'd like to explore economic support resources on campus (go back to 22)
     id: 22
   - title: I’d like to explore other options and return to the main menu (go back to 3)
@@ -555,68 +255,11 @@
 
 - question: Does this resource feel right to you?
   id: 24
+  resources:
+    - commonsdean
+    - residential_life
+    - admin_committee
   answers:
-  - title: |
-      Commons Dean
-      Dean's excuses, room changes, holistic institutional support
-      go/commons
-      Not confidential
-
-      Ann Craig Hanson
-      Dean of Ross Commons
-      003 RCD
-      hanson@middlebury.edu
-      (802) 443-3340
-      Not confidential
-
-      Scott Barnicle
-      Dean of Atwater Commons
-      Allen Hall 1534A
-      sbarnicl@middelbury.edu
-      (802) 443-3310
-      Not confidential
-
-      AJ Place
-      Dean of Brainerd Commons
-      Stewart Hall 216
-      ajplace@middlebury.edu
-      (802) 443-3320
-      Not confidential
-
-      Ian Sutherland
-      Dean of Cook Commons
-      Battell North 150
-      isutherland@middlebury.edu
-      (802) 443-3330
-      Not confidential
-
-      Matt Longman
-      Dean of Wonnacott Commons
-      Battell South 122
-      longman@middlebury.edu
-      (802) 443-3350
-      Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment   at ext. 3350
-      Not confidential
-  - title: |
-      Residential Life
-      Your common’s Commons Residential Advisor (CRA), First-Year Counselor   (FYC), Resident Assistant (RA), Community Assistant (CA)
-      go/commons
-      Not confidential
-  - title: |
-      Administration Committee
-      The Administration Committee hears requests from students and faculty for   exceptions to academic policies.
-
-      Human Resource Officers
-      Karen Guttentag
-      Judicial Affairs Officer
-      kguttent@middlebury.edu
-      (802) 443-2024
-
-      Diane Di Loreto
-      Assistant, Student Life Administrator
-      Service Building 218
-      dmdiloreto@middlebury.edu
-      (802) 443-3233
   - title: I’d like to explore other options and return to the main menu (go back to 3)
     id: 3
 
@@ -630,33 +273,10 @@
 
 - question: Do any of these resources feel right to you?
   id: 26
+  resources:
+    - judicial_affairs_hr_officers
+    - dps
   answers:
-  - title: |
-      Judicial Affairs and Human Resource Officers
-
-      Karen Guttentag
-      Judicial Affairs Officer
-      (802) 443-2024
-      kguttent@middlebury.edu
-      Not confidential
-
-      Susan Ritter
-      Title IX Coordinator
-      (802) 443-3289
-      sritter@middlebury.edu
-      Not confidential
-
-      another JAO is coming in January---place hold
-  - title: |
-      Department of Public Safety
-
-      Emergency response, safety planning, accommodations, No Contact Order,   recording reports, campus and community-based transportation
-      go/dps
-      125 South Main Street
-      Middlebury, VT 05753
-      (802) 443-5911 (emergency)
-      (802) 443-5133 (non-emergency)
-      Not confidential
   - title: I’d like to explore making a report off campus (go to 27)
     id: 27
   - title: I’d like to explore other options and return to the main menu (go back to 3)
@@ -664,19 +284,10 @@
 
 - question: Do any of these resources feel right to you?
   id: 27
+  resources:
+    - middpd
+    - vtsp
   answers:
-  - title: |
-      Middlebury Police Department
-      1 Lucius Shaw Ln
-      Middlebury, VT 05753
-      (802) 388-3191
-      Not confidential
-  - title: |
-      Vermont State Police
-      2490 Ethan Allen Hwy
-      New Haven, VT 05472
-      (802) 388-4919
-      Not confidential
   - title: I’d like to explore making a report on campus (go back to 26)
     id: 26
   - title: I’d like to explore other options and return to the main menu (go back to 3)
@@ -742,80 +353,13 @@
 
 - question: Do any of these resources feel right to you?
   id: 32
+  resources:
+    - cspchw
+    - ahc
+    - middsafe
+    - dps
+    - commonsdean
   answers:
-  - title: |
-      Counseling Services at Parton Center for Health and Wellness
-      go/parton
-      Centeno House 3rd Floor
-      (802) 443-5141
-      Confidential
-
-  - title: |
-      After Hours Counseling
-      Available whenever the Parton counseling office is closed (evenings and   weekends)
-      go/parton
-      (802) 443-5141 (follow the voicemail prompts)
-      Confidential
-
-  - title: |
-      MiddSafe Confidential Advocates
-      Confidential support, information, resource referrals and advocacy
-      24/7 student-run hotline when classes are in session
-      go/middsafe
-      (802) 377-0239
-      Confidential
-
-  - title: |
-      Department of Public Safety
-      Emergency response, safety planning, accommodations, No Contact Order,   recording reports, campus and community-based transportation
-      go/dps
-      125 South Main Street
-      Middlebury, VT 05753
-      (802) 443-5911 (emergency)
-      (802) 443-5133 (non-emergency)
-      Not confidential
-
-  - title: |
-      Commons Dean
-      Dean's excuses, room changes, holistic institutional support
-      go/commons
-      Not confidential
-
-      Ann Craig Hanson
-      Dean of Ross Commons
-      003 RCD
-      hanson@middlebury.edu
-      (802) 443-3340
-      Not confidential
-
-      Scott Barnicle
-      Dean of Atwater Commons
-      Allen Hall 1534A
-      sbarnicl@middelbury.edu
-      (802) 443-3310
-      Not confidential
-
-      AJ Place
-      Dean of Brainerd Commons
-      Stewart Hall 216
-      ajplace@middlebury.edu
-      (802) 443-3320
-      Not confidential
-
-      Ian Sutherland
-      Dean of Cook Commons
-      Battell North 150
-      isutherland@middlebury.edu
-      (802) 443-3330
-      Not confidential
-
-      Matt Longman
-      Dean of Wonnacott Commons
-      Battell South 122
-      longman@middlebury.edu
-      (802) 443-3350
-      Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment   at ext. 3350
-      Not confidential
   - title: I'd like to explore support resources off campus (go to 33)
     id: 33
   - title: I’d like to explore other options and return to the main menu (go back to 3)
@@ -823,28 +367,12 @@
 
 - question: Do any of these resources feel right to you?
   id: 33
+  resources:
+    - csac
+    - pmc
+    - nsh
   answers:
   - title: |
-      Counseling Services of Addison County (CSAC)
-      24/7 support for all community members
-      89 Main Street
-      Middlebury, VT 05753
-      (802) 388-7641 (emergency)
-      (802) 388-7641 (non-emergency)
-      Confidential
-  - title: |
-      Porter Medical Center
-      SANE exam, STD testing, evidence collection, injury triage, hospital resources.
-      115 Porter Drive
-      Middlebury, VT 05753
-      (802) 388-4701
-      Confidential
-  - title: |
-      National Suicide Hotlines
-      Suicide Prevention Lifeline: (800) 273-8255
-      National Hopeline: (800) 442-4673
-      GLBT National Health Center: (888) 843-4564
-      Confidential
   - title: I'd like to explore support resources on campus (go back to 32)
     id: 32
   - title: I’d like to explore other options and return to the main menu (go back to 3)
@@ -867,81 +395,13 @@
 
 - question: Do any of these resources feel right to you?
   id: 36
+  resources:
+    - cspchw
+    - ahc
+    - middsafe
+    - dps
+    - commonsdean
   answers:
-  - title: |
-        Counseling Services at Parton Center for Health and Wellness
-        go/parton
-        Centeno House 3rd Floor
-        (802) 443-5141
-        Confidential
-
-  - title: |
-      After Hours Counseling
-      Available whenever the Parton counseling office is closed (evenings and   weekends)
-      go/parton
-      (802) 443-5141 (follow the voicemail prompts)
-      Confidential
-
-  - title: |
-      MiddSafe Confidential Advocates
-      Confidential support, information, resource referrals and advocacy
-      24/7 student-run hotline when classes are in session
-      go/middsafe
-      (802) 377-0239
-      Confidential
-
-  - title: |
-      Department of Public Safety
-      Emergency response, safety planning, accommodations, No Contact Order,   recording reports, campus and community-based transportation
-      go/dps
-      125 South Main Street
-      Middlebury, VT 05753
-      (802) 443-5911 (emergency)
-      (802) 443-5133 (non-emergency)
-      Not confidential
-
-  - title: |
-      Commons Dean
-      Dean's excuses, room changes, holistic institutional support
-      go/commons
-      Not confidential
-
-      Ann Craig Hanson
-      Dean of Ross Commons
-      003 RCD
-      hanson@middlebury.edu
-      (802) 443-3340
-      Not confidential
-
-      Scott Barnicle
-      Dean of Atwater Commons
-      Allen Hall 1534A
-      sbarnicl@middelbury.edu
-      (802) 443-3310
-      Not confidential
-
-      AJ Place
-      Dean of Brainerd Commons
-      Stewart Hall 216
-      ajplace@middlebury.edu
-      (802) 443-3320
-      Not confidential
-
-      Ian Sutherland
-      Dean of Cook Commons
-      Battell North 150
-      isutherland@middlebury.edu
-      (802) 443-3330
-      Not confidential
-
-      Matt Longman
-      Dean of Wonnacott Commons
-      Battell South 122
-      longman@middlebury.edu
-      (802) 443-3350
-      Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment   at ext. 3350
-      Not confidential
-
   - title: I'd like to explore safety planning resources off campus (go back to 36)
     id: 36
   - title: I’d like to explore other options and return to the main menu (go back to 3)
@@ -949,36 +409,12 @@
 
 - question: Do any of these resources feel right to you?
   id: 37
+  resources:
+    - csac
+    - pmc
+    - middpd
+    - vtsp
   answers:
-  - title: |
-      Counseling Services of Addison County (CSAC)
-      24/7 support for all community members
-      89 Main Street
-      Middlebury, VT 05753
-      (802) 388-7641 (emergency)
-      (802) 388-7641 (non-emergency)
-      Confidential
-  - title: |
-      Porter Medical Center
-      SANE exam, STD testing, evidence collection, injury triage, hospital resources.
-      115 Porter Drive
-      Middlebury, VT 05753
-      (802) 388-4701
-      Confidential
-  - title: |
-      Middlebury Police Department
-      1 Lucius Shaw Ln
-      Middlebury, VT 05753
-      (802) 388-3191
-      Not confidential
-
-  - title: |
-      Vermont State Police
-      2490 Ethan Allen Hwy
-      New Haven, VT 05472
-      (802) 388-4919
-      Not confidential
-
   - title: I'd like to explore safety planning resources on campus (go back to 34)
     id: 34
   - title: I’d like to explore other options and return to the main menu (go back to 3)
@@ -1033,50 +469,10 @@
   - title: I’d like to explore other options and return to the main menu (go back to 3)
     id: 3
 
-
 - question: In any unsafe situations, call Public Safety (802-443-5911) or the Middlebury Police (911) immediately. If you can, also get in touch with your friend’s or your own Commons dean (see below for contact information). In cases where your friend has a plan to commit suicide, contact the 24-hour hotline at Counseling Services of Addison County via Public Safety (802-443-5911). Do not be afraid to overreact. If you are conflicted about whether or not the situation counts as an emergency, err on the side of caution and reach out.
+  resources:
+    - commonsdean
   answers:
-  - title: |
-      Commons Dean
-      Dean's excuses, room changes, holistic institutional support
-      go/commons
-      Not confidential
-
-      Ann Craig Hanson
-      Dean of Ross Commons
-      003 RCD
-      hanson@middlebury.edu
-      (802) 443-3340
-      Not confidential
-
-      Scott Barnicle
-      Dean of Atwater Commons
-      Allen Hall 1534A
-      sbarnicl@middelbury.edu
-      (802) 443-3310
-      Not confidential
-
-      AJ Place
-      Dean of Brainerd Commons
-      Stewart Hall 216
-      ajplace@middlebury.edu
-      (802) 443-3320
-      Not confidential
-
-      Ian Sutherland
-      Dean of Cook Commons
-      Battell North 150
-      isutherland@middlebury.edu
-      (802) 443-3330
-      Not confidential
-
-      Matt Longman
-      Dean of Wonnacott Commons
-      Battell South 122
-      longman@middlebury.edu
-      (802) 443-3350
-      Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment at ext. 3350
-      Not confidential
   - title: I’d like to explore other resources for helping a friend or myself (go back to 38)
     id: 38
   - title: I’d like to explore other options and return to the main menu (go back to 3)
@@ -1087,48 +483,9 @@
 
     In any unsafe situations, call Public Safety (802-443-5911) or the Middlebury Police (911) immediately. If you can, also get in touch with your friend’s or your own Commons dean (see below for contact information). In cases where your friend has a plan to commit suicide, contact the 24-hour hotline at Counseling Services of Addison County via Public Safety (802-443-5911).
   id: 41
+  resources:
+    - commonsdean
   answers:
-  - title: |
-      Commons Dean
-      Dean's excuses, room changes, holistic institutional support
-      go/commons
-      Not confidential
-
-      Ann Craig Hanson
-      Dean of Ross Commons
-      003 RCD
-      hanson@middlebury.edu
-      (802) 443-3340
-      Not confidential
-
-      Scott Barnicle
-      Dean of Atwater Commons
-      Allen Hall 1534A
-      sbarnicl@middelbury.edu
-      (802) 443-3310
-      Not confidential
-
-      AJ Place
-      Dean of Brainerd Commons
-      Stewart Hall 216
-      ajplace@middlebury.edu
-      (802) 443-3320
-      Not confidential
-
-      Ian Sutherland
-      Dean of Cook Commons
-      Battell North 150
-      isutherland@middlebury.edu
-      (802) 443-3330
-      Not confidential
-
-      Matt Longman
-      Dean of Wonnacott Commons
-      Battell South 122
-      longman@middlebury.edu
-      (802) 443-3350
-      Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment at ext. 3350
-      Not confidential
   - title: I’d like to explore other resources for helping a friend or myself (go back to 38)
     id: 38
   - title: I’d like to explore other options and return to the main menu (go back to 3)
@@ -1154,104 +511,26 @@
 
 - question: Do any of these resources feel right to you?
   id: 43
+  resources:
+    - cspchw
+    - ahc
+    - middsafe
+    - commonsdean
+    - residential_life
   answers:
-  - title: |
-      Counseling Services at Parton Center for Health and Wellness
-      go/parton
-      Centeno House 3rd Floor
-      (802) 443-5141
-      Confidential
-
-  - title: |
-      After Hours Counseling
-      Available whenever the Parton counseling office is closed (evenings and   weekends)
-      go/parton
-      (802) 443-5141 (follow the voicemail prompts)
-      Confidential
-
-  - title: |
-      MiddSafe Confidential Advocates
-      Confidential support, information, resource referrals and advocacy
-      24/7 student-run hotline when classes are in session
-      go/middsafe
-      (802) 377-0239
-      Confidential
-
-  - title: |
-      Commons Dean
-      Dean's excuses, room changes, holistic institutional support
-      go/commons
-      Not confidential
-
-      Ann Craig Hanson
-      Dean of Ross Commons
-      003 RCD
-      hanson@middlebury.edu
-      (802) 443-3340
-      Not confidential
-
-      Scott Barnicle
-      Dean of Atwater Commons
-      Allen Hall 1534A
-      sbarnicl@middelbury.edu
-      (802) 443-3310
-      Not confidential
-
-      AJ Place
-      Dean of Brainerd Commons
-      Stewart Hall 216
-      ajplace@middlebury.edu
-      (802) 443-3320
-      Not confidential
-
-      Ian Sutherland
-      Dean of Cook Commons
-      Battell North 150
-      isutherland@middlebury.edu
-      (802) 443-3330
-      Not confidential
-
-      Matt Longman
-      Dean of Wonnacott Commons
-      Battell South 122
-      longman@middlebury.edu
-      (802) 443-3350
-      Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment at ext. 3350
-      Not confidential
-
-  - title: |
-      Residential Life
-      Your common’s Commons Residential Advisor (CRA), First-Year Counselor   (FYC), Resident Assistant (RA), Community Assistant (CA)
-      go/commons
-      Not confidential
-  - title: I am concerned that my friend or I is experiencing an emergency and I want to seek help (go back to 40)
-    id: 40
   - title: I'd like to explore resources off campus (go to 44)
-    id: 40
+    id: 44
   - title: I’d like to explore other resources for helping a friend or myself (go back to 38)
-    id: 40
+    id: 38
   - title: I’d like to explore other options and return to the main menu (go back to 3)
-    id: 40
+    id: 3
 
 - question: Do any of these resources feel right to you?
   id: 44
+  resources:
+    - womensafe
+    - csac
   answers:
-  - title: |
-      WomenSafe
-      Confidential 24 hour support, information, referrals and advocacy for community   member of all genders and sexual orientations
-      http://www.womensafe.net/home/
-      (802) 388-4205
-      Confidential
-  - title: |
-      Counseling Services of Addison County (CSAC)
-      24/7 support for all community members
-      89 Main Street
-      Middlebury, VT 05753
-      (802) 388-7641 (emergency)
-      (802) 388-7641 (non-emergency)
-      Confidential
-  - title: I am concerned that my friend or I is experiencing an emergency and I want to seek help (go back to 40)
-    id: 40
   - title: I'd like to explore resources on campus (go back to 43)
     id: 43
   - title: I’d like to explore other resources for helping a friend or myself (go back to 38)
@@ -1297,7 +576,6 @@
     -  Accept and honor her emotions, without judgment.
     -  Be honest. You may not “understand,” but you can empathize and care.
     -  Reflect. The only way to ensure that you understand is to ask. Try something like: “it seems like you are feeling…” and “Do you mean…?”
-
 
     -  Allow them to define their experience on their own terms. Imposing labels or definitions takes away their right to make sense of their experience for themselves.
     -  Affirm the things he is doing right, such as reaching out to you. For example, you could say, “anything you’ve done so far is the right thing, because you are here, and you are talking to me.”

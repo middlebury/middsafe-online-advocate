@@ -1,0 +1,16 @@
+{% assign props=include.person %}
+
+<div class="person">
+  <h2 class="person__name">{{props.name}}</h2>
+  <p class="person__title"><em>{{props.title}}</em></p>
+  <p class="person__address">{{props.address | markdown}}</p>
+  <p class="person__email"><a href="mailto:{{props.email}}">{{props.email}}</a></p>
+  <p class="person__tel">{{props.number}}</p>
+
+  {% if props.confidential == true %}
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  {% elsif props.confidential == false %}
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  {% endif %}
+
+</div>

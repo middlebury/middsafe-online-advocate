@@ -67,6 +67,12 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('./js'));
 });
 
+gulp.task('images', function() {
+  return gulp.src('./_img/**/*.{jpg,png,svg}')
+    // TODO: compress images
+    .pipe(gulp.dest('./img'));
+});
+
 // TODO: get styles to beep on sass error
 gulp.task('styles', function() {
   return gulp.src('_scss/main.scss')
@@ -84,9 +90,10 @@ gulp.task('watch', function() {
   gulp.watch('_js/**/*.js', ['scripts']);
   gulp.watch('_scss/*.scss', ['styles']);
   gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_data/*', '_includes/*.html'], ['jekyll-rebuild']);
+  gulp.watch('_img/**/*.{jpg,png,svg}', ['images']);
 });
 
-gulp.task('build', ['jekyll-build', 'scripts', 'styles']);
+gulp.task('build', ['jekyll-build', 'scripts', 'styles', 'images']);
 
 gulp.task('deploy', ['build'], function() {
   return gulp.src('./_site/**/*')

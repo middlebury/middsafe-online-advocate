@@ -76,11 +76,13 @@ gulp.task('images', function() {
 // TODO: get styles to beep on sass error
 gulp.task('styles', function() {
   return gulp.src('_scss/main.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: ['scss'],
       onError: browserSync.notify
     })).on('error', sass.logError)
     .pipe(autoprefixer(['last 3 versions'], { cascade: true }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.stream())
     .pipe(gulp.dest('./css'));

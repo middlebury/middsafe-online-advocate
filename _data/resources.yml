@@ -6,9 +6,9 @@ list:
 dps:
   title: Department of Public Safety
   description: Emergency response, safety planning, accommodations, No Contact Order, recording reports, campus and community-based transportation
-  url: go/dps
+  link_text: go/dps
   address: |
-    125 South Main Street
+    125 South Main Street<br>
     Middlebury, VT 05753
   numbers:
     - (802) 443-5911 (emergency)
@@ -18,14 +18,14 @@ dps:
 middsafe:
   title: MiddSafe Confidential Advocates
   description: Confidential support, information, resource referrals and advocacy 24/7 student-run hotline when classes are in session
-  url: go/middsafe
+  link_text: go/middsafe
   number: (802) 377-0239
   confidential: true
 
 commonsdean:
   title: Commons Dean
   description: Dean's excuses, room changes, holistic institutional support
-  url: go/commons
+  link_text: go/commons
   confidential: false
   people:
     - name: Ann Craig Hanson
@@ -83,7 +83,7 @@ vtsp:
 womensafe:
   title: WomenSafe
   description: Confidential 24 hour support, information, referrals and advocacy for community  member of all genders and sexual orientations
-  url: http://www.womensafe.net/home/
+  link_text: http://www.womensafe.net/home/
   number: (802) 388-4205
   confidential: true
 
@@ -100,7 +100,7 @@ csac:
 
 cspchw:
   title: Counseling Services at Parton Center for Health and Wellness
-  url: go/parton
+  link_text: go/parton
   address: Centeno House 3rd Floor
   number: (802) 443-5141
   confidential: true
@@ -108,14 +108,14 @@ cspchw:
 ahc:
   title: After Hours Counseling
   description: Available whenever the Parton counseling office is closed (evenings and   weekends)
-  url: go/parton
+  link_text: go/parton
   number: (802) 443-5141 (follow the voicemail prompts)
   confidential: true
 
 safespace:
   title: SafeSpace
   description: Confidential information, support, referrals and advocacy for LGBTQ survivors.
-  url: http://www.safespaceonline.org
+  link_text: http://www.safespaceonline.org
   number: (802) 863-0003
   confidential: true
 
@@ -214,12 +214,12 @@ college_chaplains:
 
 local_congregations:
   title: Local Congregations
-  url: go/congregations
+  link_text: go/congregations
 
 phs:
   title: Parton Health Services
   description: SANE exam, STD testing, evidence collection, injury triage.
-  url: go/parton
+  link_text: go/parton
   number: (802) 443-5135
   confidential: true
 
@@ -234,7 +234,7 @@ pmc:
 
 vvcp:
   title: Vermont Victims Compensation Program
-  url: www.ccvs.state.vt.us/compensation
+  link_text: www.ccvs.state.vt.us/compensation
   people:
   - name: Sandy Robinson # This used to say "Campus contact is..." Is this fine to do?
     title: Managing Nurse Practitioner
@@ -264,7 +264,7 @@ economic_services:
 residential_life:
   title: Residential Life
   description: Your common’s Commons Residential Advisor (CRA), First-Year Counselor   (FYC), Resident Assistant (RA), Community Assistant (CA)
-  url: go/commons
+  link_text: go/commons
   confidential: false
 
 admin_committee:

@@ -271,11 +271,13 @@ admin_committee:
     title: Judicial Affairs Officer
     email: kguttent@middlebury.edu
     number: (802) 443-2024
+    confidential: false
   - name: Diane Di Loreto
     title: Assistant, Student Life Administrator
     address: Service Building 218
     email: dmdiloreto@middlebury.edu
     number: (802) 443-3233
+    confidential: false
 
 judicial_affairs_hr_officers:
   description: another JAO is coming in January---place hold
@@ -285,6 +287,7 @@ judicial_affairs_hr_officers:
     title: Judicial Affairs Officer
     email: kguttent@middlebury.edu
     number: (802) 443-2024
+    confidential: false
   - name: Susan Ritter
     title: Title IX Coordinator
     number: (802) 443-3289

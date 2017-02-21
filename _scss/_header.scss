@@ -1,0 +1,38 @@
+body {
+
+  &:not(.home) {
+    padding-top: 100px;
+  }
+}
+
+.site-header {
+  border-top: 5px solid $secondary;
+
+  body:not(.home) & {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+  }
+}
+
+.site-header__title {
+  background-color: $primary;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .home & {
+    @include sr-only();
+  }
+}
+
+.site-title {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,11 @@
+.footer {
+  border-top: 2px solid $primary;
+
+  .home & {
+    border-top: 5px solid $secondary;
+  }
+}
+
+.footer__logo {
+  padding-top: 20px;
+}

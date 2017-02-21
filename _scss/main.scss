@@ -1,6 +1,62 @@
+// dependencies
+@import '../node_modules/normalize.css/normalize';
+
+// core
 @import 'variables';
 @import 'mixins';
 
+// base
 @import 'global';
 
+// layout
+@import 'grid';
+
+// components
+@import 'button';
 @import 'header';
+@import 'footer';
+@import 'nav';
+@import 'resource';
+@import 'person';
+@import 'hero';
+@import 'modal';
+
+.pagetitle {
+  font-weight: normal;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  @include media(md) {
+    font-size: 24px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+}
+
+.answers-list {
+  border-left: 5px solid $secondary;
+  margin-bottom: 50px;
+}
+
+.answers-list__item {
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.answers-list__link {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.answers-list__link--accent {
+  color: $accent;
+}
+
+.main {
+  min-height: 70vh;
+}
+
+.modal {
+  top: 100px;
+}

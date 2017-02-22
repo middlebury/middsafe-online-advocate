@@ -1,29 +1,12 @@
 ---
 layout: default
+body_class: home
 ---
 
-<section class="section">
-  <ol class="questions-list">
-  {% for question in site.data.questions %}
-    <li id="{{forloop.index}}" class="questions-list__item">
-      <div>
-        <span>{{question.question | markdownify}}</span>
-      </div>
-      {% for resource in question.resources %}
-        {{ site.data.resources[resource] | markdownify }}
-      {% endfor %}
-      <ul class="answers-list">
-        {% for item in question.answers %}
-          <li class="answers-list__item">
-            {% if item.id %}
-              <a href="#{{item.id}}" class="answers-list__link">{{item.title}}</a>
-            {% else %}
-              <span>{{item.title | markdownify }}</span>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    </li>
-  {% endfor %}
-  </ol>
-</section>
+<div class="hero">
+  <div class="hero__content">
+    <h2 class="hero__title">Welcome</h2>
+    <p class="hero__text">to Your <strong>MiddSafe</strong> Online Advocate</p>
+    <a href="/discovery" class="button button--secondary hero__button">Get Started Now &rarr;</a>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<section class="section">
+  <ol class="questions-list">
+  {% for question in site.data.questions %}
+    <li id="{{forloop.index}}" class="questions-list__item">
+      <div>
+        <h2 class="pagetitle">{{question.question}}</h2>
+      </div>
+
+      {% for id in question.resources %}
+
+        {% assign item = site.data.resources[id] %}
+
+        {% include resource.html resource=item %}
+
+      {% endfor %}
+
+      <ul class="answers-list">
+        {% for item in question.answers %}
+          <li class="answers-list__item">
+            {% if item.id %}
+              <a href="#{{item.id}}" class="answers-list__link {% if item.accent %}answers-list__link--accent{% endif %}">{{item.title}}</a>
+            {% else %}
+              <span>{{item.title | markdownify }}</span>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+  </ol>
+</section>

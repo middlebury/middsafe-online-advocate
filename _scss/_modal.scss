@@ -6,9 +6,13 @@
   left: 0;
   top: 0;
   z-index: 2;
-  overflow: auto;
   display: flex;
   flex-direction: column;
+
+  // add inertia scrolling for content
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+
   // set all modals closed
   display: none;
 }

@@ -39,6 +39,14 @@
   .site-nav__list-item:first-child & {
     padding-left: 0;
   }
+
+  &.fetch-page-active {
+    font-weight: bold;
+
+    body:not(.home) & {
+      color: $primary;
+    }
+  }
 }
 
 .site-nav__button {

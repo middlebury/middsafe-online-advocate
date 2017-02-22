@@ -9,6 +9,16 @@
   overflow: auto;
   display: flex;
   flex-direction: column;
+  // set all modals closed
+  display: none;
+}
+
+.modal--is-open {
+  display: block;
+}
+
+.modal--is-top {
+  z-index: 3;
 }
 
 .modal__controls {

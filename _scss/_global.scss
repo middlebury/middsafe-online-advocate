@@ -11,6 +11,10 @@ body {
   background: $white;
   color: $gray;
   line-height: 1.5;
+
+  &.has-modal {
+    overflow: hidden;
+  }
 }
 
 img {

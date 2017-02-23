@@ -6,14 +6,7 @@
   left: 0;
   top: 0;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
-
-  // add inertia scrolling for content
-  overflow-y: scroll; /* has to be scroll, not auto */
-  -webkit-overflow-scrolling: touch;
-
-  // set all modals closed
+  box-shadow: 5px 0 10px rgba(black, .1);
   display: none;
 }
 
@@ -26,14 +19,9 @@
 }
 
 .modal__controls {
-  flex: 1;
   background-color: $secondary;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.modal__content {
-  flex: 1;
 }
 
 .modal__button {
@@ -53,4 +41,10 @@
 
 .modal__button-icon {
 
+}
+
+.modal__container {
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }

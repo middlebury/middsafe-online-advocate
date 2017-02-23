@@ -8,6 +8,9 @@ const modalBodyClass = 'has-modal';
 const modalTopClass = 'modal--is-top';
 const modalOpenClass = 'modal--is-open';
 
+const MODAL_ANIMATION_ELASTICITY = -500;
+const MODAL_ANIMATION_DURATION = 800;
+
 let activeModalId = '';
 let isModalAnimating = false;
 
@@ -33,8 +36,10 @@ function createModal(id, content = '') {
         </a>
       </div>
     </div>
-    <div class="container">
-      <div class="modal__content">${content}</div>
+    <div class="modal__container">
+      <div class="container">
+        <div class="modal__content">${content}</div>
+      </div>
     </div>
   `;
 
@@ -53,8 +58,6 @@ function handleModalCloseButtonClick(e) {
   // const id = e.currentTarget.dataset.modalId;
 
   closeAllModals();
-
-  removeActiveLinkClass();
 }
 
 function fetchPage(url) {
@@ -78,27 +81,34 @@ function fetchPage(url) {
 function openModal(id) {
   const modal = document.getElementById(id);
 
-  if(activeModalId === id) {
+  // dont open the modal if it's already active or one is animating
+  if(activeModalId === id || isModalAnimating) {
     return;
   }
 
+  // set the active modal id so we know what is open
   activeModalId = id;
 
   isModalAnimating = true;
 
+  // add the global has-modal body class so body overflow can be hidden via css
   document.body.classList.add(modalBodyClass);
 
   // remove is-top class from all modals
   forEach(getModals(), modal => modal.classList.remove(modalTopClass));
 
+  // add the modal open class
   modal.classList.add(modalOpenClass);
+
+  // set the modal `is-top` class so it can be layed over any existing modals via css z-index
   modal.classList.add(modalTopClass);
 
+  // animate the modal open from the left based on the modal's width
   anime({
     targets: modal,
-    translateX: [-modal.offsetWidth, 0],
-    elasticity: -1000,
-    duration: 800,
+    translateX: [-modal.offsetWidth - 50, 0],
+    elasticity: MODAL_ANIMATION_ELASTICITY,
+    duration: MODAL_ANIMATION_DURATION,
     complete: () => {
       isModalAnimating = false;
     }
@@ -106,28 +116,46 @@ function openModal(id) {
 }
 
 function closeAllModals() {
-  forEach(getModals(), modal => closeModal(modal.id));
+  forEach(getModals(), modal => {
+    // only animate close the top most modal
+    if(modal.id === activeModalId) {
+      return closeModal(modal.id);
+    }
+
+    // close all other modals by removing the open/top class
+    modal.classList.remove(modalTopClass);
+    modal.classList.remove(modalOpenClass);
+  });
 }
 
 function closeModal(id) {
   const modal = document.getElementById(id);
 
+  if(isModalAnimating) {
+    return;
+  }
+
+  removeActiveLinkClass();
+
+  isModalAnimating = true;
+
   activeModalId = null;
+
+  document.body.classList.remove(modalBodyClass);
 
   // animate modal closed here
   anime({
     targets: modal,
-    translateX: [0, -modal.offsetWidth],
-    elasticity: -1000,
-    duration: 800,
+    translateX: [0, -modal.offsetWidth - 50],
+    elasticity: MODAL_ANIMATION_ELASTICITY,
+    duration: MODAL_ANIMATION_DURATION,
     complete: () => {
-      document.body.classList.remove(modalBodyClass);
-
       // remove is-top and is-open class
       modal.classList.remove(modalOpenClass, modalTopClass);
+
+      isModalAnimating = false;
     }
   });
-
 }
 
 // sets the inner content of the modal by id
@@ -148,6 +176,11 @@ function handleLinkClick(e) {
   // prevent page from going to the url
   e.preventDefault();
 
+  // do nothing if a modal is animating
+  if(isModalAnimating) {
+    return;
+  }
+
   const link = e.target;
 
   // get the url from the link so we can load the content via ajax
@@ -156,7 +189,13 @@ function handleLinkClick(e) {
   // get the modal id from the data attribute
   const id = createModalId(link.dataset.modalId);
 
-  // remove the active link class from nav links
+  // close the modals if the intended one to open is already open
+  // essentially toggling the open state
+  if(id === activeModalId) {
+    return closeAllModals();
+  }
+
+  // remove all active link styles so the new, single one can be applied
   removeActiveLinkClass();
 
   // remove the active link class from nav links
@@ -168,7 +207,8 @@ function handleLinkClick(e) {
     // get the inner content out since the whole html doc gets fetched
     const content = page.querySelector('.js-content');
 
-    // set the inner content of the already created modal
+    // set the inner content of the already created
+    // modal with the fetched page content
     setModalContent(id, content.innerHTML);
 
     // open the modal
@@ -176,7 +216,8 @@ function handleLinkClick(e) {
 
   }).catch(err => {
     console.error(err);
-    // window.location.href = url;
+    // if page fetched to load, just change the window url to the page
+    window.location.href = url;
   });
 }
 

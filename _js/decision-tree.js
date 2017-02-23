@@ -13,6 +13,7 @@ function showQuestion(id) {
   var elem = document.getElementById(id);
   if(elem) {
     elem.style.display = 'block';
+    window.scrollTo(0, 0);
   }
 }
 

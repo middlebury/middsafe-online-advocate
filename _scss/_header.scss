@@ -1,9 +1,12 @@
 .site-header {
   border-top: 5px solid $secondary;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 5;
+
+  .js & {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
 }
 
 .site-header__title {

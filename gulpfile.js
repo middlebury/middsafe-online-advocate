@@ -17,8 +17,6 @@ var cp = require('child_process');
 var beeper = require('beeper');
 var args = require('yargs').argv;
 
-// TODO: set up minification and sourcemaps for production only builds
-
 const production = !!args.production;
 
 const jekyllOpts = ['build'];

@@ -29,16 +29,18 @@ function createModal(id, content = '') {
   modal.classList.add('modal');
 
   modal.innerHTML = `
-    <div class="modal__controls">
-      <div class="container">
-        <a href="#" class="modal__button" data-modal-id="${modalId}">
-          <span class="modal__button-icon">&larr;</span> <span class="modal__button-text">Back</span>
-        </a>
+    <div class="modal__main">
+      <div class="modal__controls">
+        <div class="container">
+          <a href="#" class="modal__button" data-modal-id="${modalId}">
+            <span class="modal__button-icon">&larr;</span> <span class="modal__button-text">Back</span>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="modal__container">
-      <div class="container">
-        <div class="modal__content">${content}</div>
+      <div class="modal__container">
+        <div class="container">
+          <div class="modal__content">${content}</div>
+        </div>
       </div>
     </div>
   `;

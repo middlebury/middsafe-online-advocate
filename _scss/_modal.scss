@@ -18,6 +18,12 @@
   z-index: 3;
 }
 
+.modal__main {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
 .modal__controls {
   background-color: $secondary;
   padding-top: 10px;

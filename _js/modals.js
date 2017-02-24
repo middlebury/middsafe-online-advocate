@@ -8,7 +8,7 @@ const modalBodyClass = 'has-modal';
 const modalTopClass = 'modal--is-top';
 const modalOpenClass = 'modal--is-open';
 
-const MODAL_ANIMATION_ELASTICITY = -500;
+const MODAL_ANIMATION_ELASTICITY = -800;
 const MODAL_ANIMATION_DURATION = 800;
 
 let activeModalId = '';

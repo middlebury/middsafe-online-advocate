@@ -56,3 +56,19 @@
 .main {
   min-height: 70vh;
 }
+
+.markdown {
+  ul {
+    list-style: initial;
+  }
+
+  ol {
+    list-style: initial;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+}

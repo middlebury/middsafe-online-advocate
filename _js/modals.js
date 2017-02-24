@@ -28,6 +28,9 @@ function createModal(id, content = '') {
   modal.id = modalId;
   modal.classList.add('modal');
 
+  const header = document.querySelector('.site-header');
+  modal.style.paddingTop = header.offsetHeight + 'px';
+
   modal.innerHTML = `
     <div class="modal__main">
       <div class="modal__controls">

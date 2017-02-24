@@ -1,19 +1,9 @@
-body {
-
-  &:not(.home) {
-    padding-top: 100px;
-  }
-}
-
 .site-header {
   border-top: 5px solid $secondary;
-
-  body:not(.home) & {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 5;
-  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
 }
 
 .site-header__title {

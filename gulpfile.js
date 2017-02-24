@@ -10,6 +10,7 @@ var gulpIf = require('gulp-if');
 var autoprefixer = require('gulp-autoprefixer');
 var babelify = require('babelify');
 var ghPages = require('gulp-gh-pages');
+var cssnano = require('gulp-cssnano');
 var cmq = require('gulp-combine-mq');
 var browserSync = require('browser-sync');
 var cp = require('child_process');
@@ -86,6 +87,7 @@ gulp.task('styles', function() {
     .pipe(autoprefixer(['last 3 versions'], { cascade: true }))
     .pipe(gulpIf(!production, sourcemaps.write('./')))
     .pipe(gulpIf(production, cmq()))
+    .pipe(gulpIf(production, cssnano({ zIndex: false })))
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.stream())
     .pipe(gulp.dest('./css'));

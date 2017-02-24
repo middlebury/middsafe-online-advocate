@@ -5,7 +5,9 @@
   <p class="resource__description">{{props.description}}</p>
   <p class="resource_url"><a href="{{props.link_href}}" class="resource__link">{{props.link_text}}</a></p>
 
-  <div class="resource__address">{{props.address | markdown}}</div>
+  {% if props.address %}
+    <div class="resource__address">{{props.address | markdownify}}</div>
+  {% endif %}
   {% if props.numbers %}
     <ul class="resource__tel-list">
       {% for tel in props.numbers %}

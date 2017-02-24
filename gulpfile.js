@@ -10,6 +10,7 @@ var gulpIf = require('gulp-if');
 var autoprefixer = require('gulp-autoprefixer');
 var babelify = require('babelify');
 var ghPages = require('gulp-gh-pages');
+var cmq = require('gulp-combine-mq');
 var browserSync = require('browser-sync');
 var cp = require('child_process');
 var beeper = require('beeper');
@@ -84,6 +85,7 @@ gulp.task('styles', function() {
     })).on('error', sass.logError)
     .pipe(autoprefixer(['last 3 versions'], { cascade: true }))
     .pipe(gulpIf(!production, sourcemaps.write('./')))
+    .pipe(gulpIf(production, cmq()))
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.stream())
     .pipe(gulp.dest('./css'));

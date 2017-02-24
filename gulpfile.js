@@ -59,10 +59,10 @@ gulp.task('scripts', function() {
     })
     .pipe(source('bundle.js'))
     .pipe(buffer())
-    .pipe(gulpIf(production, sourcemaps.init({ loadMaps: true })))
+    .pipe(gulpIf(!production, sourcemaps.init({ loadMaps: true })))
     .pipe(uglify())
     .on('error', gutil.log)
-    .pipe(gulpIf(production, sourcemaps.write('./')))
+    .pipe(gulpIf(!production, sourcemaps.write('./')))
     .pipe(gulp.dest('./_site/js'))
     .pipe(browserSync.stream())
     .pipe(gulp.dest('./js'));

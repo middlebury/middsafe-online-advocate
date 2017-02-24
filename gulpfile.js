@@ -6,6 +6,7 @@ var gutil = require('gulp-util');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
+var gulpIf = require('gulp-if');
 var autoprefixer = require('gulp-autoprefixer');
 var babelify = require('babelify');
 var ghPages = require('gulp-gh-pages');
@@ -58,10 +59,10 @@ gulp.task('scripts', function() {
     })
     .pipe(source('bundle.js'))
     .pipe(buffer())
-    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(gulpIf(production, sourcemaps.init({ loadMaps: true })))
     .pipe(uglify())
     .on('error', gutil.log)
-    .pipe(sourcemaps.write('./'))
+    .pipe(gulpIf(production, sourcemaps.write('./')))
     .pipe(gulp.dest('./_site/js'))
     .pipe(browserSync.stream())
     .pipe(gulp.dest('./js'));
@@ -76,13 +77,13 @@ gulp.task('images', function() {
 // TODO: get styles to beep on sass error
 gulp.task('styles', function() {
   return gulp.src('_scss/main.scss')
-    .pipe(sourcemaps.init())
+    .pipe(gulpIf(!production, sourcemaps.init({ loadMaps: true })))
     .pipe(sass({
       includePaths: ['scss'],
       onError: browserSync.notify
     })).on('error', sass.logError)
     .pipe(autoprefixer(['last 3 versions'], { cascade: true }))
-    .pipe(sourcemaps.write())
+    .pipe(gulpIf(!production, sourcemaps.write('./')))
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.stream())
     .pipe(gulp.dest('./css'));

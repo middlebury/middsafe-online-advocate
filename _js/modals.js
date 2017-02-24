@@ -192,7 +192,7 @@ function handleLinkClick(e) {
   const url = link.href;
 
   // get the modal id from the data attribute
-  const id = createModalId(link.dataset.modalId);
+  const id = createModalId(link.getAttribute('data-modal-id'));
 
   // close the modals if the intended one to open is already open
   // essentially toggling the open state
@@ -228,7 +228,7 @@ function handleLinkClick(e) {
 
 function main() {
   forEach(navLinks, link => {
-    const id = link.dataset.modalId;
+    const id = link.getAttribute('data-modal-id');
     createModal(id);
     link.addEventListener('click', handleLinkClick);
   });

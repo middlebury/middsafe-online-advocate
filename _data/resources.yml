@@ -115,9 +115,8 @@ safespace:
   confidential: true
 
 barbara_mcall:
-  people:
-  - name: Barbara McCall
-  title: Director of Health and Wellness Education
+  title: Barbara McCall
+  description: Director of Health and Wellness Education
   address: |
     Service Building 225  
     84 South Service Road
@@ -127,28 +126,26 @@ barbara_mcall:
   confidential: false
 
 karen_guttentag:
-  people:
-  - name: Karen Guttentag
-    title: Associate Dean for Judicial Affairs and Student Life
-    address: |
-      Service Building 219
-      84 South Service Road
-      Middlebury, VT 05753
-    email: kguttent@middlebury.edu
-    number: (802) 443-2024
-    confidential: false
+  title: Karen Guttentag
+  description: Associate Dean for Judicial Affairs and Student Life
+  address: |
+    Service Building 219  
+    84 South Service Road  
+    Middlebury, VT 05753
+  email: kguttent@middlebury.edu
+  number: (802) 443-2024
+  confidential: false
 
 sue_ritter:
-  people:
-  - name: Sue Ritter
-    title: Compliance Officer and Title IX Coordinator
-    address: |
-      Service Building 213
-      84 South Service Road
-      Middlebury, VT 05753
-    email: sritter@middlebury.edu
-    number: (802) 443-3289
-    confidential: false
+  title: Sue Ritter
+  description: Compliance Officer and Title IX Coordinator
+  address: |
+    Service Building 213  
+    84 South Service Road  
+    Middlebury, VT 05753
+  email: sritter@middlebury.edu
+  number: (802) 443-3289
+  confidential: false
 
 college_chaplains:
   title: College Chaplains

@@ -3,8 +3,8 @@ dps:
   description: Emergency response, safety planning, accommodations, No Contact Order, recording reports, campus and community-based transportation
   link_text: go/dps
   address: |
-    125 South Main Street<br>
-    Middlebury, VT 05753
+    125 South Main Street  
+    Middlebury, VT 05753  
   numbers:
     - (802) 443-5911 (emergency)
     - (802) 443-5133 (non-emergency)
@@ -62,7 +62,7 @@ commonsdean:
 middpd:
   title: Middlebury Police Department
   address: |
-    1 Lucius Shaw Ln
+    1 Lucius Shaw Ln  
     Middlebury, VT 05753
   number: (802) 388-3191
   confidential: false
@@ -70,7 +70,7 @@ middpd:
 vtsp:
   title: Vermont State Police
   address: |
-    2490 Ethan Allen Hwy
+    2490 Ethan Allen Hwy  
     New Haven, VT 05472
   number: (802) 388-4919
   confidential: false
@@ -86,7 +86,7 @@ csac:
   title: Counseling Services of Addison County (CSAC)
   description: 24/7 support for all community members
   address: |
-    89 Main Street
+    89 Main Street  
     Middlebury, VT 05753
   numbers:
     - (802) 388-7641 (emergency)
@@ -119,7 +119,7 @@ barbara_mcall:
   - name: Barbara McCall
   title: Director of Health and Wellness Education
   address: |
-    Service Building 225
+    Service Building 225  
     84 South Service Road
     Middlebury, VT 05753
   email: bmccall@middlebury.edu
@@ -156,12 +156,11 @@ college_chaplains:
   number: (802) 443-5626
   confidential: true
   people:
-
   - name: Nalia Boloch
     title: Associate Chaplain and Muslim Advisor
     address: |
-      Scott Center for Spiritual and Religious Life
-      135 South Main Street
+      Scott Center for Spiritual and Religious Life  
+      135 South Main Street  
       Middlebury, VT 05753
     email: nbaloch@middlebury.edu
     number: (802) 443-5986
@@ -170,8 +169,8 @@ college_chaplains:
   - name: Laurie Jordan
     title: Chaplain of the College
     address: |
-      Scott Center for Spiritual and Religious Life 203
-      135 South Main Street
+      Scott Center for Spiritual and Religious Life 203  
+      135 South Main Street  
       Middlebury, VT 05753
     email: ljordan@middlebury.edu
     number: (802) 443-5626
@@ -180,8 +179,8 @@ college_chaplains:
   - name: Ira Schiffer
     title: Associate Chaplain Rabbi
     address: |
-      Scott Center for Spiritual and Religious Life
-      135 South Main Street
+      Scott Center for Spiritual and Religious Life  
+      135 South Main Street  
       Middlebury, VT 05753
     email: ischiffer@middlebury.edu
     number: (802) 443-5762
@@ -190,8 +189,8 @@ college_chaplains:
   - name: Beau Scurich
     title: Associate Chaplain and Muslim Advisor
     address: |
-      Scott Center for Spiritual and Religious Life
-      135 South Main Street
+      Scott Center for Spiritual and Religious Life  
+      135 South Main Street  
       Middlebury, VT 05753
     email: bscurich@middlebury.edu
     number: (802) 443-5983
@@ -200,8 +199,8 @@ college_chaplains:
   - name: Mark Orten
     title: Dean of Spiritual and Religious Life, Director of Scott Center
     address: |
-      Scott Center for Spiritual and Religious Life 103
-      135 South Main Street
+      Scott Center for Spiritual and Religious Life 103  
+      135 South Main Street  
       Middlebury, VT 05753
     email: orten@middlebury.edu
     number: (802) 443-5626
@@ -222,7 +221,7 @@ pmc:
   title: Porter Medical Center
   description: SANE exam, STD testing, evidence collection, injury triage, hospital resources.
   address: |
-    115 Porter Drive
+    115 Porter Drive  
     Middlebury, VT 05753
   number: (802) 388-4701
   confidential: true
@@ -240,8 +239,8 @@ vvcp:
 sfs:
   title: Student Financial Services
   address: |
-    Service Building
-    84 South Service Road
+    Service Building  
+    84 South Service Road  
     Middlebury, VT 05753
   email: sfs@middlebury.edu
   number: (802) 443-5158

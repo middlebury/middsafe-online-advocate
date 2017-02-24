@@ -8,6 +8,13 @@
   {% if props.address %}
     <div class="resource__address">{{props.address | markdownify}}</div>
   {% endif %}
+
+  {% if props.email %}
+    <p class="resource__email">
+      <a href="mailto:{{props.email}}" class="resource__link">{{props.email}}</a>
+    </p>
+  {% endif %}
+
   {% if props.numbers %}
     <ul class="resource__tel-list">
       {% for tel in props.numbers %}

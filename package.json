@@ -6,7 +6,9 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build --production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:sandcat": "npm run build && npm run copy:sandcat",
+    "copy:sandcat": "cp -r _site/ /../../Volumes/middfiles/webroots/comm/middsafe-online-advocate"
   },
   "private": true,
   "author": "Zeb Pykosz <zpykosz@middlebury.edu>",

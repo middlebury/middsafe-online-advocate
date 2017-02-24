@@ -3,7 +3,9 @@
 <div class="person">
   <h2 class="person__name">{{props.name}}</h2>
   <p class="person__title"><em>{{props.title}}</em></p>
-  <p class="person__address">{{props.address | markdown}}</p>
+  {% if props.address %}
+    <div class="person__address">{{props.address | markdownify}}</div>
+  {% endif %}
   <p class="person__email"><a href="mailto:{{props.email}}">{{props.email}}</a></p>
   <p class="person__tel">{{props.number}}</p>
 

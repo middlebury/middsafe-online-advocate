@@ -1,7 +1,7 @@
-var forEach = require('./forEach');
+const forEach = require('./forEach');
 
-var questions = document.querySelectorAll('.questions-list__item');
-var answerLinks = document.querySelectorAll('.answers-list__link');
+const questions = document.querySelectorAll('.questions-list__item');
+const answerLinks = document.querySelectorAll('.answers-list__link');
 
 function hideQuestions() {
   forEach(questions, item => {
@@ -10,7 +10,7 @@ function hideQuestions() {
 }
 
 function showQuestion(id) {
-  var elem = document.getElementById(id);
+  const elem = document.getElementById(id);
   if(elem) {
     elem.style.display = 'block';
     window.scrollTo(0, 0);

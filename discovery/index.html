@@ -8,6 +8,11 @@ layout: default
     <li id="{{forloop.index}}" class="questions-list__item">
       <div>
         <h2 class="pagetitle">{{question.question}}</h2>
+        {% if question.content %}
+          <div class="markdown">
+            {{question.content | markdownify}}
+          </div>
+        {% endif %}
       </div>
 
       {% for id in question.resources %}

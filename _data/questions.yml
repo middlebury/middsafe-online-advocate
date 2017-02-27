@@ -5,7 +5,6 @@
     id: 2
   - title: "No"
     id: 30
-    accent: true
 
 - question: Are you interested in resources for yourself or for someone else?
   id: 2

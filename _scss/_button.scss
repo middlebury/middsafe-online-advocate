@@ -8,6 +8,8 @@
   padding: 5px 15px;
   text-decoration: none;
   text-align: center;
+  border: 1px solid transparent;
+  transition: all .2s;
 }
 
 .button--primary {
@@ -27,6 +29,17 @@
   &:hover,
   &:focus {
     background-color: darken($secondary, 5%);
+  }
+
+  &.button--outline {
+    border-color: $secondary;
+    background-color: transparent;
+    color: $secondary;
+
+    &:hover {
+      background-color: $secondary;
+      color: $white;
+    }
   }
 }
 

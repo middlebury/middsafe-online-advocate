@@ -16,6 +16,8 @@ const headerHeight = header.offsetHeight + 'px';
 
 document.body.style.paddingTop = headerHeight;
 
-document.querySelector('.js-escape-button').onclick = () => {
+// hide body when scape button is clicked
+const escapeBtn = document.querySelector('.js-escape-button');
+escapeBtn.addEventListener('click', () => {
   document.querySelector('body').style.display = 'none';
-};
+});

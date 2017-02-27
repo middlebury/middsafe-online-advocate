@@ -295,9 +295,10 @@
   - title: I’d like to explore other options and return to the main menu
     id: 3
 
-- question: |
-    It is completely normal to be unsure about what resources to pursue. We would like to help you think about what you might be feeling in the hopes that it will clarify what resources might be helpful.
-
+- question: It is completely normal to be unsure about what resources to pursue.
+  content: |
+    We would like to help you think about what you might be feeling in the hopes that it will clarify what resources might be helpful.
+    
     When you are ready, take a moment to check in with yourself and notice how you are feeling.
   id: 28
   answers:

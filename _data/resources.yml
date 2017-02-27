@@ -1,3 +1,10 @@
+middsafe:
+  title: MiddSafe Confidential Advocates
+  description: Confidential support, information, resource referrals and advocacy 24/7 student-run hotline when classes are in session
+  link_text: go/middsafe
+  number: (802) 377-0239
+  confidential: true
+
 dps:
   title: Department of Public Safety
   description: Emergency response, safety planning, accommodations, No Contact Order, recording reports, campus and community-based transportation
@@ -9,13 +16,6 @@ dps:
     - (802) 443-5911 (emergency)
     - (802) 443-5133 (non-emergency)
   confidential: false
-
-middsafe:
-  title: MiddSafe Confidential Advocates
-  description: Confidential support, information, resource referrals and advocacy 24/7 student-run hotline when classes are in session
-  link_text: go/middsafe
-  number: (802) 377-0239
-  confidential: true
 
 commonsdean:
   title: Commons Dean

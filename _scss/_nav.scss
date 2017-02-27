@@ -41,7 +41,7 @@
     padding-left: 0;
   }
 
-  &.fetch-page-active {
+  &.active {
     font-weight: bold;
 
     body:not(.home) & {

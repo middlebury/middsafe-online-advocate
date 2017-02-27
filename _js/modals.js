@@ -1,8 +1,12 @@
 const anime = require('animejs');
 const forEach = require('./forEach');
 
+const header = document.querySelector('.site-header');
+
 const navLinks = document.querySelectorAll('a[data-modal-id]');
-const activeLinkClass = 'fetch-page-active';
+const modals = document.querySelectorAll('.modal');
+
+const activeLinkClass = 'active';
 
 const modalBodyClass = 'has-modal';
 const modalTopClass = 'modal--is-top';
@@ -14,77 +18,12 @@ const MODAL_ANIMATION_DURATION = 800;
 let activeModalId = '';
 let isModalAnimating = false;
 
-// hash to store already fetched page content in
-const pageCache = {};
-
-const createModalId = id => `modal-${id}`;
-
-const getModals = () => document.querySelectorAll('.modal');
-
-function createModal(id, content = '') {
-  const modal = document.createElement('div');
-
-  const modalId = createModalId(id);
-  modal.id = modalId;
-  modal.classList.add('modal');
-
-  const header = document.querySelector('.site-header');
-  modal.style.paddingTop = header.offsetHeight + 'px';
-
-  modal.innerHTML = `
-    <div class="modal__main">
-      <div class="modal__controls">
-        <div class="container">
-          <a href="#" class="modal__button" data-modal-id="${modalId}">
-            <span class="modal__button-icon">&larr;</span> <span class="modal__button-text">Back</span>
-          </a>
-        </div>
-      </div>
-      <div class="modal__container">
-        <div class="container">
-          <div class="modal__content">${content}</div>
-        </div>
-      </div>
-    </div>
-  `;
-
-  const closeBtn = modal.querySelector('.modal__button');
-
-  closeBtn.addEventListener('click', handleModalCloseButtonClick);
-
-  document.body.appendChild(modal);
-
-  return modal;
-}
-
-function handleModalCloseButtonClick(e) {
-  e.preventDefault();
-
-  // const id = e.currentTarget.dataset.modalId;
-
-  closeAllModals();
-}
-
-function fetchPage(url) {
-  if(pageCache[url]) {
-    return window.Promise.resolve(pageCache[url]);
-  }
-
-  return fetch(url)
-    .then(res => res.text())
-    .then(text => new window.DOMParser().parseFromString(text, 'text/html'))
-    .then(html => {
-      pageCache[url] = html;
-      return html;
-    })
-    .catch(err => {
-      console.error(err);
-      throw err;
-    });
-}
-
 function openModal(id) {
   const modal = document.getElementById(id);
+
+  if(!modal) {
+    throw new Error('no modal found');
+  }
 
   // dont open the modal if it's already active or one is animating
   if(activeModalId === id || isModalAnimating) {
@@ -100,7 +39,7 @@ function openModal(id) {
   document.body.classList.add(modalBodyClass);
 
   // remove is-top class from all modals
-  forEach(getModals(), modal => modal.classList.remove(modalTopClass));
+  forEach(modals, modal => modal.classList.remove(modalTopClass));
 
   // add the modal open class
   modal.classList.add(modalOpenClass);
@@ -120,8 +59,13 @@ function openModal(id) {
   });
 }
 
+function handleModalCloseButtonClick(e) {
+  e.preventDefault();
+  closeAllModals();
+}
+
 function closeAllModals() {
-  forEach(getModals(), modal => {
+  forEach(modals, modal => {
     // only animate close the top most modal
     if(modal.id === activeModalId) {
       return closeModal(modal.id);
@@ -163,13 +107,6 @@ function closeModal(id) {
   });
 }
 
-// sets the inner content of the modal by id
-function setModalContent(id, content) {
-  const modal = document.getElementById(id);
-  const modalContent = modal.querySelector('.modal__content');
-  modalContent.innerHTML = content;
-}
-
 // removes the active link class from all page fetcher links
 function removeActiveLinkClass() {
   forEach(navLinks, link => {
@@ -186,13 +123,8 @@ function handleLinkClick(e) {
     return;
   }
 
-  const link = e.target;
-
-  // get the url from the link so we can load the content via ajax
-  const url = link.href;
-
   // get the modal id from the data attribute
-  const id = createModalId(link.getAttribute('data-modal-id'));
+  const id = e.target.getAttribute('data-modal-id');
 
   // close the modals if the intended one to open is already open
   // essentially toggling the open state
@@ -204,34 +136,26 @@ function handleLinkClick(e) {
   removeActiveLinkClass();
 
   // remove the active link class from nav links
-  link.classList.add(activeLinkClass);
+  e.target.classList.add(activeLinkClass);
 
-  // fetch the page content
-  fetchPage(url).then(page => {
-
-    // get the inner content out since the whole html doc gets fetched
-    const content = page.querySelector('.js-content');
-
-    // set the inner content of the already created
-    // modal with the fetched page content
-    setModalContent(id, content.innerHTML);
-
-    // open the modal
-    openModal(id);
-
-  }).catch(err => {
-    console.error(err);
-    // if page fetched to load, just change the window url to the page
-    window.location.href = url;
-  });
+  // open the modal
+  openModal(id);
 }
 
 function main() {
   forEach(navLinks, link => {
-    const id = link.getAttribute('data-modal-id');
-    createModal(id);
     link.addEventListener('click', handleLinkClick);
   });
+
+  forEach(modals, modal => {
+    const btn = modal.querySelector('[data-modal-close-button]');
+    btn.addEventListener('click', handleModalCloseButtonClick);
+  });
+
+
+  const headerHeight = header.offsetHeight + 'px';
+
+  forEach(modals, m => m.style.paddingTop = headerHeight);
 }
 
 main();

@@ -1,0 +1,8 @@
+<h2 class="pagetitle">Resources</h2>
+
+{% for resource in site.data.resources %}
+  {% assign id = resource[0] %}
+  {% assign item = site.data.resources[id] %}
+
+  {% include resource.html resource=item %}
+{% endfor %}

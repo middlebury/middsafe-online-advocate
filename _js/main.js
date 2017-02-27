@@ -11,9 +11,10 @@ if (!('ontouchstart' in html)) {
 require('./decision-tree');
 require('./modals');
 
+// add top padding to header since it is fixed position and needs content
+// under it to be pushed down
 const header = document.querySelector('.site-header');
 const headerHeight = header.offsetHeight + 'px';
-
 document.body.style.paddingTop = headerHeight;
 
 // hide body when scape button is clicked

@@ -6,10 +6,10 @@ layout: default
   <ol class="questions-list">
   {% for question in site.data.questions %}
     <li id="{{forloop.index}}" class="questions-list__item">
-      <div>
+      <div class="question">
         <h2 class="pagetitle">{{question.question}}</h2>
         {% if question.content %}
-          <div class="markdown">
+          <div class="question__content markdown">
             {{question.content | markdownify}}
           </div>
         {% endif %}

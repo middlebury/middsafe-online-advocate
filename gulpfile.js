@@ -95,7 +95,15 @@ gulp.task('watch', function() {
   gulp.watch('_js/**/*.js', ['scripts']);
   gulp.watch('_scss/*.scss', ['styles']);
   gulp.watch('_img/**/*.{jpg,png,svg}', ['images']);
-  gulp.watch(['./**/*.{html,md}', '!_site/', '_data/*'], ['jekyll-rebuild']);
+  gulp.watch([
+    './_layouts/*.html',
+    './_includes/*.html',
+    './**/*.md',
+    './_data/*',
+     // HACK: some reason if we try to generically target these folders
+     // it causes an infinite rebuild loop
+    './{discovery,about,resources}/*.{md,html}',
+  ], ['jekyll-rebuild']);
 });
 
 gulp.task('build', ['jekyll-build', 'scripts', 'styles', 'images']);

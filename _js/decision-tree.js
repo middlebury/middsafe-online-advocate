@@ -1,6 +1,6 @@
 const forEach = require('./forEach');
 
-const questions = document.querySelectorAll('.questions-list__item');
+const questions = document.querySelectorAll('.discovery__item');
 const answerLinks = document.querySelectorAll('.answers-list__link');
 
 function hideQuestions() {

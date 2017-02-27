@@ -5,7 +5,7 @@ layout: default
 <section class="section">
   <ol class="questions-list">
   {% for question in site.data.questions %}
-    <li id="{{forloop.index}}" class="questions-list__item">
+    <li id="{{forloop.index}}" class="discovery__item">
       <div class="question">
         <h2 class="pagetitle">{{question.question}}</h2>
         {% if question.content %}

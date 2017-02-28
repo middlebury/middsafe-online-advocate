@@ -261,7 +261,7 @@ residential_life:
 admin_committee:
   title: Administration Committee
   description: The Administration Committee hears requests from students and faculty for   exceptions to academic policies.
-  people_title: Human Resource Officers
+  # people_title: Human Resource Officers
   people:
   - name: Karen Guttentag
     title: Judicial Affairs Officer
@@ -276,8 +276,7 @@ admin_committee:
     confidential: false
 
 judicial_affairs_hr_officers:
-  description: another JAO is coming in January---place hold
-  people_title: Judicial Affairs and Human Resource Officers
+  description: Judicial Affairs and Human Resource Officers
   people:
   - name: Karen Guttentag
     title: Judicial Affairs Officer

@@ -20,8 +20,12 @@
 }
 
 .answers-list__item {
-  margin-bottom: 40px;
   padding-left: 20px;
+  margin-bottom: 20px;
+
+  @include media(md) {
+    margin-bottom: 40px;
+  }
 }
 
 .answers-list__link {

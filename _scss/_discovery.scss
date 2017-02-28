@@ -1,5 +1,9 @@
 .discovery__back-button {
-  margin-top: 40px;
+  margin-top: 20px;
+
+  @include media(md) {
+    margin-top: 40px;
+  }
 
   .has-discovery.discovery-item-1 & {
     display: none;

@@ -46,11 +46,12 @@
     - dps
     - middsafe
     - commonsdean
+  answers_heading: "If these resources aren’t working for you, would you like to:"
   answers:
-  - title: I'd like to explore safety planning resources off campus
+  - title: Explore safety planning resources off campus
     id: 6
 
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Do any of these resources feel right to you?

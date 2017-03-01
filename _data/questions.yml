@@ -345,8 +345,8 @@
   content: |
     We may not understand exactly what you are feeling right now, but we care deeply and want to help. We hope you will reach out to a resource that feels right to you.
 
-    Would you consider seeking support
   id: 31
+  answers_heading: "Would you consider seeking support:"
   answers:
   - title: On campus
     id: 32
@@ -436,8 +436,8 @@
     -  Reassure him that he has the right to any and all of his feelings, even those that are conflicting or confusing.
     -  Identify professional resources for additional support.
 
-    What would be most helpful in addressing concerns you have?
   id: 38
+  answers_heading: What would be most helpful in addressing concerns you have?
   answers:
   - title: Understanding when and how to seek help
     id: 39
@@ -460,8 +460,8 @@
     -  Threats of harming other or property, with a plan and/or the means
     -  Stalking concerns, no matter how mild the stalking action appears to be
 
-    Are you concerned that you or your friend are experiencing an emergency?
   id: 39
+  answers_heading: Are you concerned that you or your friend are experiencing an emergency?
   answers:
   - title: "Yes"
     id: 40
@@ -511,7 +511,7 @@
 
     In situations like these there are confidential and non confidential resources to provide information, help you navigate the complexities of caring for your friend, and assist you with determining if and when you need to take additional steps to support your friend’s safety.
 
-    Are you interested in exploring these resources:
+  answers_heading: "Are you interested in exploring these resources:"
   id: 42
   answers:
   - title: On campus

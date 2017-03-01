@@ -33,6 +33,10 @@
   margin-bottom: 20px;
 }
 
+.resource__url + .resource__confidentiality {
+  margin-top: -20px;
+}
+
 .resource__email {
   margin-bottom: 0;
   font-size: 14px;

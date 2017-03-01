@@ -143,11 +143,9 @@
   - title: I’d like to explore other options and return to the main menu
     id: 3
 
-- question: Speaking with faculty, staff, family members, and friends about personal violations can be difficult, confusing, and emotional.
+- question: Lorem ipsum
   content: |
-    It is important to reach out to people who can serve as a support network.
-
-    Below is a list of some faculty and staff members that might be helpful resources.
+    Speaking with faculty, staff, family members, and friends about personal violations can be difficult, confusing, and emotional. It is important to reach out to people who can serve as a support network. Below is a list of some faculty and staff members that might be helpful resources.
   id: 14
   resources:
     - commonsdean
@@ -502,8 +500,10 @@
   - title: I’d like to explore other options and return to the main menu
     id: 3
 
-- question: Examples of other concerning situations
+- question: Lorem ipsum
   content: |
+    ### Examples of other concerning situations
+    
     -  Your friend is using coping mechanisms that concern you but do not seem immediately life threatening.
     -  You are worried your friend may be in an abusive relationship, but you aren’t sure.
     -  Your friend is missing classes, isolating themselves, eating poorly, or acting in ways that concern you.

@@ -23,18 +23,10 @@
 .resource__title {
   font-size: 16px;
   margin-bottom: 5px;
-
-  @include media(md) {
-    font-size: 18px;
-  }
 }
 
 .resource__description {
   margin-bottom: 0;
-
-  @include media(md) {
-    font-size: 18px;
-  }
 }
 
 .resource__url {

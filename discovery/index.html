@@ -24,6 +24,10 @@ layout: default
 
       {% endfor %}
 
+      {% if question.answers_heading %}
+        <h3 class="answers-list-heading">{{question.answers_heading}}</h3>
+      {% endif %}
+
       <ul class="answers-list">
         {% for item in question.answers %}
           <li class="answers-list__item">

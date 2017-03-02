@@ -47,6 +47,8 @@ function openModal(id) {
   // set the modal `is-top` class so it can be layed over any existing modals via css z-index
   modal.classList.add(modalTopClass);
 
+  modal.style.transform = 'translateX(-100vw)';
+
   // animate the modal open from the left based on the modal's width
   anime({
     targets: modal,

@@ -100,7 +100,7 @@
   - title: Explore other options and return to the main menu
     id: 3
 
-- question: Do any of these resources feel right to you?
+- question: Does this resource feel right to you?
   id: 10
   resources:
     - csac
@@ -120,7 +120,7 @@
   - title: Off campus
     id: 13
 
-- question: Do any of these resources feel right to you?
+- question: Does this resource feel right to you?
   id: 12
   resources:
     - middsafe

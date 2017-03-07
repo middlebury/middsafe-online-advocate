@@ -82,7 +82,7 @@ gulp.task('styles', function() {
       includePaths: ['scss'],
       onError: browserSync.notify
     })).on('error', sass.logError)
-    .pipe(autoprefixer(['last 3 versions'], { cascade: true }))
+    .pipe(autoprefixer(['last 3 versions', '> 2%', 'ie 10'], { cascade: true }))
     .pipe(gulpIf(!production, sourcemaps.write('./')))
     .pipe(gulpIf(production, cmq()))
     .pipe(gulpIf(production, cssnano({ zIndex: false })))

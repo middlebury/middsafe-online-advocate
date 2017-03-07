@@ -22,11 +22,13 @@ layout: default
 
         {% include resource.html resource=item %}
 
-      {% endfor %}
+        {% if forloop.length == 1 %}
+          <h3 class="answers-list-heading">If this resource isn't working for you, would you like to:</h3>
+        {% else %}
+          <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+        {% endif %}
 
-      {% if question.answers_heading %}
-        <h3 class="answers-list-heading">{{question.answers_heading}}</h3>
-      {% endif %}
+      {% endfor %}
 
       <ul class="answers-list">
         {% for item in question.answers %}

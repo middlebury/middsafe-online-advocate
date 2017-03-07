@@ -19,13 +19,16 @@ layout: default
       {% for id in question.resources %}
 
         {% assign item = site.data.resources[id] %}
-
         {% include resource.html resource=item %}
 
-        {% if forloop.length == 1 %}
-          <h3 class="answers-list-heading">If this resource isn't working for you, would you like to:</h3>
-        {% else %}
-          <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+        {% if forloop.index == forloop.length %}
+
+          {% if forloop.length == 1 %}
+            <h3 class="answers-list-heading">If this resource isn't working for you, would you like to:</h3>
+          {% else %}
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          {% endif %}
+
         {% endif %}
 
       {% endfor %}

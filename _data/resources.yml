@@ -13,8 +13,10 @@ dps:
     125 South Main Street  
     Middlebury, VT 05753  
   numbers:
-    - (802) 443-5911 (emergency)
-    - (802) 443-5133 (non-emergency)
+    - number: (802) 443-5911
+      label: (emergency)
+    - number: (802) 443-5133
+      label: (non-emergency)
   confidential: false
 
 commonsdean:
@@ -88,9 +90,11 @@ csac:
   address: |
     89 Main Street  
     Middlebury, VT 05753
-  numbers:
-    - (802) 388-7641 (emergency)
-    - (802) 388-7641 (non-emergency)
+  numbers: 
+    - number: (802) 388-7641
+      label: (emergency)
+    - number: (802) 388-7641
+      label: (non-emergency)
   confidential: true
 
 cspchw:
@@ -297,7 +301,10 @@ judicial_affairs_hr_officers:
 nsh:
   title: National Suicide Hotlines
   numbers:
-    - "Suicide Prevention Lifeline: (800) 273-8255"
-    - "National Hopeline: (800) 442-4673"
-    - "GLBT National Health Center: (888) 843-4564"
+    - header: Suicide Prevention Lifeline
+      number: (800) 273-8255
+    - header: National Hopeline
+      number: (800) 442-4673
+    - header: GLBT National Health Center
+      number: (888) 843-4564
   confidential: true

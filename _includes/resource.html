@@ -17,8 +17,8 @@
 
   {% if props.numbers %}
     <ul class="resource__tel-list">
-      {% for tel in props.numbers %}
-        <li class="resource__tel">{{tel}}</li>
+      {% for item in props.numbers %}
+        <li class="resource__tel">{{item.header}}{% if item.header %}: {% endif %}{{item.number}} {{item.label}}</li>
       {% endfor %}
     </ul>
   {% elsif props.number %}

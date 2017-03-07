@@ -62,9 +62,9 @@
     - womensafe
     - csac
   answers:
-  - title: I'd like to explore safety planning resources on campus
+  - title: Explore safety planning resources on campus
     id: 5
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: "Are you interested in speaking to:"
@@ -93,11 +93,11 @@
     - cspchw
     - ahc
   answers:
-  - title: I'd like to explore counselors to whom I could speak off campus
+  - title: Explore counselors to whom I could speak off campus
     id: 10
-  - title: I’d like to explore others to whom I could talk
+  - title: Explore others to whom I could talk
     id: 7
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Do any of these resources feel right to you?
@@ -105,11 +105,11 @@
   resources:
     - csac
   answers:
-  - title: I'd like to explore counselors to whom I could speak on campus
+  - title: Explore counselors to whom I could speak on campus
     id: 9
-  - title: I’d like to explore others to whom I could talk
+  - title: Explore others to whom I could talk
     id: 7
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: "Are you interested in speaking with an advocate:"
@@ -125,11 +125,11 @@
   resources:
     - middsafe
   answers:
-  - title: I'd like to explore advocacy resources off campus
+  - title: Explore advocacy resources off campus
     id: 13
-  - title: I’d like to explore others to whom I could talk
+  - title: Explore others to whom I could talk
     id: 7
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Do any of these resources feel right to you?
@@ -139,9 +139,9 @@
     - safespace
     - rainn
   answers:
-  - title: I’d like to explore others to whom I could talk
+  - title: Explore others to whom I could talk
     id: 7
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Lorem ipsum
@@ -156,9 +156,9 @@
     - karen_guttentag
     - sue_ritter
   answers:
-  - title: I’d like to explore others to whom I could talk
+  - title: Explore others to whom I could talk
     id: 7
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: "Are you interested in spiritual and pastoral care resources:"
@@ -174,11 +174,11 @@
   resources:
     - college_chaplains
   answers:
-  - title: I'd like to explore spiritual and pastoral care resources off campus
+  - title: Explore spiritual and pastoral care resources off campus
     id: 17
-  - title: I’d like to explore others to whom I could talk
+  - title: Explore others to whom I could talk
     id: 7
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Does this resource feel right to you?
@@ -186,11 +186,11 @@
   resources:
     - local_congregations
   answers:
-  - title: I'd like to explore spiritual and pastoral care resources on campus
+  - title: Explore spiritual and pastoral care resources on campus
     id: 16
-  - title: I’d like to explore others to whom I could talk
+  - title: Explore others to whom I could talk
     id: 7
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: "Are you interested in medical care:"
@@ -206,9 +206,9 @@
   resources:
     - phs
   answers:
-  - title: I'd like to explore medical care off campus
+  - title: Explore medical care off campus
     id: 20
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Does this resource feel right to you?
@@ -216,9 +216,9 @@
   resources:
     - pmc
   answers:
-  - title: I'd like to explore medical care on campus
+  - title: Explore medical care on campus
     id: 19
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: "Are you interested in economic support:"
@@ -237,9 +237,9 @@
     - sfs
     - emf
   answers:
-  - title: I'd like to explore economic support off campus
+  - title: Explore economic support off campus
     id: 23
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Does this resources feel right to you?
@@ -248,9 +248,9 @@
     - economic_services
     - womensafe
   answers:
-  - title: I'd like to explore economic support resources on campus
+  - title: Explore economic support resources on campus
     id: 22
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Does this resource feel right to you?
@@ -260,7 +260,7 @@
     - residential_life
     - admin_committee
   answers:
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: "Are you interested in making a report:"
@@ -277,9 +277,9 @@
     - judicial_affairs_hr_officers
     - dps
   answers:
-  - title: I’d like to explore making a report off campus
+  - title: Explore making a report off campus
     id: 27
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Do any of these resources feel right to you?
@@ -288,9 +288,9 @@
     - middpd
     - vtsp
   answers:
-  - title: I’d like to explore making a report on campus
+  - title: Explore making a report on campus
     id: 26
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: 
@@ -331,7 +331,7 @@
   content: "Please know that you can reach MiddSafe Confidential Advocates at this number when classes are in session: (802) 377-0239. We are more than happy to talk and listen to you."
   id: 29
   answers:
-  - title: I’d like to explore available resources and return to the main menu
+  - title: Explore available resources and return to the main menu
     id: 3
 
 - question: Are you experiencing thoughts of suicide or self harm?
@@ -363,9 +363,9 @@
     - dps
     - commonsdean
   answers:
-  - title: I'd like to explore support resources off campus
+  - title: Explore support resources off campus
     id: 33
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Do any of these resources feel right to you?
@@ -375,10 +375,9 @@
     - pmc
     - nsh
   answers:
-  - title: |
-  - title: I'd like to explore support resources on campus
+  - title: Explore support resources on campus
     id: 32
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: "Are you feeling:"
@@ -405,9 +404,9 @@
     - dps
     - commonsdean
   answers:
-  - title: I'd like to explore safety planning resources off campus
+  - title: Explore safety planning resources off campus
     id: 36
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Do any of these resources feel right to you?
@@ -418,9 +417,9 @@
     - middpd
     - vtsp
   answers:
-  - title: I'd like to explore safety planning resources on campus
+  - title: Explore safety planning resources on campus
     id: 34
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: 
@@ -470,9 +469,9 @@
     id: 41
   - title: No, and I am interested in learning about other examples of when and how to   seek help
     id: 42
-  - title: I’d like to explore other resources for helping a friend or myself
+  - title: Explore other resources for helping a friend or myself
     id: 38
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Lorem ipsum
@@ -482,9 +481,9 @@
   resources:
     - commonsdean
   answers:
-  - title: I’d like to explore other resources for helping a friend or myself
+  - title: Explore other resources for helping a friend or myself
     id: 38
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Lorem ipsum
@@ -496,9 +495,9 @@
   resources:
     - commonsdean
   answers:
-  - title: I’d like to explore other resources for helping a friend or myself
+  - title: Explore other resources for helping a friend or myself
     id: 38
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Lorem ipsum
@@ -529,11 +528,11 @@
     - commonsdean
     - residential_life
   answers:
-  - title: I'd like to explore resources off campus
+  - title: Explore resources off campus
     id: 44
-  - title: I’d like to explore other resources for helping a friend or myself
+  - title: Explore other resources for helping a friend or myself
     id: 38
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Do any of these resources feel right to you?
@@ -542,11 +541,11 @@
     - womensafe
     - csac
   answers:
-  - title: I'd like to explore resources on campus
+  - title: Explore resources on campus
     id: 43
-  - title: I’d like to explore other resources for helping a friend or myself
+  - title: Explore other resources for helping a friend or myself
     id: 38
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Understanding Trauma
@@ -570,9 +569,9 @@
     Survivors also may experience flashbacks, nightmares, frightening thoughts, sleep disturbances, emotional numbness, and/or irritability.
   id: 45
   answers:
-  - title: I’d like to explore other resources for helping a friend or myself
+  - title: Explore other resources for helping a friend or myself
     id: 38
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Listen and Believe
@@ -598,9 +597,9 @@
     -  “Investigating” or probing for more information than your friend is willing or able to share. Avoid “why?” questions, as they can imply blame.
   id: 46
   answers:
-  - title: I’d like to explore other resources for helping a friend or myself
+  - title: Explore other resources for helping a friend or myself
     id: 38
-  - title: I’d like to explore other options and return to the main menu
+  - title: Explore other options and return to the main menu
     id: 3
 
 - question: Taking Care of Yourself

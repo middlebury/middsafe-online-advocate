@@ -278,6 +278,11 @@ admin_committee:
 judicial_affairs_hr_officers:
   description: Judicial Affairs and Human Resource Officers
   people:
+  - name: Brian Lind
+    title: Assoc. Dean of Judicial Affairs and Student Life
+    email: blind@middlebury.edu
+    number: (802) 443-5385
+    confidential: false
   - name: Karen Guttentag
     title: Judicial Affairs Officer
     email: kguttent@middlebury.edu

@@ -7,7 +7,9 @@
     <div class="person__address">{{props.address | markdownify}}</div>
   {% endif %}
   <p class="person__email"><a href="mailto:{{props.email}}">{{props.email}}</a></p>
-  <p class="person__tel">{{props.number}}</p>
+  <p class="person__tel">
+    <a href="tel:{{props.number}}">{{props.number}}</a>
+  </p>
 
   {% if props.confidential == true %}
     <p class="resource__confidentiality"><strong>Confidential</strong></p>

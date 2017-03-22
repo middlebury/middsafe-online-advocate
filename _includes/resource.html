@@ -3,7 +3,10 @@
 <article class="resource">
   <h3 class="resource__title">{{props.title}}</h3>
   <p class="resource__description">{{props.description}}</p>
-  <p class="resource__url"><a href="{{props.link_href}}" class="resource__link">{{props.link_text}}</a></p>
+
+  {% if props.link_text && props.link_href %}
+    <p class="resource__url"><a href="{{props.link_href}}" class="resource__link">{{props.link_text}}</a></p>
+  {% endif %}
 
   {% if props.address %}
     <div class="resource__address">{{props.address | markdownify}}</div>

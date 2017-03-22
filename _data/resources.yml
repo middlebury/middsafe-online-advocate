@@ -2,6 +2,7 @@ middsafe:
   title: MiddSafe Confidential Advocates
   description: Confidential support, information, resource referrals and advocacy 24/7 student-run hotline when classes are in session
   link_text: go/middsafe
+  link_href: http://go.middlebury.edu/middsafe
   number: (802) 377-0239
   confidential: true
 
@@ -9,9 +10,9 @@ dps:
   title: Department of Public Safety
   description: Emergency response, safety planning, accommodations, No Contact Order, recording reports, campus and community-based transportation
   link_text: go/dps
+  link_href: http://go.middlebury.edu/dps
   address: |
     125 South Main Street  
-    Middlebury, VT 05753  
   numbers:
     - number: (802) 443-5911
       label: (emergency)
@@ -23,42 +24,42 @@ commonsdean:
   title: Commons Dean
   description: Dean's excuses, room changes, holistic institutional support
   link_text: go/commons
+  link_href: http://go.middlebury.edu/commons
   confidential: false
   people:
     - name: Emily Van Mistri
       title: Dean of Ross Commons
       address: 003 RCD
       email: evanmistri@middlebury.edu
-      number: (802) 443-3340
+      note: Please call Ross Commons Coordinator, Tania Cantin, for an appointment at(802) 443-3340
       confidential: false
 
     - name: Scott Barnicle
       title: Dean of Atwater Commons
       address: Allen Hall 1534A
       email: sbarnicl@middelbury.edu
-      number: (802) 443-3310
+      note: Please call Atwater Commons Coordinator, Debbie Cousino, for an appointment at (802) 443-3310
       confidential: false
 
     - name: AJ Place
       title: Dean of Brainerd Commons
       address: Stewart Hall 216
       email: ajplace@middlebury.edu
-      number: (802) 443-3320
+      note: Please call Brainerd Commons Coordinator, Diane Burnham, for an appointment at (802) 443-332
       confidential: false
 
     - name: Ian Sutherland
       title: Dean of Cook Commons
       address: Battell North 150
       email: isutherland@middlebury.edu
-      number: (802) 443-3330
+      note: Please call Cook Commons Coordinator, Linda Schiffer, for an appointment at (802) 443-3330
       confidential: false
 
     - name: Matt Longman
       title: Dean of Wonnacott Commons
       address: Battell South 122
       email: longman@middlebury.edu
-      number: (802) 443-3350
-      note: Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment   at ext. 3350
+      note: Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment at (802) 443-3350
       confidential: false
 
 middpd:
@@ -100,6 +101,7 @@ csac:
 cspchw:
   title: Counseling Services at Parton Center for Health and Wellness
   link_text: go/parton
+  link_href: http://go.middlebury.edu/parton
   address: Centeno House 3rd Floor
   number: (802) 443-5141
   confidential: true
@@ -108,7 +110,10 @@ ahc:
   title: After Hours Counseling
   description: Available whenever the Parton counseling office is closed (evenings and   weekends)
   link_text: go/parton
-  number: (802) 443-5141 (follow the voicemail prompts)
+  link_href: http://go.middlebury.edu/parton
+  numbers: 
+    - number: (802) 443-5141
+      label: (press 1 to be connected to a counselor if it is after hours)
   confidential: true
 
 safespace:
@@ -118,37 +123,56 @@ safespace:
   number: (802) 863-0003
   confidential: true
 
-barbara_mcall:
+barbara_mccall:
   title: Barbara McCall
   description: Director of Health and Wellness Education
   address: |
     Service Building 225  
-    84 South Service Road
-    Middlebury, VT 05753
   email: bmccall@middlebury.edu
   number: (802) 443-5361
   confidential: false
 
-karen_guttentag:
-  title: Karen Guttentag
-  description: Associate Dean for Judicial Affairs and Student Life
-  address: |
-    Service Building 219  
-    84 South Service Road  
-    Middlebury, VT 05753
-  email: kguttent@middlebury.edu
-  number: (802) 443-2024
-  confidential: false
+judicial_affairs:
+  title: Judicial Affairs Officers
+  people:
+    - name: Karen Guttentag
+      description: Associate Dean for Judicial Affairs and Student Life
+      address: |
+        Service Building 219  
+      email: kguttent@middlebury.edu
+      number: (802) 443-2024
+      confidential: false
+    - name: Brian Lind
+      address: |
+        Service Building 217  
+      title: Assoc. Dean of Judicial Affairs and Student Life
+      email: blind@middlebury.edu
+      number: (802) 443-5385
+      confidential: false
+    
+hr_officers:
+  title: Human Relations Officers 
+  people:
+    - name: Earl Fletcher
+      description: Human Relations Officer
+      address: |
+        Service Building 216  
+      email: efletcher@middlebury.edu
+      number: (802) 443-3426
+      confidential: false
+    - name: Steven Collieer
+      description: Human Relations Officer
+      address: |
+        Service Building 215  
+      email: scollieer@middlebury.edu
+      number: (802) 443-3474
+      confidential: false
 
-sue_ritter:
-  title: Sue Ritter
-  description: Compliance Officer and Title IX Coordinator
-  address: |
-    Service Building 213  
-    84 South Service Road  
-    Middlebury, VT 05753
-  email: sritter@middlebury.edu
+title_IX:
+  title: Susan Ritter
+  description: Title IX Coordinator and Compliance Officer
   number: (802) 443-3289
+  email: sritter@middlebury.edu
   confidential: false
 
 college_chaplains:
@@ -157,64 +181,59 @@ college_chaplains:
   number: (802) 443-5626
   confidential: true
   people:
-  - name: Nalia Boloch
-    title: Associate Chaplain and Muslim Advisor
-    address: |
-      Scott Center for Spiritual and Religious Life  
-      135 South Main Street  
-      Middlebury, VT 05753
-    email: nbaloch@middlebury.edu
-    number: (802) 443-5986
-    confidential: true
-
-  - name: Laurie Jordan
-    title: Chaplain of the College
-    address: |
-      Scott Center for Spiritual and Religious Life 203  
-      135 South Main Street  
-      Middlebury, VT 05753
-    email: ljordan@middlebury.edu
-    number: (802) 443-5626
-    confidential: true
-
-  - name: Ira Schiffer
-    title: Associate Chaplain Rabbi
-    address: |
-      Scott Center for Spiritual and Religious Life  
-      135 South Main Street  
-      Middlebury, VT 05753
-    email: ischiffer@middlebury.edu
-    number: (802) 443-5762
-    confidential: true
-
-  - name: Beau Scurich
-    title: Associate Chaplain and Muslim Advisor
-    address: |
-      Scott Center for Spiritual and Religious Life  
-      135 South Main Street  
-      Middlebury, VT 05753
-    email: bscurich@middlebury.edu
-    number: (802) 443-5983
-    confidential: true
-
-  - name: Mark Orten
-    title: Dean of Spiritual and Religious Life, Director of Scott Center
-    address: |
-      Scott Center for Spiritual and Religious Life 103  
-      135 South Main Street  
-      Middlebury, VT 05753
-    email: orten@middlebury.edu
-    number: (802) 443-5626
-    confidential: true
+    - name: Nalia Boloch
+      title: Associate Chaplain and Muslim Advisor
+      address: |
+        Scott Center for Spiritual and Religious Life  
+        135 South Main Street  
+      email: nbaloch@middlebury.edu
+      number: (802) 443-5986
+      confidential: true
+    - name: Laurie Jordan
+      title: Chaplain of the College
+      address: |
+        Scott Center for Spiritual and Religious Life 203  
+        135 South Main Street  
+      email: ljordan@middlebury.edu
+      number: (802) 443-5626
+      confidential: true
+    - name: Ira Schiffer
+      title: Associate Chaplain Rabbi
+      address: |
+        Scott Center for Spiritual and Religious Life  
+        135 South Main Street  
+      email: ischiffer@middlebury.edu
+      number: (802) 443-5762
+      confidential: true
+    - name: Beau Scurich
+      title: Associate Chaplain and Muslim Advisor
+      address: |
+        Scott Center for Spiritual and Religious Life  
+        135 South Main Street  
+      email: bscurich@middlebury.edu
+      number: (802) 443-5983
+      confidential: true
+    - name: Mark Orten
+      title: Dean of Spiritual and Religious Life, Director of Scott Center
+      address: |
+        Scott Center for Spiritual and Religious Life 103  
+        135 South Main Street  
+      email: orten@middlebury.edu
+      number: (802) 443-5626
+      confidential: true
 
 local_congregations:
   title: Local Congregations
   link_text: go/congregations
+  link_href: http://go.middlebury.edu/congregations
 
 phs:
   title: Parton Health Services
   description: SANE exam, STD testing, evidence collection, injury triage.
+  address: |
+    Centeno House 3rd Floor
   link_text: go/parton
+  link_href: http://go.middlebury.edu/parton
   number: (802) 443-5135
   confidential: true
 
@@ -231,72 +250,55 @@ vvcp:
   title: Vermont Victims Compensation Program
   link_text: www.ccvs.state.vt.us/compensation
   people:
-  - name: Sandy Robinson # This used to say "Campus contact is..." Is this fine to do?
-    title: Managing Nurse Practitioner
-    address: Centeno House
-    number: (802) 443-5135
-    confidential: true
+    - name: Sandy Robinson # This used to say "Campus contact is..." Is this fine to do?
+      title: Managing Nurse Practitioner
+      address: Centeno House
+      number: (802) 443-5135
+      confidential: true
 
 sfs:
   title: Student Financial Services
   address: |
     Service Building  
-    84 South Service Road  
-    Middlebury, VT 05753
   email: sfs@middlebury.edu
   number: (802) 443-5158
   confidential: false
 
 emf:
   title: Emergency Medical Fund
+  description: Please contact your Dean for more information.
 
 economic_services:
   title: Economic Services
+  description: Emergency help to meet basic needs for health insurance, child care, food and fuel assistance
   number: (800) 479-6151
-  description: Emergency help to meet basic needs for health insurance, child care, food and   fuel assistance
   confidential: false
 
 residential_life:
   title: Residential Life
-  description: Your common’s Commons Residential Advisor (CRA), First-Year Counselor   (FYC), Resident Assistant (RA), Community Assistant (CA)
+  description: Your common’s Commons Residential Advisor (CRA), First-Year Counselor (FYC), Resident Assistant (RA), Community Assistant (CA)
   link_text: go/commons
+  link_href: http://go.middlebury.edu/commons
   confidential: false
 
 admin_committee:
   title: Administration Committee
-  description: The Administration Committee hears requests from students and faculty for   exceptions to academic policies.
+  description: The Administration Committee hears requests from students and faculty for exceptions to academic policies.
   # people_title: Human Resource Officers
   people:
-  - name: Karen Guttentag
-    title: Judicial Affairs Officer
-    email: kguttent@middlebury.edu
-    number: (802) 443-2024
-    confidential: false
-  - name: Diane Di Loreto
-    title: Assistant, Student Life Administrator
-    address: Service Building 218
-    email: dmdiloreto@middlebury.edu
-    number: (802) 443-3233
-    confidential: false
-
-judicial_affairs_hr_officers:
-  description: Judicial Affairs and Human Resource Officers
-  people:
-  - name: Brian Lind
-    title: Assoc. Dean of Judicial Affairs and Student Life
-    email: blind@middlebury.edu
-    number: (802) 443-5385
-    confidential: false
-  - name: Karen Guttentag
-    title: Judicial Affairs Officer
-    email: kguttent@middlebury.edu
-    number: (802) 443-2024
-    confidential: false
-  - name: Susan Ritter
-    title: Title IX Coordinator
-    number: (802) 443-3289
-    email: sritter@middlebury.edu
-    confidential: false
+    - name: Karen Guttentag
+      description: Associate Dean for Judicial Affairs and Student Life
+      address: |
+        Service Building 219  
+      email: kguttent@middlebury.edu
+      number: (802) 443-2024
+      confidential: false
+    - name: Diane Di Loreto
+      title: Assistant, Student Life Administrator
+      address: Service Building 218
+      email: dmdiloreto@middlebury.edu
+      number: (802) 443-3233
+      confidential: false
 
 nsh:
   title: National Suicide Hotlines

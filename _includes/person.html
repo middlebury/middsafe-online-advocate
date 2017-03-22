@@ -3,13 +3,20 @@
 <div class="person">
   <h2 class="person__name">{{props.name}}</h2>
   <p class="person__title"><em>{{props.title}}</em></p>
+
   {% if props.address %}
     <div class="person__address">{{props.address | markdownify}}</div>
   {% endif %}
-  <p class="person__email"><a href="mailto:{{props.email}}">{{props.email}}</a></p>
-  <p class="person__tel">
-    <a href="tel:{{props.number}}">{{props.number}}</a>
-  </p>
+
+  {% if props.email %}
+    <p class="person__email"><a href="mailto:{{props.email}}">{{props.email}}</a></p>
+  {% endif %}
+
+  {% if props.number %}
+    <p class="person__tel">
+      <a href="tel:{{props.number}}">{{props.number}}</a>
+    </p>
+  {% endif %}
 
   {% if props.confidential == true %}
     <p class="resource__confidentiality"><strong>Confidential</strong></p>

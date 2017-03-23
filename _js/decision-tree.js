@@ -15,7 +15,7 @@ function handleBackButtonClick(e) {
 
   const id = previousIds.pop();
 
-  if(id) {
+  if (id) {
     showQuestion(id);
   }
 }
@@ -31,7 +31,7 @@ function showQuestion(id) {
 
   const elem = document.getElementById(id);
 
-  if(!elem) {
+  if (!elem) {
     return;
   }
 
@@ -48,7 +48,7 @@ function showQuestion(id) {
 function handleAnswerClick(e) {
   e.preventDefault();
 
-  const { href } = e.target;
+  const {href} = e.target;
   const id = href.split('#')[1];
 
   previousIds.push(activeId);
@@ -59,7 +59,7 @@ function handleAnswerClick(e) {
 function main() {
   document.body.classList.add('has-discovery');
 
-  if(!answerLinks.length || !questions.length) {
+  if (!answerLinks.length || !questions.length) {
     return false;
   }
 
@@ -71,7 +71,6 @@ function main() {
   showQuestion(firstId);
 
   backButton.addEventListener('click', handleBackButtonClick);
-
 }
 
 main();

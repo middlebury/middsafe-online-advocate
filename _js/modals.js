@@ -21,12 +21,12 @@ let isModalAnimating = false;
 function openModal(id) {
   const modal = document.getElementById(id);
 
-  if(!modal) {
+  if (!modal) {
     throw new Error('no modal found');
   }
 
   // dont open the modal if it's already active or one is animating
-  if(activeModalId === id || isModalAnimating) {
+  if (activeModalId === id || isModalAnimating) {
     return;
   }
 
@@ -58,7 +58,7 @@ function openModal(id) {
     complete: () => {
       modal.focus();
       isModalAnimating = false;
-    }
+    },
   });
 }
 
@@ -70,7 +70,7 @@ function handleModalCloseButtonClick(e) {
 function closeAllModals() {
   forEach(modals, modal => {
     // only animate close the top most modal
-    if(modal.id === activeModalId) {
+    if (modal.id === activeModalId) {
       return closeModal(modal.id);
     }
 
@@ -83,7 +83,7 @@ function closeAllModals() {
 function closeModal(id) {
   const modal = document.getElementById(id);
 
-  if(isModalAnimating) {
+  if (isModalAnimating) {
     return;
   }
 
@@ -106,7 +106,7 @@ function closeModal(id) {
       modal.classList.remove(modalOpenClass, modalTopClass);
 
       isModalAnimating = false;
-    }
+    },
   });
 }
 
@@ -122,7 +122,7 @@ function handleLinkClick(e) {
   e.preventDefault();
 
   // do nothing if a modal is animating
-  if(isModalAnimating) {
+  if (isModalAnimating) {
     return;
   }
 
@@ -131,7 +131,7 @@ function handleLinkClick(e) {
 
   // close the modals if the intended one to open is already open
   // essentially toggling the open state
-  if(id === activeModalId) {
+  if (id === activeModalId) {
     return closeAllModals();
   }
 
@@ -154,7 +154,6 @@ function main() {
     const btn = modal.querySelector('[data-modal-close-button]');
     btn.addEventListener('click', handleModalCloseButtonClick);
   });
-
 
   const headerHeight = header.offsetHeight + 'px';
 

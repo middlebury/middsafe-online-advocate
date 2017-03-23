@@ -6,7 +6,7 @@ layout: default
   <a href="#" role="button" class="button button--secondary button--outline discovery__back-button js-discovery-back-button" aria-label="Go back to previous question"><span aria-hidden>&larr; Previous question</span></a>
   <div class="questions-list">
   {% for question in site.data.questions %}
-    <article id="{{forloop.index}}" class="discovery__item" tabindex="-1">
+    <article id="{{question.id}}" class="discovery__item" tabindex="-1">
       <div class="question">
         <h2 class="pagetitle">{{question.question}}</h2>
         {% if question.content %}

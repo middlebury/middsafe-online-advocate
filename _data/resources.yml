@@ -81,7 +81,8 @@ vtsp:
 womensafe:
   title: WomenSafe
   description: Confidential 24 hour support, information, referrals and advocacy for community  member of all genders and sexual orientations
-  link_text: http://www.womensafe.net/home/
+  link_text: www.womensafe.net
+  link_href: http://www.womensafe.net/home/
   number: (802) 388-4205
   confidential: true
 
@@ -119,7 +120,8 @@ ahc:
 safespace:
   title: SafeSpace
   description: Confidential information, support, referrals and advocacy for LGBTQ survivors.
-  link_text: http://www.safespaceonline.org
+  link_text: www.safespaceonline.org
+  link_href: http://www.safespaceonline.org
   number: (802) 863-0003
   confidential: true
 
@@ -249,6 +251,7 @@ pmc:
 vvcp:
   title: Vermont Victims Compensation Program
   link_text: www.ccvs.state.vt.us/compensation
+  link_href: http://www.ccvs.state.vt.us/compensation
   people:
     - name: Sandy Robinson # This used to say "Campus contact is..." Is this fine to do?
       title: Managing Nurse Practitioner

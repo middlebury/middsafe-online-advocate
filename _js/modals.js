@@ -56,6 +56,7 @@ function openModal(id) {
     elasticity: MODAL_ANIMATION_ELASTICITY,
     duration: MODAL_ANIMATION_DURATION,
     complete: () => {
+      modal.focus();
       isModalAnimating = false;
     }
   });

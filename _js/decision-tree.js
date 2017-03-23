@@ -42,6 +42,8 @@ function showQuestion(id) {
 
   elem.classList.add(activeClass);
 
+  elem.focus();
+
   window.scrollTo(0, 0);
 }
 

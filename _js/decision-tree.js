@@ -23,6 +23,7 @@ function handleBackButtonClick(e) {
 function hideQuestions() {
   forEach(questions, item => {
     item.classList.remove(activeClass);
+    item.setAttribute('aria-hidden', true);
   });
 }
 
@@ -41,6 +42,8 @@ function showQuestion(id) {
   activeId = id;
 
   elem.classList.add(activeClass);
+
+  elem.setAttribute('aria-hidden', false);
 
   elem.focus();
 

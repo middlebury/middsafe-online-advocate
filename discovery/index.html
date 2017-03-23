@@ -3,10 +3,10 @@ layout: default
 ---
 
 <section class="section">
-  <ol class="questions-list">
   <a href="#" role="button" class="button button--secondary button--outline discovery__back-button js-discovery-back-button" aria-label="Go back to previous question"><span aria-hidden>&larr; Previous question</span></a>
+  <div class="questions-list">
   {% for question in site.data.questions %}
-    <li id="{{forloop.index}}" class="discovery__item">
+    <article id="{{forloop.index}}" class="discovery__item" tabindex="-1">
       <div class="question">
         <h2 class="pagetitle">{{question.question}}</h2>
         {% if question.content %}
@@ -44,7 +44,7 @@ layout: default
           </li>
         {% endfor %}
       </ul>
-    </li>
+    </article>
   {% endfor %}
-  </ol>
+  </div>
 </section>

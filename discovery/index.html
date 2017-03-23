@@ -33,17 +33,19 @@ layout: default
 
       {% endfor %}
 
-      <ul class="answers-list">
-        {% for item in question.answers %}
-          <li class="answers-list__item">
-            {% if item.id %}
-              <a href="#{{item.id}}" class="answers-list__link {% if item.accent %}answers-list__link--accent{% endif %}">{{item.title}}</a>
-            {% else %}
-              <span>{{item.title | markdownify }}</span>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
+      <nav>
+        <ul class="answers-list">
+          {% for item in question.answers %}
+            <li class="answers-list__item">
+              {% if item.id %}
+                <a href="#{{item.id}}" class="answers-list__link {% if item.accent %}answers-list__link--accent{% endif %}">{{item.title}}</a>
+              {% else %}
+                <span>{{item.title | markdownify }}</span>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
     </article>
   {% endfor %}
   </div>

@@ -48,6 +48,8 @@
 }
 
 .discovery__item {
+  outline: none;
+
   .has-discovery & {
     display: none;
   }

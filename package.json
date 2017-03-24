@@ -8,6 +8,7 @@
     "build": "gulp build --production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy:sandcat": "npm run build && npm run copy:sandcat",
+    "deploy": "npm run build && gulp deploy",
     "copy:sandcat": "cp -r _site/ /../../Volumes/middfiles/webroots/comm/middsafe-online-advocate"
   },
   "private": true,

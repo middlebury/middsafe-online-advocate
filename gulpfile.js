@@ -21,14 +21,16 @@ const production = !!args.production;
 
 const jekyllOpts = ['build'];
 
-if(!production) {
+if (!production) {
   jekyllOpts.push('--config', '_config.dev.yml');
 }
 
 gulp.task('jekyll-build', function(done) {
-  return cp.spawn('jekyll', jekyllOpts, {
-    stdio: 'inherit'
-  }).on('close', done);
+  return cp
+    .spawn('jekyll', jekyllOpts, {
+      stdio: 'inherit'
+    })
+    .on('close', done);
 });
 
 gulp.task('jekyll-rebuild', ['jekyll-build'], function() {
@@ -39,7 +41,7 @@ gulp.task('browser-sync', function() {
   browserSync({
     open: false,
     server: {
-      baseDir: '_site',
+      baseDir: '_site'
     }
   });
 });
@@ -48,18 +50,19 @@ gulp.task('scripts', function() {
   var b = browserify({
     entries: './_js/main.js',
     debug: true,
-    transform: [[babelify, { presets: ['es2015']}]]
+    transform: [[babelify, {presets: ['es2015']}]]
   });
 
-  return b.bundle()
+  return b
+    .bundle()
     .on('error', function(err) {
       console.error(err.message);
       beeper();
-      this.emit("end");
+      this.emit('end');
     })
     .pipe(source('bundle.js'))
     .pipe(buffer())
-    .pipe(gulpIf(!production, sourcemaps.init({ loadMaps: true })))
+    .pipe(gulpIf(!production, sourcemaps.init({loadMaps: true})))
     .pipe(uglify())
     .on('error', gutil.log)
     .pipe(gulpIf(!production, sourcemaps.write('./')))
@@ -69,23 +72,25 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('images', function() {
-  return gulp.src('./_img/**/*.{jpg,png,svg}')
-    // TODO: compress images
-    .pipe(gulp.dest('./img'));
+  return gulp.src('./_img/**/*.{jpg,png,svg}').pipe(gulp.dest('./img')); // TODO: compress images
 });
 
 // TODO: get styles to beep on sass error
 gulp.task('styles', function() {
-  return gulp.src('_scss/main.scss')
-    .pipe(gulpIf(!production, sourcemaps.init({ loadMaps: true })))
-    .pipe(sass({
-      includePaths: ['scss'],
-      onError: browserSync.notify
-    })).on('error', sass.logError)
-    .pipe(autoprefixer(['last 3 versions', '> 2%', 'ie 10'], { cascade: true }))
+  return gulp
+    .src('_scss/main.scss')
+    .pipe(gulpIf(!production, sourcemaps.init({loadMaps: true})))
+    .pipe(
+      sass({
+        includePaths: ['scss'],
+        onError: browserSync.notify
+      })
+    )
+    .on('error', sass.logError)
+    .pipe(autoprefixer(['last 3 versions', '> 2%', 'ie 10'], {cascade: true}))
     .pipe(gulpIf(!production, sourcemaps.write('./')))
     .pipe(gulpIf(production, cmq()))
-    .pipe(gulpIf(production, cssnano({ zIndex: false })))
+    .pipe(gulpIf(production, cssnano({zIndex: false})))
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.stream())
     .pipe(gulp.dest('./css'));
@@ -95,24 +100,28 @@ gulp.task('watch', function() {
   gulp.watch('_js/**/*.js', ['scripts']);
   gulp.watch('_scss/*.scss', ['styles']);
   gulp.watch('_img/**/*.{jpg,png,svg}', ['images']);
-  gulp.watch([
-    './_layouts/*.html',
-    './_includes/*.html',
-    './**/*.md',
-    './_data/*',
-     // HACK: some reason if we try to generically target these folders
-     // it causes an infinite rebuild loop
-    './{discovery,about,resources}/*.{md,html}',
-  ], ['jekyll-rebuild']);
+  gulp.watch(
+    [
+      './_layouts/*.html',
+      './_includes/*.html',
+      './**/*.md',
+      './_data/*',
+      // HACK: some reason if we try to generically target these folders
+      // it causes an infinite rebuild loop
+      './{discovery,about,resources}/*.{md,html}'
+    ],
+    ['jekyll-rebuild']
+  );
 });
 
 gulp.task('build', ['jekyll-build', 'scripts', 'styles', 'images']);
 
 gulp.task('deploy', ['build'], function() {
-  return gulp.src('./_site/**/*')
-    .pipe(ghPages({
+  return gulp.src('./_site/**/*').pipe(
+    ghPages({
       branch: 'site'
-    }));
+    })
+  );
 });
 
 gulp.task('default', ['build', 'browser-sync', 'watch']);

@@ -1,6 +1,6 @@
 title: MiddSafe Online Advocate
 description:
-baseurl: ""
+baseurl: "/comm/middsafe-online-advocate"
 development: true
 markdown: kramdown
 exclude:

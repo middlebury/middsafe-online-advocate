@@ -1,7 +1,7 @@
 title: MiddSafe Online Advocate
 description:
 baseurl: ""
-
+development: true
 markdown: kramdown
 exclude:
   - node_modules

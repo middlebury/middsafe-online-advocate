@@ -1,52 +1,7076 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>MiddSafe Online Advocate</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/comm/middsafe-online-advocate/img/midd_favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/83898/706148/css/fonts.css">
+    <link rel="stylesheet" href="/comm/middsafe-online-advocate/css/main.css?1490367718504424000">
+  </head>
+  <body class="">
+    <header class="site-header">
+  <div class="site-header__title">
+    <div class="container">
+      <h1 class="site-title"><a href="/comm/middsafe-online-advocate/"><strong>MiddSafe</strong> Online Advocate</a></h1>
+    </div>
+  </div>
+  <nav class="site-nav">
+    <div class="container">
+      <div class="site-nav__items">
+        <ul class="site-nav__list">
+          <li class="site-nav__list-item"><a href="/comm/middsafe-online-advocate/resources" class="site-nav__link" data-modal-id="resources-modal">Resources</a></li>
+          <li class="site-nav__list-item"><a href="/comm/middsafe-online-advocate/about" class="site-nav__link" data-modal-id="about-modal">About</a></li>
+        </ul>
+        <div class="site-nav__button">
+          <a href="http://www.middlebury.edu" class="button button--accent js-escape-button">Exit Window</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
 
-<section class="section">
+    <main class="main" id="main">
+      <div class="container">
+        <section class="section">
   <a href="#" role="button" class="button button--secondary button--outline discovery__back-button js-discovery-back-button" aria-label="Go back to previous question"><span aria-hidden>&larr; Previous question</span></a>
   <div class="questions-list">
-  {% for question in site.data.questions %}
-    <article id="{{question.id}}" class="discovery__item" tabindex="-1">
+  
+    <article id="1" class="discovery__item" tabindex="-1">
       <div class="question">
-        <h2 class="pagetitle">{{question.question}}</h2>
-        {% if question.content %}
-          <div class="question__content markdown">
-            {{question.content | markdownify}}
-          </div>
-        {% endif %}
+        <h2 class="pagetitle">Do you feel safe right now?</h2>
+        
       </div>
 
-      {% for id in question.resources %}
-
-        {% assign item = site.data.resources[id] %}
-        {% include resource.html resource=item %}
-
-        {% if forloop.index == forloop.length %}
-
-          {% if forloop.length == 1 %}
-            <h3 class="answers-list-heading">If this resource isn't working for you, would you like to:</h3>
-          {% else %}
-            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
-          {% endif %}
-
-        {% endif %}
-
-      {% endfor %}
+      
 
       <nav>
         <ul class="answers-list">
-          {% for item in question.answers %}
+          
             <li class="answers-list__item">
-              {% if item.id %}
-                <a href="#{{item.id}}" class="answers-list__link {% if item.accent %}answers-list__link--accent{% endif %}">{{item.title}}</a>
-              {% else %}
-                <span>{{item.title | markdownify }}</span>
-              {% endif %}
+              
+                <a href="#2" class="answers-list__link ">Yes</a>
+              
             </li>
-          {% endfor %}
+          
+            <li class="answers-list__item">
+              
+                <a href="#30" class="answers-list__link ">No</a>
+              
+            </li>
+          
         </ul>
       </nav>
     </article>
-  {% endfor %}
+  
+    <article id="2" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Are you interested in resources for yourself or for someone else?</h2>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Myself</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#38" class="answers-list__link ">Someone else</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="3" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Would you like to learn more about:</h2>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#4" class="answers-list__link ">Safety planning</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#7" class="answers-list__link ">Counseling and others to talk to</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#18" class="answers-list__link ">Medical care</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#21" class="answers-list__link ">Economic support</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#24" class="answers-list__link ">Housing and academic support</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#25" class="answers-list__link ">Making a report</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#28" class="answers-list__link ">I’m not sure</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="4" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Are you interested in safety planning resources:</h2>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#5" class="answers-list__link ">On campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#6" class="answers-list__link ">Off campus</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="5" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Do any of these resources feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Department of Public Safety</h3>
+  <p class="resource__description">Emergency response, safety planning, accommodations, No Contact Order, recording reports, campus and community-based transportation</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/dps" class="resource__link">go/dps</a></p>
+  
+
+  
+    <div class="resource__address"><p>125 South Main Street</p>
+</div>
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5911">(802) 443-5911</a>
+          (emergency)
+        </li>
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5133">(802) 443-5133</a>
+          (non-emergency)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">MiddSafe Confidential Advocates</h3>
+  <p class="resource__description">Confidential support, information, resource referrals and advocacy 24/7 student-run hotline when classes are in session</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/middsafe" class="resource__link">go/middsafe</a></p>
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 377-0239">(802) 377-0239</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Commons Dean</h3>
+  <p class="resource__description">Dean's excuses, room changes, holistic institutional support</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/commons" class="resource__link">go/commons</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Emily Van Mistri</h2>
+  <p class="person__title"><em>Dean of Ross Commons</em></p>
+
+  
+    <div class="person__address"><p>003 RCD</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:evanmistri@middlebury.edu">evanmistri@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Scott Barnicle</h2>
+  <p class="person__title"><em>Dean of Atwater Commons</em></p>
+
+  
+    <div class="person__address"><p>Allen Hall 1534A</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:sbarnicl@middelbury.edu">sbarnicl@middelbury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">AJ Place</h2>
+  <p class="person__title"><em>Dean of Brainerd Commons</em></p>
+
+  
+    <div class="person__address"><p>Stewart Hall 216</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:ajplace@middlebury.edu">ajplace@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Ian Sutherland</h2>
+  <p class="person__title"><em>Dean of Cook Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell North 150</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:isutherland@middlebury.edu">isutherland@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Matt Longman</h2>
+  <p class="person__title"><em>Dean of Wonnacott Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell South 122</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:longman@middlebury.edu">longman@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#6" class="answers-list__link ">Explore safety planning resources off campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="6" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Do any of these resources feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Middlebury Police Department</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+    <div class="resource__address"><p>1 Lucius Shaw Ln<br />
+Middlebury, VT 05753</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-3191">(802) 388-3191</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Vermont State Police</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+    <div class="resource__address"><p>2490 Ethan Allen Hwy<br />
+New Haven, VT 05472</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-4919">(802) 388-4919</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">WomenSafe</h3>
+  <p class="resource__description">Confidential 24 hour support, information, referrals and advocacy for community  member of all genders and sexual orientations</p>
+
+  
+    <p class="resource__url"><a href="http://www.womensafe.net/home/" class="resource__link">www.womensafe.net</a></p>
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-4205">(802) 388-4205</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Counseling Services of Addison County (CSAC)</h3>
+  <p class="resource__description">24/7 support for all community members</p>
+
+  
+
+  
+    <div class="resource__address"><p>89 Main Street<br />
+Middlebury, VT 05753</p>
+</div>
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 388-7641">(802) 388-7641</a>
+          (emergency)
+        </li>
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 388-7641">(802) 388-7641</a>
+          (non-emergency)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#5" class="answers-list__link ">Explore safety planning resources on campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="7" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Are you interested in speaking to:</h2>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#8" class="answers-list__link ">Mental health counselors</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#11" class="answers-list__link ">Advocates</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#14" class="answers-list__link ">Faculty, staff, family members, and friends</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#15" class="answers-list__link ">Spiritual and pastoral leaders</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="8" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Are you interested in speaking to a counselor:</h2>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#9" class="answers-list__link ">On campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#10" class="answers-list__link ">Off campus</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="9" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Do any of these resources feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Counseling Services at Parton Center for Health and Wellness</h3>
+  <p class="resource__description"></p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/parton" class="resource__link">go/parton</a></p>
+  
+
+  
+    <div class="resource__address"><p>Centeno House 3rd Floor</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-5141">(802) 443-5141</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">After Hours Counseling</h3>
+  <p class="resource__description">Available whenever the Parton counseling office is closed (evenings and   weekends)</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/parton" class="resource__link">go/parton</a></p>
+  
+
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5141">(802) 443-5141</a>
+          (press 1 to be connected to a counselor if it is after hours)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#10" class="answers-list__link ">Explore counselors off campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#7" class="answers-list__link ">Explore others I could talk to</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="10" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Does this resource feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Counseling Services of Addison County (CSAC)</h3>
+  <p class="resource__description">24/7 support for all community members</p>
+
+  
+
+  
+    <div class="resource__address"><p>89 Main Street<br />
+Middlebury, VT 05753</p>
+</div>
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 388-7641">(802) 388-7641</a>
+          (emergency)
+        </li>
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 388-7641">(802) 388-7641</a>
+          (non-emergency)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If this resource isn't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#9" class="answers-list__link ">Explore counselors on campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#7" class="answers-list__link ">Explore others I could talk to</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="11" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Are you interested in speaking with an advocate:</h2>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#12" class="answers-list__link ">On campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#13" class="answers-list__link ">Off campus</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="12" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Does this resource feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">MiddSafe Confidential Advocates</h3>
+  <p class="resource__description">Confidential support, information, resource referrals and advocacy 24/7 student-run hotline when classes are in session</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/middsafe" class="resource__link">go/middsafe</a></p>
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 377-0239">(802) 377-0239</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If this resource isn't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#13" class="answers-list__link ">Explore advocacy resources off campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#7" class="answers-list__link ">Explore others I could talk to</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="13" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Do any of these resources feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">WomenSafe</h3>
+  <p class="resource__description">Confidential 24 hour support, information, referrals and advocacy for community  member of all genders and sexual orientations</p>
+
+  
+    <p class="resource__url"><a href="http://www.womensafe.net/home/" class="resource__link">www.womensafe.net</a></p>
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-4205">(802) 388-4205</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">SafeSpace</h3>
+  <p class="resource__description">Confidential information, support, referrals and advocacy for LGBTQ survivors.</p>
+
+  
+    <p class="resource__url"><a href="http://www.safespaceonline.org" class="resource__link">www.safespaceonline.org</a></p>
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 863-0003">(802) 863-0003</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title"></h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#7" class="answers-list__link ">Explore others I could talk to</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="14" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">It is important to reach out for support.</h2>
+        
+          <div class="question__content markdown">
+            <p>Speaking with faculty, staff, family members, and friends about personal violations can be helpful, but it can also be very difficult. Below is a list of some faculty and staff members that might be helpful resources.</p>
+
+          </div>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Commons Dean</h3>
+  <p class="resource__description">Dean's excuses, room changes, holistic institutional support</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/commons" class="resource__link">go/commons</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Emily Van Mistri</h2>
+  <p class="person__title"><em>Dean of Ross Commons</em></p>
+
+  
+    <div class="person__address"><p>003 RCD</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:evanmistri@middlebury.edu">evanmistri@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Scott Barnicle</h2>
+  <p class="person__title"><em>Dean of Atwater Commons</em></p>
+
+  
+    <div class="person__address"><p>Allen Hall 1534A</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:sbarnicl@middelbury.edu">sbarnicl@middelbury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">AJ Place</h2>
+  <p class="person__title"><em>Dean of Brainerd Commons</em></p>
+
+  
+    <div class="person__address"><p>Stewart Hall 216</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:ajplace@middlebury.edu">ajplace@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Ian Sutherland</h2>
+  <p class="person__title"><em>Dean of Cook Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell North 150</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:isutherland@middlebury.edu">isutherland@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Matt Longman</h2>
+  <p class="person__title"><em>Dean of Wonnacott Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell South 122</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:longman@middlebury.edu">longman@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">After Hours Counseling</h3>
+  <p class="resource__description">Available whenever the Parton counseling office is closed (evenings and   weekends)</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/parton" class="resource__link">go/parton</a></p>
+  
+
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5141">(802) 443-5141</a>
+          (press 1 to be connected to a counselor if it is after hours)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Counseling Services at Parton Center for Health and Wellness</h3>
+  <p class="resource__description"></p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/parton" class="resource__link">go/parton</a></p>
+  
+
+  
+    <div class="resource__address"><p>Centeno House 3rd Floor</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-5141">(802) 443-5141</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Barbara McCall</h3>
+  <p class="resource__description">Director of Health and Wellness Education</p>
+
+  
+
+  
+    <div class="resource__address"><p>Service Building 225</p>
+</div>
+  
+
+  
+    <p class="resource__email">
+      <a href="mailto:bmccall@middlebury.edu" class="resource__link">bmccall@middlebury.edu</a>
+    </p>
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-5361">(802) 443-5361</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Susan Ritter</h3>
+  <p class="resource__description">Title IX Coordinator and Compliance Officer</p>
+
+  
+
+  
+
+  
+    <p class="resource__email">
+      <a href="mailto:sritter@middlebury.edu" class="resource__link">sritter@middlebury.edu</a>
+    </p>
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-3289">(802) 443-3289</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#7" class="answers-list__link ">Explore others I could talk to</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="15" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Are you interested in spiritual and pastoral care resources:</h2>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#16" class="answers-list__link ">On campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#17" class="answers-list__link ">Off campus</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="16" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Does this resource feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">College Chaplains</h3>
+  <p class="resource__description">For individuals of all faiths and beliefs.</p>
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-5626">(802) 443-5626</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Nalia Boloch</h2>
+  <p class="person__title"><em>Associate Chaplain and Muslim Advisor</em></p>
+
+  
+    <div class="person__address"><p>Scott Center for Spiritual and Religious Life<br />
+135 South Main Street</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:nbaloch@middlebury.edu">nbaloch@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-5986">(802) 443-5986</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Laurie Jordan</h2>
+  <p class="person__title"><em>Chaplain of the College</em></p>
+
+  
+    <div class="person__address"><p>Scott Center for Spiritual and Religious Life 203<br />
+135 South Main Street</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:ljordan@middlebury.edu">ljordan@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-5626">(802) 443-5626</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Ira Schiffer</h2>
+  <p class="person__title"><em>Associate Chaplain Rabbi</em></p>
+
+  
+    <div class="person__address"><p>Scott Center for Spiritual and Religious Life<br />
+135 South Main Street</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:ischiffer@middlebury.edu">ischiffer@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-5762">(802) 443-5762</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Beau Scurich</h2>
+  <p class="person__title"><em>Associate Chaplain and Muslim Advisor</em></p>
+
+  
+    <div class="person__address"><p>Scott Center for Spiritual and Religious Life<br />
+135 South Main Street</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:bscurich@middlebury.edu">bscurich@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-5983">(802) 443-5983</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Mark Orten</h2>
+  <p class="person__title"><em>Dean of Spiritual and Religious Life, Director of Scott Center</em></p>
+
+  
+    <div class="person__address"><p>Scott Center for Spiritual and Religious Life 103<br />
+135 South Main Street</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:orten@middlebury.edu">orten@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-5626">(802) 443-5626</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If this resource isn't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#17" class="answers-list__link ">Explore spiritual and pastoral care resources off campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#7" class="answers-list__link ">Explore others I could talk to</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="17" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Does this resource feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Local Congregations</h3>
+  <p class="resource__description"></p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/congregations" class="resource__link">go/congregations</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If this resource isn't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#16" class="answers-list__link ">Explore spiritual and pastoral care resources on campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#7" class="answers-list__link ">Explore others I could talk to</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="18" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Are you interested in medical care:</h2>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#19" class="answers-list__link ">On campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#20" class="answers-list__link ">Off campus</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="19" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Does this resource feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Parton Health Services</h3>
+  <p class="resource__description">SANE exam, STD testing, evidence collection, injury triage.</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/parton" class="resource__link">go/parton</a></p>
+  
+
+  
+    <div class="resource__address"><p>Centeno House 3rd Floor</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-5135">(802) 443-5135</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If this resource isn't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#20" class="answers-list__link ">Explore medical care off campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="20" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Does this resource feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Porter Medical Center</h3>
+  <p class="resource__description">SANE exam, STD testing, evidence collection, injury triage, hospital resources.</p>
+
+  
+
+  
+    <div class="resource__address"><p>115 Porter Drive<br />
+Middlebury, VT 05753</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-4701">(802) 388-4701</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If this resource isn't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#19" class="answers-list__link ">Explore medical care on campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="21" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Are you interested in economic support:</h2>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#22" class="answers-list__link ">On campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#23" class="answers-list__link ">Off campus</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="22" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Do any of these resources feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Emergency Medical Fund</h3>
+  <p class="resource__description">Please contact your Dean for more information.</p>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Commons Dean</h3>
+  <p class="resource__description">Dean's excuses, room changes, holistic institutional support</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/commons" class="resource__link">go/commons</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Emily Van Mistri</h2>
+  <p class="person__title"><em>Dean of Ross Commons</em></p>
+
+  
+    <div class="person__address"><p>003 RCD</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:evanmistri@middlebury.edu">evanmistri@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Scott Barnicle</h2>
+  <p class="person__title"><em>Dean of Atwater Commons</em></p>
+
+  
+    <div class="person__address"><p>Allen Hall 1534A</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:sbarnicl@middelbury.edu">sbarnicl@middelbury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">AJ Place</h2>
+  <p class="person__title"><em>Dean of Brainerd Commons</em></p>
+
+  
+    <div class="person__address"><p>Stewart Hall 216</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:ajplace@middlebury.edu">ajplace@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Ian Sutherland</h2>
+  <p class="person__title"><em>Dean of Cook Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell North 150</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:isutherland@middlebury.edu">isutherland@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Matt Longman</h2>
+  <p class="person__title"><em>Dean of Wonnacott Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell South 122</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:longman@middlebury.edu">longman@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Vermont Victims Compensation Program</h3>
+  <p class="resource__description"></p>
+
+  
+    <p class="resource__url"><a href="http://www.ccvs.state.vt.us/compensation" class="resource__link">www.ccvs.state.vt.us/compensation</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Sandy Robinson</h2>
+  <p class="person__title"><em>Managing Nurse Practitioner</em></p>
+
+  
+    <div class="person__address"><p>Centeno House</p>
+</div>
+  
+
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-5135">(802) 443-5135</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Student Financial Services</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+    <div class="resource__address"><p>Service Building</p>
+</div>
+  
+
+  
+    <p class="resource__email">
+      <a href="mailto:sfs@middlebury.edu" class="resource__link">sfs@middlebury.edu</a>
+    </p>
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-5158">(802) 443-5158</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#23" class="answers-list__link ">Explore economic support off campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="23" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Does this resources feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Economic Services</h3>
+  <p class="resource__description">Emergency help to meet basic needs for health insurance, child care, food and fuel assistance</p>
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(800) 479-6151">(800) 479-6151</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">WomenSafe</h3>
+  <p class="resource__description">Confidential 24 hour support, information, referrals and advocacy for community  member of all genders and sexual orientations</p>
+
+  
+    <p class="resource__url"><a href="http://www.womensafe.net/home/" class="resource__link">www.womensafe.net</a></p>
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-4205">(802) 388-4205</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#22" class="answers-list__link ">Explore economic support resources on campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="24" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Does this resource feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Commons Dean</h3>
+  <p class="resource__description">Dean's excuses, room changes, holistic institutional support</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/commons" class="resource__link">go/commons</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Emily Van Mistri</h2>
+  <p class="person__title"><em>Dean of Ross Commons</em></p>
+
+  
+    <div class="person__address"><p>003 RCD</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:evanmistri@middlebury.edu">evanmistri@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Scott Barnicle</h2>
+  <p class="person__title"><em>Dean of Atwater Commons</em></p>
+
+  
+    <div class="person__address"><p>Allen Hall 1534A</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:sbarnicl@middelbury.edu">sbarnicl@middelbury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">AJ Place</h2>
+  <p class="person__title"><em>Dean of Brainerd Commons</em></p>
+
+  
+    <div class="person__address"><p>Stewart Hall 216</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:ajplace@middlebury.edu">ajplace@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Ian Sutherland</h2>
+  <p class="person__title"><em>Dean of Cook Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell North 150</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:isutherland@middlebury.edu">isutherland@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Matt Longman</h2>
+  <p class="person__title"><em>Dean of Wonnacott Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell South 122</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:longman@middlebury.edu">longman@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Residential Life</h3>
+  <p class="resource__description">Your common’s Commons Residential Advisor (CRA), First-Year Counselor (FYC), Resident Assistant (RA), Community Assistant (CA)</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/commons" class="resource__link">go/commons</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Administration Committee</h3>
+  <p class="resource__description">The Administration Committee hears requests from students and faculty for exceptions to academic policies.</p>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Karen Guttentag</h2>
+  <p class="person__title"><em></em></p>
+
+  
+    <div class="person__address"><p>Service Building 219</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:kguttent@middlebury.edu">kguttent@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-2024">(802) 443-2024</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Diane Di Loreto</h2>
+  <p class="person__title"><em>Assistant, Student Life Administrator</em></p>
+
+  
+    <div class="person__address"><p>Service Building 218</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:dmdiloreto@middlebury.edu">dmdiloreto@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-3233">(802) 443-3233</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="25" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Are you interested in making a report:</h2>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#26" class="answers-list__link ">On campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#27" class="answers-list__link ">Off campus</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="26" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Do any of these resources feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Judicial Affairs Officers</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Karen Guttentag</h2>
+  <p class="person__title"><em></em></p>
+
+  
+    <div class="person__address"><p>Service Building 219</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:kguttent@middlebury.edu">kguttent@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-2024">(802) 443-2024</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Brian Lind</h2>
+  <p class="person__title"><em>Assoc. Dean of Judicial Affairs and Student Life</em></p>
+
+  
+    <div class="person__address"><p>Service Building 217</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:blind@middlebury.edu">blind@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-5385">(802) 443-5385</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Human Relations Officers</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Earl Fletcher</h2>
+  <p class="person__title"><em></em></p>
+
+  
+    <div class="person__address"><p>Service Building 216</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:efletcher@middlebury.edu">efletcher@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-3426">(802) 443-3426</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Steven Collieer</h2>
+  <p class="person__title"><em></em></p>
+
+  
+    <div class="person__address"><p>Service Building 215</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:scollieer@middlebury.edu">scollieer@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-3474">(802) 443-3474</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Susan Ritter</h3>
+  <p class="resource__description">Title IX Coordinator and Compliance Officer</p>
+
+  
+
+  
+
+  
+    <p class="resource__email">
+      <a href="mailto:sritter@middlebury.edu" class="resource__link">sritter@middlebury.edu</a>
+    </p>
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-3289">(802) 443-3289</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Department of Public Safety</h3>
+  <p class="resource__description">Emergency response, safety planning, accommodations, No Contact Order, recording reports, campus and community-based transportation</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/dps" class="resource__link">go/dps</a></p>
+  
+
+  
+    <div class="resource__address"><p>125 South Main Street</p>
+</div>
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5911">(802) 443-5911</a>
+          (emergency)
+        </li>
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5133">(802) 443-5133</a>
+          (non-emergency)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#27" class="answers-list__link ">Explore making a report off campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="27" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Do any of these resources feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Middlebury Police Department</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+    <div class="resource__address"><p>1 Lucius Shaw Ln<br />
+Middlebury, VT 05753</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-3191">(802) 388-3191</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Vermont State Police</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+    <div class="resource__address"><p>2490 Ethan Allen Hwy<br />
+New Haven, VT 05472</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-4919">(802) 388-4919</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#26" class="answers-list__link ">Explore making a report on campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="28" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">It is completely normal to feel unsure.</h2>
+        
+          <div class="question__content markdown">
+            <p>We hope that you will consider contacting a MiddSafe Confidential Advocate in person or through our 24/7 hotline while classes are in session at 802-377-0239. We are here to listen and help you find resources that feel right to you. You may also refer to the “Resources” tab on the top of each page for a list of contacts that can provide support.</p>
+
+          </div>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="30" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Are you experiencing thoughts of suicide or self harm?</h2>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#31" class="answers-list__link ">Yes</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#34" class="answers-list__link ">No</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="31" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">We care deeply and want to help.</h2>
+        
+          <div class="question__content markdown">
+            <p>We hope you will reach out to a resource that feels right to you.</p>
+
+          </div>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#32" class="answers-list__link ">On campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#33" class="answers-list__link ">Off campus</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="32" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Do any of these resources feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Counseling Services at Parton Center for Health and Wellness</h3>
+  <p class="resource__description"></p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/parton" class="resource__link">go/parton</a></p>
+  
+
+  
+    <div class="resource__address"><p>Centeno House 3rd Floor</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-5141">(802) 443-5141</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">After Hours Counseling</h3>
+  <p class="resource__description">Available whenever the Parton counseling office is closed (evenings and   weekends)</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/parton" class="resource__link">go/parton</a></p>
+  
+
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5141">(802) 443-5141</a>
+          (press 1 to be connected to a counselor if it is after hours)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">MiddSafe Confidential Advocates</h3>
+  <p class="resource__description">Confidential support, information, resource referrals and advocacy 24/7 student-run hotline when classes are in session</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/middsafe" class="resource__link">go/middsafe</a></p>
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 377-0239">(802) 377-0239</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Department of Public Safety</h3>
+  <p class="resource__description">Emergency response, safety planning, accommodations, No Contact Order, recording reports, campus and community-based transportation</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/dps" class="resource__link">go/dps</a></p>
+  
+
+  
+    <div class="resource__address"><p>125 South Main Street</p>
+</div>
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5911">(802) 443-5911</a>
+          (emergency)
+        </li>
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5133">(802) 443-5133</a>
+          (non-emergency)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Commons Dean</h3>
+  <p class="resource__description">Dean's excuses, room changes, holistic institutional support</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/commons" class="resource__link">go/commons</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Emily Van Mistri</h2>
+  <p class="person__title"><em>Dean of Ross Commons</em></p>
+
+  
+    <div class="person__address"><p>003 RCD</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:evanmistri@middlebury.edu">evanmistri@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Scott Barnicle</h2>
+  <p class="person__title"><em>Dean of Atwater Commons</em></p>
+
+  
+    <div class="person__address"><p>Allen Hall 1534A</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:sbarnicl@middelbury.edu">sbarnicl@middelbury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">AJ Place</h2>
+  <p class="person__title"><em>Dean of Brainerd Commons</em></p>
+
+  
+    <div class="person__address"><p>Stewart Hall 216</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:ajplace@middlebury.edu">ajplace@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Ian Sutherland</h2>
+  <p class="person__title"><em>Dean of Cook Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell North 150</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:isutherland@middlebury.edu">isutherland@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Matt Longman</h2>
+  <p class="person__title"><em>Dean of Wonnacott Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell South 122</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:longman@middlebury.edu">longman@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#33" class="answers-list__link ">Explore support resources off campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="33" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Do any of these resources feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Counseling Services of Addison County (CSAC)</h3>
+  <p class="resource__description">24/7 support for all community members</p>
+
+  
+
+  
+    <div class="resource__address"><p>89 Main Street<br />
+Middlebury, VT 05753</p>
+</div>
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 388-7641">(802) 388-7641</a>
+          (emergency)
+        </li>
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 388-7641">(802) 388-7641</a>
+          (non-emergency)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Porter Medical Center</h3>
+  <p class="resource__description">SANE exam, STD testing, evidence collection, injury triage, hospital resources.</p>
+
+  
+
+  
+    <div class="resource__address"><p>115 Porter Drive<br />
+Middlebury, VT 05753</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-4701">(802) 388-4701</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">National Suicide Hotlines</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          Suicide Prevention Lifeline: 
+          <a href="tel:(800) 273-8255">(800) 273-8255</a>
+          
+        </li>
+      
+        <li class="resource__tel">
+          National Hopeline: 
+          <a href="tel:(800) 442-4673">(800) 442-4673</a>
+          
+        </li>
+      
+        <li class="resource__tel">
+          GLBT National Health Center: 
+          <a href="tel:(888) 843-4564">(888) 843-4564</a>
+          
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#32" class="answers-list__link ">Explore support resources on campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Are you feeling:</h2>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#35" class="answers-list__link ">Physically unsafe</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#31" class="answers-list__link ">Mentally/ emotionally unsafe (i.e. panic, thoughts of hurting yourself or hurting someone else)</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="35" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Are you interested in safety planning resources:</h2>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#36" class="answers-list__link ">On campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#37" class="answers-list__link ">Off campus</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="36" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Do any of these resources feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Counseling Services at Parton Center for Health and Wellness</h3>
+  <p class="resource__description"></p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/parton" class="resource__link">go/parton</a></p>
+  
+
+  
+    <div class="resource__address"><p>Centeno House 3rd Floor</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-5141">(802) 443-5141</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">After Hours Counseling</h3>
+  <p class="resource__description">Available whenever the Parton counseling office is closed (evenings and   weekends)</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/parton" class="resource__link">go/parton</a></p>
+  
+
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5141">(802) 443-5141</a>
+          (press 1 to be connected to a counselor if it is after hours)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">MiddSafe Confidential Advocates</h3>
+  <p class="resource__description">Confidential support, information, resource referrals and advocacy 24/7 student-run hotline when classes are in session</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/middsafe" class="resource__link">go/middsafe</a></p>
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 377-0239">(802) 377-0239</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Department of Public Safety</h3>
+  <p class="resource__description">Emergency response, safety planning, accommodations, No Contact Order, recording reports, campus and community-based transportation</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/dps" class="resource__link">go/dps</a></p>
+  
+
+  
+    <div class="resource__address"><p>125 South Main Street</p>
+</div>
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5911">(802) 443-5911</a>
+          (emergency)
+        </li>
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5133">(802) 443-5133</a>
+          (non-emergency)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Commons Dean</h3>
+  <p class="resource__description">Dean's excuses, room changes, holistic institutional support</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/commons" class="resource__link">go/commons</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Emily Van Mistri</h2>
+  <p class="person__title"><em>Dean of Ross Commons</em></p>
+
+  
+    <div class="person__address"><p>003 RCD</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:evanmistri@middlebury.edu">evanmistri@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Scott Barnicle</h2>
+  <p class="person__title"><em>Dean of Atwater Commons</em></p>
+
+  
+    <div class="person__address"><p>Allen Hall 1534A</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:sbarnicl@middelbury.edu">sbarnicl@middelbury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">AJ Place</h2>
+  <p class="person__title"><em>Dean of Brainerd Commons</em></p>
+
+  
+    <div class="person__address"><p>Stewart Hall 216</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:ajplace@middlebury.edu">ajplace@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Ian Sutherland</h2>
+  <p class="person__title"><em>Dean of Cook Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell North 150</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:isutherland@middlebury.edu">isutherland@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Matt Longman</h2>
+  <p class="person__title"><em>Dean of Wonnacott Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell South 122</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:longman@middlebury.edu">longman@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#36" class="answers-list__link ">Explore safety planning resources off campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="37" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Do any of these resources feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Counseling Services of Addison County (CSAC)</h3>
+  <p class="resource__description">24/7 support for all community members</p>
+
+  
+
+  
+    <div class="resource__address"><p>89 Main Street<br />
+Middlebury, VT 05753</p>
+</div>
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 388-7641">(802) 388-7641</a>
+          (emergency)
+        </li>
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 388-7641">(802) 388-7641</a>
+          (non-emergency)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Porter Medical Center</h3>
+  <p class="resource__description">SANE exam, STD testing, evidence collection, injury triage, hospital resources.</p>
+
+  
+
+  
+    <div class="resource__address"><p>115 Porter Drive<br />
+Middlebury, VT 05753</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-4701">(802) 388-4701</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Middlebury Police Department</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+    <div class="resource__address"><p>1 Lucius Shaw Ln<br />
+Middlebury, VT 05753</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-3191">(802) 388-3191</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Vermont State Police</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+    <div class="resource__address"><p>2490 Ethan Allen Hwy<br />
+New Haven, VT 05472</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-4919">(802) 388-4919</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#34" class="answers-list__link ">Explore safety planning resources on campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="38" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">It can be upsetting to see a friend struggling or in pain.</h2>
+        
+          <div class="question__content markdown">
+            <p>Providing support to someone who has experienced sexual or relationship violence is no different. These violations can take away people’s sense of power and leave them feeling helpless. Offering gentle, consistent, and nonjudgmental friendship and support can alleviate the strong and confusing emotions your friend or partner may feel.</p>
+
+<p>Regardless of your own knowledge or experience with sexual or relationship violence, you can play a key role in supporting survivors and restoring their sense of control.</p>
+
+<h3 id="you-can">You can:</h3>
+
+<ul>
+  <li>Help her focus on her strengths.</li>
+  <li>Provide a safe place for them to explore their emotions.</li>
+  <li>Reinforce that no one is responsible for being assaulted, stalked or abused.</li>
+  <li>Reassure him that he has the right to any and all of his feelings, even those that are conflicting or confusing.</li>
+  <li>Identify professional resources for additional support.</li>
+</ul>
+
+          </div>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#39" class="answers-list__link ">Understanding when and how to seek help</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#45" class="answers-list__link ">Learning about what your friend might be experiencing</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#46" class="answers-list__link ">Learning how to communicate with your friend</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#47" class="answers-list__link ">Taking care of myself</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="39" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Friends can serve an important role.</h2>
+        
+          <div class="question__content markdown">
+            <p>Friends can identify and help survivors connect voluntarily with appropriate resources. Unfortunately, you also may find yourself in situations in which you are sufficiently concerned about your friend’s well being that you need to seek help with or without your friend’s permission. If your friend or partner is in danger, either from others or from themselves, you must reach out to a trained professional.</p>
+
+<h3 id="examples-of-emergencies">Examples of emergencies:</h3>
+
+<ul>
+  <li>Any situation in which immediate danger or threat is present</li>
+  <li>A serious flashback or dissociative episode</li>
+  <li>Suicidal thoughts, with a plan and/or the means</li>
+  <li>Threats of harming other or property, with a plan and/or the means</li>
+  <li>Stalking concerns, no matter how mild the stalking action appears to be</li>
+</ul>
+
+          </div>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#40" class="answers-list__link ">Yes</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#41" class="answers-list__link ">I’m not sure</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#42" class="answers-list__link ">No, and I am interested in learning about non-emergent examples of when and how to seek help</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#38" class="answers-list__link ">Explore other resources for helping a friend or myself</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="40" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Call Public Safety (802-443-5911) or the Police (911) immediately.</h2>
+        
+          <div class="question__content markdown">
+            <p>If you can, also get in touch with your friend’s or your own Commons dean (see below for contact information). In cases where your friend has a plan to commit suicide, in addition to contacting Public Safety (802-443-5911), you may also contact the 24-hour hotline at Counseling Services of Addison County (802-388-7641) and Counseling at Parton Center for Health and Wellness (802-443-5141, and press 1 to be connected to a counselor if it is after hours). If you are conflicted about whether or not the situation counts as an emergency, err on the side of caution and reach out.</p>
+
+          </div>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Commons Dean</h3>
+  <p class="resource__description">Dean's excuses, room changes, holistic institutional support</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/commons" class="resource__link">go/commons</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Emily Van Mistri</h2>
+  <p class="person__title"><em>Dean of Ross Commons</em></p>
+
+  
+    <div class="person__address"><p>003 RCD</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:evanmistri@middlebury.edu">evanmistri@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Scott Barnicle</h2>
+  <p class="person__title"><em>Dean of Atwater Commons</em></p>
+
+  
+    <div class="person__address"><p>Allen Hall 1534A</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:sbarnicl@middelbury.edu">sbarnicl@middelbury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">AJ Place</h2>
+  <p class="person__title"><em>Dean of Brainerd Commons</em></p>
+
+  
+    <div class="person__address"><p>Stewart Hall 216</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:ajplace@middlebury.edu">ajplace@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Ian Sutherland</h2>
+  <p class="person__title"><em>Dean of Cook Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell North 150</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:isutherland@middlebury.edu">isutherland@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Matt Longman</h2>
+  <p class="person__title"><em>Dean of Wonnacott Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell South 122</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:longman@middlebury.edu">longman@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If this resource isn't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#38" class="answers-list__link ">Explore other resources for helping a friend or myself</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="41" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">If safety is a concern, call for help.</h2>
+        
+          <div class="question__content markdown">
+            <p>If you are conflicted about whether or not the situation counts as an emergency, err on the side of caution and reach out for professional help. <strong>In any unsafe situations, call Public Safety (802-443-5911) or the Police (911) immediately.</strong> If you can, also get in touch with your friend’s or your own Commons dean (see below for contact information). In cases where your friend has a plan to commit suicide, in addition to contacting Public Safety (802-443-5911), you may also contact the 24-hour hotline at Counseling Services of Addison County (802-388-7641) and Counseling at Parton Center for Health and Wellness (802-443-5141, and press 1 to be connected to a counselor if it is after hours).</p>
+
+          </div>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Commons Dean</h3>
+  <p class="resource__description">Dean's excuses, room changes, holistic institutional support</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/commons" class="resource__link">go/commons</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Emily Van Mistri</h2>
+  <p class="person__title"><em>Dean of Ross Commons</em></p>
+
+  
+    <div class="person__address"><p>003 RCD</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:evanmistri@middlebury.edu">evanmistri@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Scott Barnicle</h2>
+  <p class="person__title"><em>Dean of Atwater Commons</em></p>
+
+  
+    <div class="person__address"><p>Allen Hall 1534A</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:sbarnicl@middelbury.edu">sbarnicl@middelbury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">AJ Place</h2>
+  <p class="person__title"><em>Dean of Brainerd Commons</em></p>
+
+  
+    <div class="person__address"><p>Stewart Hall 216</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:ajplace@middlebury.edu">ajplace@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Ian Sutherland</h2>
+  <p class="person__title"><em>Dean of Cook Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell North 150</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:isutherland@middlebury.edu">isutherland@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Matt Longman</h2>
+  <p class="person__title"><em>Dean of Wonnacott Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell South 122</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:longman@middlebury.edu">longman@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If this resource isn't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#38" class="answers-list__link ">Explore other resources for helping a friend or myself</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="42" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Examples of non-emergent, but concerning situations</h2>
+        
+          <div class="question__content markdown">
+            <ul>
+  <li>Your friend is using coping mechanisms that concern you but do not seem immediately life threatening.</li>
+  <li>You are worried your friend may be in an abusive relationship, but you aren’t sure.</li>
+  <li>Your friend is missing classes, isolating themselves, eating poorly, or acting in ways that concern you.</li>
+  <li>Your friend is suffering from the trauma of sexual violence and needs more support from you than you are able to provide.</li>
+</ul>
+
+<p>In situations like these there are confidential and non confidential resources to provide information, help you navigate the complexities of caring for your friend, and assist you with determining if and when you need to take additional steps to support your friend’s safety.</p>
+
+          </div>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#43" class="answers-list__link ">On campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#43" class="answers-list__link ">Off campus</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="43" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Do any of these resources feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Counseling Services at Parton Center for Health and Wellness</h3>
+  <p class="resource__description"></p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/parton" class="resource__link">go/parton</a></p>
+  
+
+  
+    <div class="resource__address"><p>Centeno House 3rd Floor</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-5141">(802) 443-5141</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">After Hours Counseling</h3>
+  <p class="resource__description">Available whenever the Parton counseling office is closed (evenings and   weekends)</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/parton" class="resource__link">go/parton</a></p>
+  
+
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5141">(802) 443-5141</a>
+          (press 1 to be connected to a counselor if it is after hours)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">MiddSafe Confidential Advocates</h3>
+  <p class="resource__description">Confidential support, information, resource referrals and advocacy 24/7 student-run hotline when classes are in session</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/middsafe" class="resource__link">go/middsafe</a></p>
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 377-0239">(802) 377-0239</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Commons Dean</h3>
+  <p class="resource__description">Dean's excuses, room changes, holistic institutional support</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/commons" class="resource__link">go/commons</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Emily Van Mistri</h2>
+  <p class="person__title"><em>Dean of Ross Commons</em></p>
+
+  
+    <div class="person__address"><p>003 RCD</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:evanmistri@middlebury.edu">evanmistri@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Scott Barnicle</h2>
+  <p class="person__title"><em>Dean of Atwater Commons</em></p>
+
+  
+    <div class="person__address"><p>Allen Hall 1534A</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:sbarnicl@middelbury.edu">sbarnicl@middelbury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">AJ Place</h2>
+  <p class="person__title"><em>Dean of Brainerd Commons</em></p>
+
+  
+    <div class="person__address"><p>Stewart Hall 216</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:ajplace@middlebury.edu">ajplace@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Ian Sutherland</h2>
+  <p class="person__title"><em>Dean of Cook Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell North 150</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:isutherland@middlebury.edu">isutherland@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Matt Longman</h2>
+  <p class="person__title"><em>Dean of Wonnacott Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell South 122</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:longman@middlebury.edu">longman@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Residential Life</h3>
+  <p class="resource__description">Your common’s Commons Residential Advisor (CRA), First-Year Counselor (FYC), Resident Assistant (RA), Community Assistant (CA)</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/commons" class="resource__link">go/commons</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#44" class="answers-list__link ">Explore resources off campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#38" class="answers-list__link ">Explore other resources for helping a friend or myself</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="44" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Do any of these resources feel right to you?</h2>
+        
+      </div>
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">WomenSafe</h3>
+  <p class="resource__description">Confidential 24 hour support, information, referrals and advocacy for community  member of all genders and sexual orientations</p>
+
+  
+    <p class="resource__url"><a href="http://www.womensafe.net/home/" class="resource__link">www.womensafe.net</a></p>
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-4205">(802) 388-4205</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+      
+
+        
+        
+
+<article class="resource">
+  <h3 class="resource__title">Counseling Services of Addison County (CSAC)</h3>
+  <p class="resource__description">24/7 support for all community members</p>
+
+  
+
+  
+    <div class="resource__address"><p>89 Main Street<br />
+Middlebury, VT 05753</p>
+</div>
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 388-7641">(802) 388-7641</a>
+          (emergency)
+        </li>
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 388-7641">(802) 388-7641</a>
+          (non-emergency)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+        
+
+          
+            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
+          
+
+        
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#43" class="answers-list__link ">Explore resources on campus</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#38" class="answers-list__link ">Explore other resources for helping a friend or myself</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="45" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Understanding Trauma</h2>
+        
+          <div class="question__content markdown">
+            <p>Survivors may experience and exhibit a wide variety of reactions as a result of the physical and psychological impact of trauma. A survivor’s decisions, actions and feelings may appear counterintuitive and illogical when considered in the context of what we might expect under “normal” circumstances. However, when the impact and effects of trauma are taken into account, these decisions, actions and feelings may be completely logical and understandable. This may be confusing both to the survivor and to you. Although some responses are commonly seen, there is no reaction to sexual violence that is “normal” or “abnormal.”</p>
+
+<h3 id="common-reactions">Common reactions</h3>
+
+<ul>
+  <li>Shock, confusion</li>
+  <li>Memory loss or trouble accessing memories</li>
+  <li>Depression</li>
+  <li>Hypervigilance</li>
+  <li>Mistrust of self and others</li>
+  <li>Shame, guild, self-blame</li>
+  <li>Anxiety</li>
+  <li>Isolation</li>
+  <li>Anger</li>
+  <li>Denial, minimization, attempt to “normalize” their experience</li>
+  <li>Physical manifestations of distress: shaking, nausea, loss of appetite, etc.</li>
+</ul>
+
+<p>Survivors also may experience flashbacks, nightmares, frightening thoughts, sleep disturbances, emotional numbness, and/or irritability.</p>
+
+          </div>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#38" class="answers-list__link ">Explore other resources for helping a friend or myself</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="46" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Listen and Believe</h2>
+        
+          <div class="question__content markdown">
+            <p>Active listening is an important skill when helping a friend or partner who is a survivor of sexual violence. Think about a time when you needed support, and recall someone who listened to you in a way that made you feel “heard.” How did they do that?</p>
+
+<h3 id="do">Do</h3>
+
+<ul>
+  <li>Believe, no matter how strange, upsetting, or unlikely the events may seem</li>
+  <li>Accept and honor her emotions, without judgment.</li>
+  <li>Be honest. You may not “understand,” but you can empathize and care.</li>
+  <li>Reflect. The only way to ensure that you understand is to ask. Try something like: “it seems like you are feeling…” and “Do you mean…?”</li>
+  <li>Allow them to define their experience on their own terms. Imposing labels or definitions takes away their right to make sense of their experience for themselves.</li>
+  <li>Affirm the things he is doing right, such as reaching out to you. For example, you could say, “anything you’ve done so far is the right thing, because you are here, and you are talking to me.”</li>
+  <li>Meet her wherever she is in her process of healing, understanding, willingness to talk, or asking for help. Her needs will shift over time; remain flexible and present.</li>
+  <li>Thank them for trusting you and respect their privacy by keeping the information confidential. If your friend has shared their experience with others, ask permission before having conversations about your friend with others.</li>
+</ul>
+
+<h3 id="avoid">Avoid</h3>
+
+<ul>
+  <li>Suggesting how he should feel—for example, indicating that he should feel more outraged or that he should calm down.</li>
+  <li>Advice that begins with “don’t.”</li>
+  <li>Trying to “fix” or “rescue” her. Instead, support her in charting her own path.</li>
+  <li>“Investigating” or probing for more information than your friend is willing or able to share. Avoid “why?” questions, as they can imply blame.</li>
+</ul>
+
+          </div>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#38" class="answers-list__link ">Explore other resources for helping a friend or myself</a>
+              
+            </li>
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">Explore other options and return to the main menu</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
+    <article id="47" class="discovery__item" tabindex="-1">
+      <div class="question">
+        <h2 class="pagetitle">Taking Care of Yourself</h2>
+        
+          <div class="question__content markdown">
+            <p>It is extremely difficult to watch someone you care about deal with sexual violence, abuse, or stalking, and it is likely to take an emotional and mental toll on you. These feelings are normal, but they can be difficult to navigate while you also are trying to be a supportive friend or partner.</p>
+
+<h3 id="things-you-may-feel">Things you may feel:</h3>
+
+<ul>
+  <li>Shock and disbelief</li>
+  <li>Rage and helplessness</li>
+  <li>Fear for the survivor’s safety or health</li>
+  <li>Preoccupation with the event and its aftermath</li>
+  <li>Loss of security and trust</li>
+  <li>Confusion about the survivor’s responses and needs</li>
+  <li>Guilt or responsibility for your friend’s experience</li>
+  <li>Anger at your friend, at the assailant, or at others around you</li>
+</ul>
+
+<p>It is just as important to care for yourself in times of stress as it is to care for others and to seek support from someone you trust. It is also important to acknowledge your own limits. While you may care deeply for your friend and may be compelled by their trust in you, you are not a trained counselor. We all want to extend ourselves beyond our normal limits when someone is in crisis, but when doing so begins to compromise your own ability to function or leads you into situations for which you are not trained, no one is well served. In these situations, it is best to be honest with yourself and your friend.</p>
+
+          </div>
+        
+      </div>
+
+      
+
+      <nav>
+        <ul class="answers-list">
+          
+            <li class="answers-list__item">
+              
+                <a href="#3" class="answers-list__link ">We hope you will consider exploring resources for yourself</a>
+              
+            </li>
+          
+        </ul>
+      </nav>
+    </article>
+  
   </div>
 </section>
+
+      </div>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__logo">
+      <img
+        src="/comm/middsafe-online-advocate/img/midd-shield.png"
+        srcset="/comm/middsafe-online-advocate/img/midd-shield.png 1x, /comm/middsafe-online-advocate/img/midd-shield@2x.png 2x"
+        alt="Middlebury shield">
+    </div>
+  </div>
+</footer>
+
+    <div class="modal" id="resources-modal" tabindex="-1" role="dialog" aria-labelledby="resources-page-title" aria-hidden="true">
+  <div class="modal__main">
+    <div class="modal__controls">
+      <div class="container">
+        <a href="#" role="button" class="modal__button" aria-label="Close modal" data-modal-close-button>
+          <span aria-hidden="true">
+            <span class="modal__button-icon">&times;</span>
+            <span class="modal__button-text">Close</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="modal__container">
+      <div class="container">
+        <div class="modal__content">
+          <h2 class="pagetitle" id="resources-page-title">Resources</h2>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">MiddSafe Confidential Advocates</h3>
+  <p class="resource__description">Confidential support, information, resource referrals and advocacy 24/7 student-run hotline when classes are in session</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/middsafe" class="resource__link">go/middsafe</a></p>
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 377-0239">(802) 377-0239</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Department of Public Safety</h3>
+  <p class="resource__description">Emergency response, safety planning, accommodations, No Contact Order, recording reports, campus and community-based transportation</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/dps" class="resource__link">go/dps</a></p>
+  
+
+  
+    <div class="resource__address"><p>125 South Main Street</p>
+</div>
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5911">(802) 443-5911</a>
+          (emergency)
+        </li>
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5133">(802) 443-5133</a>
+          (non-emergency)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Commons Dean</h3>
+  <p class="resource__description">Dean's excuses, room changes, holistic institutional support</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/commons" class="resource__link">go/commons</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Emily Van Mistri</h2>
+  <p class="person__title"><em>Dean of Ross Commons</em></p>
+
+  
+    <div class="person__address"><p>003 RCD</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:evanmistri@middlebury.edu">evanmistri@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Scott Barnicle</h2>
+  <p class="person__title"><em>Dean of Atwater Commons</em></p>
+
+  
+    <div class="person__address"><p>Allen Hall 1534A</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:sbarnicl@middelbury.edu">sbarnicl@middelbury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">AJ Place</h2>
+  <p class="person__title"><em>Dean of Brainerd Commons</em></p>
+
+  
+    <div class="person__address"><p>Stewart Hall 216</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:ajplace@middlebury.edu">ajplace@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Ian Sutherland</h2>
+  <p class="person__title"><em>Dean of Cook Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell North 150</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:isutherland@middlebury.edu">isutherland@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Matt Longman</h2>
+  <p class="person__title"><em>Dean of Wonnacott Commons</em></p>
+
+  
+    <div class="person__address"><p>Battell South 122</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:longman@middlebury.edu">longman@middlebury.edu</a></p>
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Middlebury Police Department</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+    <div class="resource__address"><p>1 Lucius Shaw Ln<br />
+Middlebury, VT 05753</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-3191">(802) 388-3191</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Vermont State Police</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+    <div class="resource__address"><p>2490 Ethan Allen Hwy<br />
+New Haven, VT 05472</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-4919">(802) 388-4919</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">WomenSafe</h3>
+  <p class="resource__description">Confidential 24 hour support, information, referrals and advocacy for community  member of all genders and sexual orientations</p>
+
+  
+    <p class="resource__url"><a href="http://www.womensafe.net/home/" class="resource__link">www.womensafe.net</a></p>
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-4205">(802) 388-4205</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Counseling Services of Addison County (CSAC)</h3>
+  <p class="resource__description">24/7 support for all community members</p>
+
+  
+
+  
+    <div class="resource__address"><p>89 Main Street<br />
+Middlebury, VT 05753</p>
+</div>
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 388-7641">(802) 388-7641</a>
+          (emergency)
+        </li>
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 388-7641">(802) 388-7641</a>
+          (non-emergency)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Counseling Services at Parton Center for Health and Wellness</h3>
+  <p class="resource__description"></p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/parton" class="resource__link">go/parton</a></p>
+  
+
+  
+    <div class="resource__address"><p>Centeno House 3rd Floor</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-5141">(802) 443-5141</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">After Hours Counseling</h3>
+  <p class="resource__description">Available whenever the Parton counseling office is closed (evenings and   weekends)</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/parton" class="resource__link">go/parton</a></p>
+  
+
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          
+          <a href="tel:(802) 443-5141">(802) 443-5141</a>
+          (press 1 to be connected to a counselor if it is after hours)
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">SafeSpace</h3>
+  <p class="resource__description">Confidential information, support, referrals and advocacy for LGBTQ survivors.</p>
+
+  
+    <p class="resource__url"><a href="http://www.safespaceonline.org" class="resource__link">www.safespaceonline.org</a></p>
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 863-0003">(802) 863-0003</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Barbara McCall</h3>
+  <p class="resource__description">Director of Health and Wellness Education</p>
+
+  
+
+  
+    <div class="resource__address"><p>Service Building 225</p>
+</div>
+  
+
+  
+    <p class="resource__email">
+      <a href="mailto:bmccall@middlebury.edu" class="resource__link">bmccall@middlebury.edu</a>
+    </p>
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-5361">(802) 443-5361</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Judicial Affairs Officers</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Karen Guttentag</h2>
+  <p class="person__title"><em></em></p>
+
+  
+    <div class="person__address"><p>Service Building 219</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:kguttent@middlebury.edu">kguttent@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-2024">(802) 443-2024</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Brian Lind</h2>
+  <p class="person__title"><em>Assoc. Dean of Judicial Affairs and Student Life</em></p>
+
+  
+    <div class="person__address"><p>Service Building 217</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:blind@middlebury.edu">blind@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-5385">(802) 443-5385</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Human Relations Officers</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Earl Fletcher</h2>
+  <p class="person__title"><em></em></p>
+
+  
+    <div class="person__address"><p>Service Building 216</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:efletcher@middlebury.edu">efletcher@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-3426">(802) 443-3426</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Steven Collieer</h2>
+  <p class="person__title"><em></em></p>
+
+  
+    <div class="person__address"><p>Service Building 215</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:scollieer@middlebury.edu">scollieer@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-3474">(802) 443-3474</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Susan Ritter</h3>
+  <p class="resource__description">Title IX Coordinator and Compliance Officer</p>
+
+  
+
+  
+
+  
+    <p class="resource__email">
+      <a href="mailto:sritter@middlebury.edu" class="resource__link">sritter@middlebury.edu</a>
+    </p>
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-3289">(802) 443-3289</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">College Chaplains</h3>
+  <p class="resource__description">For individuals of all faiths and beliefs.</p>
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-5626">(802) 443-5626</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Nalia Boloch</h2>
+  <p class="person__title"><em>Associate Chaplain and Muslim Advisor</em></p>
+
+  
+    <div class="person__address"><p>Scott Center for Spiritual and Religious Life<br />
+135 South Main Street</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:nbaloch@middlebury.edu">nbaloch@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-5986">(802) 443-5986</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Laurie Jordan</h2>
+  <p class="person__title"><em>Chaplain of the College</em></p>
+
+  
+    <div class="person__address"><p>Scott Center for Spiritual and Religious Life 203<br />
+135 South Main Street</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:ljordan@middlebury.edu">ljordan@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-5626">(802) 443-5626</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Ira Schiffer</h2>
+  <p class="person__title"><em>Associate Chaplain Rabbi</em></p>
+
+  
+    <div class="person__address"><p>Scott Center for Spiritual and Religious Life<br />
+135 South Main Street</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:ischiffer@middlebury.edu">ischiffer@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-5762">(802) 443-5762</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Beau Scurich</h2>
+  <p class="person__title"><em>Associate Chaplain and Muslim Advisor</em></p>
+
+  
+    <div class="person__address"><p>Scott Center for Spiritual and Religious Life<br />
+135 South Main Street</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:bscurich@middlebury.edu">bscurich@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-5983">(802) 443-5983</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Mark Orten</h2>
+  <p class="person__title"><em>Dean of Spiritual and Religious Life, Director of Scott Center</em></p>
+
+  
+    <div class="person__address"><p>Scott Center for Spiritual and Religious Life 103<br />
+135 South Main Street</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:orten@middlebury.edu">orten@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-5626">(802) 443-5626</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Local Congregations</h3>
+  <p class="resource__description"></p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/congregations" class="resource__link">go/congregations</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Parton Health Services</h3>
+  <p class="resource__description">SANE exam, STD testing, evidence collection, injury triage.</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/parton" class="resource__link">go/parton</a></p>
+  
+
+  
+    <div class="resource__address"><p>Centeno House 3rd Floor</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-5135">(802) 443-5135</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Porter Medical Center</h3>
+  <p class="resource__description">SANE exam, STD testing, evidence collection, injury triage, hospital resources.</p>
+
+  
+
+  
+    <div class="resource__address"><p>115 Porter Drive<br />
+Middlebury, VT 05753</p>
+</div>
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 388-4701">(802) 388-4701</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Vermont Victims Compensation Program</h3>
+  <p class="resource__description"></p>
+
+  
+    <p class="resource__url"><a href="http://www.ccvs.state.vt.us/compensation" class="resource__link">www.ccvs.state.vt.us/compensation</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Sandy Robinson</h2>
+  <p class="person__title"><em>Managing Nurse Practitioner</em></p>
+
+  
+    <div class="person__address"><p>Centeno House</p>
+</div>
+  
+
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-5135">(802) 443-5135</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Student Financial Services</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+    <div class="resource__address"><p>Service Building</p>
+</div>
+  
+
+  
+    <p class="resource__email">
+      <a href="mailto:sfs@middlebury.edu" class="resource__link">sfs@middlebury.edu</a>
+    </p>
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(802) 443-5158">(802) 443-5158</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Emergency Medical Fund</h3>
+  <p class="resource__description">Please contact your Dean for more information.</p>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Economic Services</h3>
+  <p class="resource__description">Emergency help to meet basic needs for health insurance, child care, food and fuel assistance</p>
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__tel">
+      <a href="tel:(800) 479-6151">(800) 479-6151</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Residential Life</h3>
+  <p class="resource__description">Your common’s Commons Residential Advisor (CRA), First-Year Counselor (FYC), Resident Assistant (RA), Community Assistant (CA)</p>
+
+  
+    <p class="resource__url"><a href="http://go.middlebury.edu/commons" class="resource__link">go/commons</a></p>
+  
+
+  
+
+  
+
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">Administration Committee</h3>
+  <p class="resource__description">The Administration Committee hears requests from students and faculty for exceptions to academic policies.</p>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <ul class="resource__person-list">
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Karen Guttentag</h2>
+  <p class="person__title"><em></em></p>
+
+  
+    <div class="person__address"><p>Service Building 219</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:kguttent@middlebury.edu">kguttent@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-2024">(802) 443-2024</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+      <li class="resource__person">
+        
+
+<div class="person">
+  <h2 class="person__name">Diane Di Loreto</h2>
+  <p class="person__title"><em>Assistant, Student Life Administrator</em></p>
+
+  
+    <div class="person__address"><p>Service Building 218</p>
+</div>
+  
+
+  
+    <p class="person__email"><a href="mailto:dmdiloreto@middlebury.edu">dmdiloreto@middlebury.edu</a></p>
+  
+
+  
+    <p class="person__tel">
+      <a href="tel:(802) 443-3233">(802) 443-3233</a>
+    </p>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
+  
+
+</div>
+
+      </li>
+    
+  </ul>
+  
+</article>
+
+
+  
+  
+
+  
+
+<article class="resource">
+  <h3 class="resource__title">National Suicide Hotlines</h3>
+  <p class="resource__description"></p>
+
+  
+
+  
+
+  
+
+  
+    <ul class="resource__tel-list">
+      
+        <li class="resource__tel">
+          Suicide Prevention Lifeline: 
+          <a href="tel:(800) 273-8255">(800) 273-8255</a>
+          
+        </li>
+      
+        <li class="resource__tel">
+          National Hopeline: 
+          <a href="tel:(800) 442-4673">(800) 442-4673</a>
+          
+        </li>
+      
+        <li class="resource__tel">
+          GLBT National Health Center: 
+          <a href="tel:(888) 843-4564">(888) 843-4564</a>
+          
+        </li>
+      
+    </ul>
+  
+
+  
+    <p class="resource__confidentiality"><strong>Confidential</strong></p>
+  
+
+  
+
+  
+</article>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="about-page-title" aria-hidden="true">
+  <div class="modal__main">
+    <div class="modal__controls">
+      <div class="container">
+        <a href="#" role="button" class="modal__button" aria-label="Close modal" data-modal-close-button>
+          <span aria-hidden="true">
+            <span class="modal__button-icon">&times;</span>
+            <span class="modal__button-text">Close</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="modal__container">
+      <div class="container">
+        <div class="modal__content">
+          <h2 class="pagetitle" id="about-page-title">About</h2>
+
+<div class="markdown"><p>Welcome to the MiddSafe Online Advocate. This is a tool for peers in need of support and information around sexual assault, stalking, dating violence, domestic violence, and other personal violations. When you’re ready to get started, you will be asked a series of questions in order to find resources that might feel right to you.</p>
+
+<p>The MiddSafe Online Advocate is an extension of MiddSafe Confidential Advocates. MiddSafe Advocates are Middlebury College students available to provide support surrounding sexual violence and other personal violations through our 24/7 hotline at 802-377-0239 or in person.</p>
+
+<p>If you have any questions about the MiddSafe Online Advocate or MiddSafe Confidential Advocates, please refer to the FAQs below or contact an advocate at 802-377-0239.</p>
+</div>
+
+<h2 class="pagetitle">FAQs</h2>
+
+
+  <h3>What is MiddSafe and who are MiddSafe Confidential Advocates?</h3>
+  <div class="markdown"><p>MiddSafe Advocates are Middlebury College students committed to providing confidential resources to peers in need of support and information around sexual assault, stalking, dating violence, domestic violence, and other personal violations.</p>
+</div>
+
+  <h3>What is confidentiality and what are its limits?</h3>
+  <div class="markdown"><p>Confidentiality is a legal status designated to individuals who will never discuss contacts or contents of conversations held in privilege with anyone except with other confidential resources with whom communication is necessary. Individuals acting in a confidential role take all precautions to ensure that the time, location, and volume of conversations limit the possibility of being overheard while maximizing the safety of the contact and resource.</p>
+
+<p>Limits of confidentiality exist when there is a clear and substantial risk of physical danger to self, others, or the community. Such situations are high-risk and/or life-threatening when a person or others are endangered by themselves or someone else (e.g. threats of suicide, threats from others). When substantial risk is present, confidential individuals are required to report to the appropriate professional staff for immediate assistance in order to prioritize individual and community safety. Confidentiality may also be broken if there is a requirement by law (e.g. child abuse or a subpoena) or when confidentiality is waived by the victim/survivor.</p>
+</div>
+
+  <h3>What if I’m not sure what I experienced is considered sexual assault, dating violence, stalking, or is even a big deal?</h3>
+  <div class="markdown"><p>MiddSafe Confidential Advocate services are available for anyone who feels they need assistance, support, and advocacy, whether or not the experience qualifies as a “sexual assault” or “personal violation” as defined by themselves, the College, or the state.</p>
+</div>
+
+  <h3>What if I don’t find answers to my questions through the MiddSafe Online Advocate?</h3>
+  <div class="markdown"><p>We hope that you will consider contacting a MiddSafe Confidential Advocate in person or through our 24/7 hotline while classes are in session at 802-377-0239. We are here to listen and help you find resources that feel right to you. You may also refer to the “Resources” tab on the top of each page for a list of contacts that can provide support.</p>
+</div>
+
+  <h3>Is the MiddSafe Online Advocate anonymous?</h3>
+  <div class="markdown"><p>Middlebury takes user privacy seriously and does not collect personally identifiable information about you when you use our websites unless you enter contact information, such as name, email, address or telephone numbers, when requesting a specific action from Middlebury (such as being added to a mailing list or requesting correspondence). When you enter personally identifiable information into our websites, we only use that information for the intended purpose and do not otherwise distribute or use your identifying data.</p>
+
+<p>We also use Google Analytics to collect and analyze website use. Google Analytics collects data using cookies and the information they collect is also anonymous, although it may contain location and/or demographic information.</p>
+
+<p>For more information, please view our <a href="http://www.middlebury.edu/about/privacy">Privacy Policy</a>.</p>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="/comm/middsafe-online-advocate/js/bundle.js?1490367718504424000"></script>
+    
+  </body>
+</html>

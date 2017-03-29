@@ -31,7 +31,7 @@ commonsdean:
       title: Dean of Ross Commons
       address: 003 RCD
       email: evanmistri@middlebury.edu
-      note: Please call Ross Commons Coordinator, Tania Cantin, for an appointment at(802) 443-3340
+      note: Please call Ross Commons Coordinator, Tania Cantin, for an appointment at (802) 443-3340
       confidential: false
 
     - name: Scott Barnicle
@@ -45,7 +45,7 @@ commonsdean:
       title: Dean of Brainerd Commons
       address: Stewart Hall 216
       email: ajplace@middlebury.edu
-      note: Please call Brainerd Commons Coordinator, Diane Burnham, for an appointment at (802) 443-332
+      note: Please call Brainerd Commons Coordinator, Diane Burnham, for an appointment at (802) 443-3320
       confidential: false
 
     - name: Ian Sutherland
@@ -61,6 +61,15 @@ commonsdean:
       email: longman@middlebury.edu
       note: Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment at (802) 443-3350
       confidential: false
+
+barbara_mccall:
+  name: Barbara McCall
+  title: Director of Health and Wellness Education
+  address: |
+    Service Building 225  
+  email: bmccall@middlebury.edu
+  number: (802) 443-5361
+  confidential: false
 
 middpd:
   title: Middlebury Police Department
@@ -95,7 +104,7 @@ csac:
   numbers: 
     - number: (802) 388-7641
       label: (emergency)
-    - number: (802) 388-7641
+    - number: (802) 388-6751
       label: (non-emergency)
   confidential: true
 
@@ -117,37 +126,20 @@ ahc:
       label: (press 1 to be connected to a counselor if it is after hours)
   confidential: true
 
-safespace:
-  title: SafeSpace
-  description: Confidential information, support, referrals and advocacy for LGBTQ survivors.
-  link_text: www.safespaceonline.org
-  link_href: http://www.safespaceonline.org
-  number: (802) 863-0003
-  confidential: true
-
-barbara_mccall:
-  title: Barbara McCall
-  description: Director of Health and Wellness Education
-  address: |
-    Service Building 225  
-  email: bmccall@middlebury.edu
-  number: (802) 443-5361
-  confidential: false
-
 judicial_affairs:
   title: Judicial Affairs Officers
   people:
     - name: Karen Guttentag
-      description: Associate Dean for Judicial Affairs and Student Life
+      title: Associate Dean for Judicial Affairs and Student Life
       address: |
         Service Building 219  
       email: kguttent@middlebury.edu
       number: (802) 443-2024
       confidential: false
     - name: Brian Lind
+      title: Assoc. Dean of Judicial Affairs and Student Life
       address: |
         Service Building 217  
-      title: Assoc. Dean of Judicial Affairs and Student Life
       email: blind@middlebury.edu
       number: (802) 443-5385
       confidential: false
@@ -162,7 +154,7 @@ hr_officers:
       email: efletcher@middlebury.edu
       number: (802) 443-3426
       confidential: false
-    - name: Steven Collieer
+    - name: Steven Collier
       description: Human Relations Officer
       address: |
         Service Building 215  
@@ -180,7 +172,6 @@ title_IX:
 college_chaplains:
   title: College Chaplains
   description: For individuals of all faiths and beliefs.
-  number: (802) 443-5626
   confidential: true
   people:
     - name: Nalia Boloch
@@ -253,8 +244,9 @@ vvcp:
   link_text: www.ccvs.state.vt.us/compensation
   link_href: http://www.ccvs.state.vt.us/compensation
   people:
-    - name: Sandy Robinson # This used to say "Campus contact is..." Is this fine to do?
+    - name: Sandy Robinson 
       title: Managing Nurse Practitioner
+      description: contact Sandy Robinson via Parton Health Services to learn more about the Vermont Victims Compensation Program
       address: Centeno House
       number: (802) 443-5135
       confidential: true
@@ -272,7 +264,7 @@ emf:
   description: Please contact your Dean for more information.
 
 economic_services:
-  title: Economic Services
+  title: Vermont Economic Services Division
   description: Emergency help to meet basic needs for health insurance, child care, food and fuel assistance
   number: (800) 479-6151
   confidential: false
@@ -290,7 +282,7 @@ admin_committee:
   # people_title: Human Resource Officers
   people:
     - name: Karen Guttentag
-      description: Associate Dean for Judicial Affairs and Student Life
+      title: Associate Dean for Judicial Affairs and Student Life
       address: |
         Service Building 219  
       email: kguttent@middlebury.edu
@@ -303,6 +295,16 @@ admin_committee:
       number: (802) 443-3233
       confidential: false
 
+rainn:
+  title: Rape, Abuse and Incest National Network 
+  description: A nationwide partnership of more than 1,100 local rape treatment hotlines	provides survivors with free, confidential services around the clock. RAINN can transfer callers to local hotlines and shelters closest to their current location.	There is also a chat function available on their website.
+  numbers:
+  - header: Suicide Prevention Lifeline
+    number: (800) 656-4673
+  link_text: www.rainn.org
+  link_href: https://www.rainn.org/index.php
+  confidential: true
+
 nsh:
   title: National Suicide Hotlines
   numbers:
@@ -310,6 +312,12 @@ nsh:
       number: (800) 273-8255
     - header: National Hopeline
       number: (800) 442-4673
-    - header: GLBT National Health Center
-      number: (888) 843-4564
+  confidential: true
+
+safespace:
+  title: SafeSpace
+  description: Confidential information, support, referrals and advocacy for LGBTQ survivors.
+  link_text: www.safespaceonline.org
+  link_href: http://www.safespaceonline.org
+  number: (802) 863-0003
   confidential: true

@@ -21,17 +21,22 @@ layout: default
         {% assign item = site.data.resources[id] %}
         {% include resource.html resource=item %}
 
-        {% if forloop.index == forloop.length %}
+      {% endfor %}
 
-          {% if forloop.length == 1 %}
-            <h3 class="answers-list-heading">If this resource isn't working for you, would you like to:</h3>
-          {% else %}
-            <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
-          {% endif %}
-
+      {% comment %}check if this is the last resource{% endcomment %}
+      {% if question.answers_heading == '' %}
+        {% comment %}if there is only one resource, use the singular heading{% endcomment %}
+        {% if question.resources.size == 1 %}
+          <h3 class="answers-list-heading">If this resource isn't working for you, would you like to:</h3>
+        {% elsif question.resources.size > 1 %}
+          <h3 class="answers-list-heading">If these resources aren't working for you, would you like to:</h3>
         {% endif %}
 
-      {% endfor %}
+      {% elsif question.answers_heading != '' and question.answers.size > 0 %}
+
+        <h3 class="answers-list-heading">{{question.answers_heading}}</h3>
+
+      {% endif %}
 
       <nav>
         <ul class="answers-list">

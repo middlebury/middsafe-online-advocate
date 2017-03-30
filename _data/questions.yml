@@ -60,6 +60,7 @@
     - vtsp
     - womensafe
     - csac
+  answers_heading: "If these resources aren’t working for you, would you like to:"
   answers:
   - title: Explore safety planning resources on campus
     id: 5
@@ -125,7 +126,7 @@
   id: 12
   resources:
     - middsafe
-  answers_heading: "If these resources aren’t working for you, would you like to:"
+  answers_heading: "If this resource isn't working for you, would you like to:"
   answers:
   - title: Explore advocacy resources off campus
     id: 13
@@ -463,7 +464,6 @@
   content: |
     If you can, also get in touch with your friend’s or your own Commons dean (see below for contact information). In cases where your friend has a plan to commit suicide, in addition to contacting Public Safety (802-443-5911), you may also contact the 24-hour hotline at Counseling Services of Addison County (802-388-7641) and Counseling at Parton Center for Health and Wellness (802-443-5141, and press 1 to be connected to a counselor if it is after hours). If you are conflicted about whether or not the situation counts as an emergency, err on the side of caution and reach out for professional help.
   id: 40
-  answers_heading: "Below is the information for the Commons deans:"
   resources:
     - commonsdean
 
@@ -471,7 +471,6 @@
   content: |
     If you are conflicted about whether or not the situation counts as an emergency, err on the side of caution and reach out for professional help. **In any unsafe situations, call Public Safety (802-443-5911) or the Police (911) immediately.** If you can, also get in touch with your friend’s or your own Commons dean (see below for contact information). In cases where your friend has a plan to commit suicide, in addition to contacting Public Safety (802-443-5911), you may also contact the 24-hour hotline at Counseling Services of Addison County (802-388-7641) and Counseling at Parton Center for Health and Wellness (802-443-5141, and press 1 to be connected to a counselor if it is after hours).
   id: 41
-  answers_heading: "Below is the information for the Commons deans:"
   resources:
     - commonsdean
  

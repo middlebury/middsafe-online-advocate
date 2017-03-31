@@ -31,35 +31,45 @@ commonsdean:
       title: Dean of Ross Commons
       address: 003 RCD
       email: evanmistri@middlebury.edu
-      note: Please call Ross Commons Coordinator, Tania Cantin, for an appointment at (802) 443-3340
+      numbers:
+      - header: Please call Ross Commons Coordinator, Tania Cantin, for an appointment at
+        number: (802) 443-3340
       confidential: false
 
     - name: Scott Barnicle
       title: Dean of Atwater Commons
       address: Allen Hall 1534A
       email: sbarnicl@middelbury.edu
-      note: Please call Atwater Commons Coordinator, Debbie Cousino, for an appointment at (802) 443-3310
+      numbers:
+      - header: Please call Atwater Commons Coordinator, Debbie Cousino, for an appointment at 
+        number: (802) 443-3310
       confidential: false
 
     - name: AJ Place
       title: Dean of Brainerd Commons
       address: Stewart Hall 216
       email: ajplace@middlebury.edu
-      note: Please call Brainerd Commons Coordinator, Diane Burnham, for an appointment at (802) 443-3320
+      numbers:
+      - header: Please call Brainerd Commons Coordinator, Diane Burnham, for an appointment at
+        number: (802) 443-3320
       confidential: false
 
     - name: Ian Sutherland
       title: Dean of Cook Commons
       address: Battell North 150
       email: isutherland@middlebury.edu
-      note: Please call Cook Commons Coordinator, Linda Schiffer, for an appointment at (802) 443-3330
+      numbers:
+      - header: Please call Cook Commons Coordinator, Linda Schiffer, for an appointment at 
+        number: (802) 443-3330
       confidential: false
 
     - name: Matt Longman
       title: Dean of Wonnacott Commons
       address: Battell South 122
       email: longman@middlebury.edu
-      note: Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment at (802) 443-3350
+      numbers:
+      - header: Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment at 
+        number: (802) 443-3350
       confidential: false
 
 barbara_mccall:

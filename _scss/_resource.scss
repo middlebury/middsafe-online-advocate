@@ -2,7 +2,10 @@
   position: relative;
   padding-top: 10px;
   margin-bottom: 60px;
-  max-width: 600px;
+
+  @include media(md) {
+    max-width: 500px;
+  }
 
   &:before {
     content: '';

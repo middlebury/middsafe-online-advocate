@@ -73,8 +73,8 @@ commonsdean:
       confidential: false
 
 barbara_mccall:
-  name: Barbara McCall
-  title: Director of Health and Wellness Education
+  title: Barbara McCall
+  description: Director of Health and Wellness Education
   address: |
     Service Building 225  
   email: bmccall@middlebury.edu

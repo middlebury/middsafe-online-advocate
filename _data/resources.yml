@@ -157,18 +157,18 @@ judicial_affairs:
 hr_officers:
   title: Human Relations Officers 
   people:
-    - name: Earl Fletcher
+    - name: Earl Fetcher
       description: Human Relations Officer
       address: |
         Service Building 216  
-      email: efletcher@middlebury.edu
+      email: efetcher@middlebury.edu
       number: (802) 443-3426
       confidential: false
     - name: Steven Collier
       description: Human Relations Officer
       address: |
         Service Building 215  
-      email: scollieer@middlebury.edu
+      email: scollier@middlebury.edu
       number: (802) 443-3474
       confidential: false
 

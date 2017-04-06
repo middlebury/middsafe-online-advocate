@@ -45,6 +45,7 @@
   resources:
     - dps
     - middsafe
+    - womensafe
     - commonsdean
   answers_heading: "If these resources aren’t working for you, would you like to:"
   answers:
@@ -126,6 +127,7 @@
   id: 12
   resources:
     - middsafe
+    - womensafe
   answers_heading: "If this resource isn't working for you, would you like to:"
   answers:
   - title: Explore advocacy resources off campus
@@ -342,6 +344,7 @@
     - cspchw
     - ahc
     - middsafe
+    - womensafe
     - commonsdean
     - dps
   answers_heading: "If these resources aren’t working for you, would you like to:"
@@ -386,6 +389,7 @@
     - cspchw
     - ahc
     - middsafe
+    - womensafe
     - commonsdean
     - dps
   answers_heading: "If these resources aren’t working for you, would you like to:"
@@ -497,6 +501,7 @@
     - cspchw
     - ahc
     - middsafe
+    - womensafe
     - commonsdean
     - residential_life
   answers_heading: "If these resources aren’t working for you, would you like to:"

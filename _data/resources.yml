@@ -6,6 +6,14 @@ middsafe:
   number: (802) 377-0239
   confidential: true
 
+womensafe:
+  title: WomenSafe
+  description: Confidential 24 hour support, information, referrals and advocacy for community member of all genders and sexual orientations
+  link_text: www.womensafe.net
+  link_href: http://www.womensafe.net/home/
+  number: (802) 388-4205
+  confidential: true
+
 dps:
   title: Department of Public Safety
   description: Emergency response, safety planning, accommodations, No Contact Order, recording reports, campus and community-based transportation
@@ -96,14 +104,6 @@ vtsp:
     New Haven, VT 05472
   number: (802) 388-4919
   confidential: false
-
-womensafe:
-  title: WomenSafe
-  description: Confidential 24 hour support, information, referrals and advocacy for community member of all genders and sexual orientations
-  link_text: www.womensafe.net
-  link_href: http://www.womensafe.net/home/
-  number: (802) 388-4205
-  confidential: true
 
 csac:
   title: Counseling Services of Addison County (CSAC)

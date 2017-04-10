@@ -35,15 +35,6 @@ commonsdean:
   link_href: http://go.middlebury.edu/commons
   confidential: false
   people:
-    - name: Emily Van Mistri
-      title: Dean of Ross Commons
-      address: 003 RCD
-      email: evanmistri@middlebury.edu
-      numbers:
-      - header: Please call Ross Commons Coordinator, Taunia Cantin, for an appointment at
-        number: (802) 443-3340
-      confidential: false
-
     - name: Scott Barnicle
       title: Dean of Atwater Commons
       address: Allen Hall 1534A
@@ -51,6 +42,24 @@ commonsdean:
       numbers:
       - header: Please call Atwater Commons Coordinator, Debbie Cousino, for an appointment at 
         number: (802) 443-3310
+      confidential: false
+
+    - name: Matt Longman
+      title: Dean of Wonnacott Commons
+      address: Battell South 122
+      email: longman@middlebury.edu
+      numbers:
+      - header: Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment at 
+        number: (802) 443-3350
+      confidential: false
+
+    - name: Emily Van Mistri
+      title: Dean of Ross Commons
+      address: 003 RCD
+      email: evanmistri@middlebury.edu
+      numbers:
+      - header: Please call Ross Commons Coordinator, Taunia Cantin, for an appointment at
+        number: (802) 443-3340
       confidential: false
 
     - name: AJ Place
@@ -69,15 +78,6 @@ commonsdean:
       numbers:
       - header: Please call Cook Commons Coordinator, Linda Schiffer, for an appointment at 
         number: (802) 443-3330
-      confidential: false
-
-    - name: Matt Longman
-      title: Dean of Wonnacott Commons
-      address: Battell South 122
-      email: longman@middlebury.edu
-      numbers:
-      - header: Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment at 
-        number: (802) 443-3350
       confidential: false
 
 barbara_mccall:

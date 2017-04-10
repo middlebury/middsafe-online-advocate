@@ -233,6 +233,8 @@ local_congregations:
 phs:
   title: Parton Health Services
   description: SANE exam, STD testing, evidence collection, injury triage.
+  note: |
+    For more information about SANE exams, please visit: [www.middlebury.edu/student-life/health-wellness-education-and-safety](http://www.middlebury.edu/student-life/health-wellness-education-and-safety)
   address: |
     Centeno House 3rd Floor
   link_text: go/parton

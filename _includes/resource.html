@@ -40,6 +40,10 @@
     <p class="resource__confidentiality"><strong>Not Confidential</strong></p>
   {% endif %}
 
+  {% if props.note %}
+    <div class="resource__note">{{props.note | markdownify }}</div>
+  {% endif %}
+
   {% if props.people_title %}
     <h4 class="resource__people-title">{{props.people_title}}</h4>
   {% endif %}

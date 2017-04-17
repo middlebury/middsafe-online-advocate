@@ -1,6 +1,6 @@
 middsafe:
   title: MiddSafe Confidential Advocates
-  description: Free and confidential support, information, referrals, and advocacy from trained Middlebury students. A 24-hour student-run hotline is available when undergraduate classes are in session on the Middlebury, VT campus.
+  description: Free and confidential support, information, referrals, and advocacy from trained Middlebury students. A 24-hour student-run hotline is available when undergraduate classes are in session on the Middlebury, Vermont, campus.
   link_text: go/middsafe
   link_href: http://go.middlebury.edu/middsafe
   number: (802) 377-0239
@@ -8,7 +8,7 @@ middsafe:
 
 womensafe:
   title: WomenSafe
-  description: Confidential 24 hour support, information, referrals and advocacy for community member of all genders and sexual orientations
+  description: Confidential 24-hour support, information, referrals, and advocacy for community member of all genders and sexual orientations
   link_text: www.womensafe.net
   link_href: http://www.womensafe.net/home/
   number: (802) 388-4205
@@ -16,7 +16,7 @@ womensafe:
 
 dps:
   title: Department of Public Safety
-  description: Emergency response, safety planning, accommodations, No Contact Order, recording reports, campus and community-based transportation
+  description: Emergency response, safety planning, accommodations, No Contact Orders, recording reports, campus and community-based transportation
   link_text: go/dps
   link_href: http://go.middlebury.edu/dps
   address: |
@@ -58,7 +58,7 @@ commonsdean:
       address: 003 RCD
       email: evanmistri@middlebury.edu
       numbers:
-      - header: Please call Ross Commons Coordinator, Taunia Cantin, for an appointment at
+      - header: Please call Ross Commons Coordinator Taunia Cantin for an appointment at
         number: (802) 443-3340
       confidential: false
 
@@ -67,7 +67,7 @@ commonsdean:
       address: Stewart Hall 216
       email: ajplace@middlebury.edu
       numbers:
-      - header: Please call Brainerd Commons Coordinator, Diane Burnham, for an appointment at
+      - header: Please call Brainerd Commons Coordinator Diane Burnham for an appointment at
         number: (802) 443-3320
       confidential: false
 
@@ -76,7 +76,7 @@ commonsdean:
       address: Battell North 150
       email: isutherland@middlebury.edu
       numbers:
-      - header: Please call Cook Commons Coordinator, Linda Schiffer, for an appointment at 
+      - header: Please call Cook Commons Coordinator Linda Schiffer for an appointment at 
         number: (802) 443-3330
       confidential: false
 
@@ -127,8 +127,8 @@ cspchw:
   confidential: true
 
 ahc:
-  title: After Hours Counseling
-  description: Available whenever the Parton counseling office is closed (evenings and   weekends)
+  title: After-Hours Counseling
+  description: Available whenever the Parton counseling office is closed (evenings and weekends)
   link_text: go/parton
   link_href: http://go.middlebury.edu/parton
   numbers: 
@@ -181,7 +181,7 @@ title_IX:
 
 college_chaplains:
   title: College Chaplains
-  description: For individuals of all faiths and beliefs.
+  description: For individuals of all faiths and beliefs
   confidential: true
   people:
     - name: Nalia Boloch
@@ -232,9 +232,9 @@ local_congregations:
 
 phs:
   title: Parton Health Services
-  description: SANE exam, STD testing, evidence collection, injury triage.
   note: |
     For more information about SANE exams, please visit: [www.middlebury.edu/student-life/health-wellness-education-and-safety](http://www.middlebury.edu/student-life/health-wellness-education-and-safety)
+  description: SANE exam, STD testing, evidence collection, injury triage
   address: |
     Centeno House 3rd Floor
   link_text: go/parton
@@ -244,7 +244,7 @@ phs:
 
 pmc:
   title: Porter Medical Center
-  description: SANE exam, STD testing, evidence collection, injury triage, hospital resources.
+  description: SANE exam, STD testing, evidence collection, injury triage, hospital resources
   address: |
     115 Porter Drive  
     Middlebury, VT 05753
@@ -258,7 +258,7 @@ vvcp:
   people:
     - name: Sandy Robinson 
       title: Managing Nurse Practitioner
-      description: contact Sandy Robinson via Parton Health Services to learn more about the Vermont Victims Compensation Program
+      description: Contact Sandy Robinson via Parton Health Services to learn more about the Vermont Victims Compensation Program
       address: Centeno House
       number: (802) 443-5135
       confidential: true
@@ -273,7 +273,7 @@ sfs:
 
 emf:
   title: Emergency Medical Fund
-  description: Please contact your Dean for more information.
+  description: Please contact your dean for more information.
 
 economic_services:
   title: Vermont Economic Services Division
@@ -283,7 +283,7 @@ economic_services:
 
 residential_life:
   title: Residential Life
-  description: Your common’s Commons Residential Advisor (CRA), First-Year Counselor (FYC), Resident Assistant (RA), Community Assistant (CA)
+  description: Your commons’s Commons Residential Advisor (CRA), First-Year Counselor (FYC), Resident Assistant (RA), Community Assistant (CA)
   link_text: go/commons
   link_href: http://go.middlebury.edu/commons
   confidential: false
@@ -308,8 +308,8 @@ admin_committee:
       confidential: false
 
 rainn:
-  title: Rape, Abuse and Incest National Network 
-  description: A nationwide partnership of more than 1,100 local rape treatment hotlines	provides survivors with free, confidential services around the clock. RAINN can transfer callers to local hotlines and shelters closest to their current location.	There is also a chat function available on their website.
+  title: Rape, Abuse, and Incest National Network 
+  description: A nationwide partnership of more than 1,100 local rape treatment hotlines provides survivors with free, confidential services around the clock. RAINN can transfer callers to local hotlines and shelters closest to their current location. There is also a chat function available on their website.
   numbers:
   - header: Suicide Prevention Lifeline
     number: (800) 656-4673
@@ -328,7 +328,7 @@ nsh:
 
 safespace:
   title: SafeSpace
-  description: Confidential information, support, referrals and advocacy for LGBTQ survivors.
+  description: Confidential information, support, referrals, and advocacy for LGBTQ survivors.
   link_text: www.safespaceonline.org
   link_href: http://www.safespaceonline.org
   number: (802) 863-0003

@@ -40,7 +40,7 @@ commonsdean:
       address: Allen Hall 1534A
       email: sbarnicl@middelbury.edu
       numbers:
-      - header: Please call Atwater Commons Coordinator, Debbie Cousino, for an appointment at 
+      - header: Please call Atwater Commons Coordinator Debbie Cousino for an appointment at 
         number: (802) 443-3310
       confidential: false
 
@@ -49,7 +49,7 @@ commonsdean:
       address: Battell South 122
       email: longman@middlebury.edu
       numbers:
-      - header: Please call Wonnacott Coordinator, MariAnn Osborne, for an appointment at 
+      - header: Please call Wonnacott Coordinator MariAnn Osborne for an appointment at 
         number: (802) 443-3350
       confidential: false
 
@@ -106,7 +106,7 @@ vtsp:
   confidential: false
 
 csac:
-  title: Counseling Services of Addison County (CSAC)
+  title: Counseling Service of Addison County (CSAC)
   description: 24/7 support for all community members
   address: |
     89 Main Street  
@@ -233,7 +233,7 @@ local_congregations:
 phs:
   title: Parton Health Services
   note: |
-    For more information about SANE exams, please visit: [www.middlebury.edu/student-life/health-wellness-education-and-safety](http://www.middlebury.edu/student-life/health-wellness-education-and-safety)
+    For more information about SANE exams, please visit [www.middlebury.edu/student-life/health-wellness-education-and-safety](http://www.middlebury.edu/student-life/health-wellness-education-and-safety)
   description: SANE exam, STD testing, evidence collection, injury triage
   address: |
     Centeno House 3rd Floor

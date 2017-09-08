@@ -184,13 +184,13 @@ college_chaplains:
   description: For individuals of all faiths and beliefs
   confidential: true
   people:
-    - name: Nalia Boloch
-      title: Associate Chaplain and Muslim Advisor
+    - name: Danielle Stillman
+      title: Associate Chaplain/Rabbi
       address: |
         Scott Center for Spiritual and Religious Life  
         135 South Main Street  
-      email: nbaloch@middlebury.edu
-      number: (802) 443-5986
+      email: dastillman@middlebury.edu
+      number: (802) 443-5762
       confidential: true
     - name: Laurie Jordan
       title: Chaplain of the College
@@ -199,22 +199,6 @@ college_chaplains:
         135 South Main Street  
       email: ljordan@middlebury.edu
       number: (802) 443-5626
-      confidential: true
-    - name: Ira Schiffer
-      title: Associate Chaplain Rabbi
-      address: |
-        Scott Center for Spiritual and Religious Life  
-        135 South Main Street  
-      email: ischiffer@middlebury.edu
-      number: (802) 443-5762
-      confidential: true
-    - name: Beau Scurich
-      title: Associate Chaplain and Muslim Advisor
-      address: |
-        Scott Center for Spiritual and Religious Life  
-        135 South Main Street  
-      email: bscurich@middlebury.edu
-      number: (802) 443-5983
       confidential: true
     - name: Mark Orten
       title: Dean of Spiritual and Religious Life, Director of Scott Center

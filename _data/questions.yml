@@ -161,8 +161,10 @@
     - cspchw
     - ahc
     - barbara_mccall
-    - judicial_affairs
-    - title_IX
+    - madeline_hope
+    - emily_wagner
+    # - judicial_affairs
+    - title_ix
     - hr_officers
     - college_chaplains
   answers_heading: "If these resources aren’t working for you, would you like to:"  
@@ -292,8 +294,8 @@
 - question: Do any of these resources feel right to you?
   id: 26
   resources:
-    - judicial_affairs
-    - title_IX
+    # - judicial_affairs
+    - title_ix
     - hr_officers
     - dps
   answers_heading: "If these resources aren’t working for you, would you like to:"  

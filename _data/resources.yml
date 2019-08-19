@@ -40,7 +40,7 @@ commonsdean:
       address: Allen Hall 1534A
       email: sbarnicl@middelbury.edu
       numbers:
-      - header: Please call Atwater Commons Coordinator Debbie Cousino for an appointment at 
+      - header: Please call the Atwater Commons Coordinator office for an appointment at 
         number: (802) 443-3310
       confidential: false
 
@@ -49,7 +49,7 @@ commonsdean:
       address: Battell South 122
       email: longman@middlebury.edu
       numbers:
-      - header: Please call Wonnacott Coordinator MariAnn Osborne for an appointment at 
+      - header: Please call the Wonnacott Commons office for an appointment at 
         number: (802) 443-3350
       confidential: false
 
@@ -58,7 +58,7 @@ commonsdean:
       address: 003 RCD
       email: evanmistri@middlebury.edu
       numbers:
-      - header: Please call Ross Commons Coordinator Taunia Cantin for an appointment at
+      - header: Please call the Ross Commons office for an appointment at
         number: (802) 443-3340
       confidential: false
 
@@ -67,7 +67,7 @@ commonsdean:
       address: Stewart Hall 216
       email: ajplace@middlebury.edu
       numbers:
-      - header: Please call Brainerd Commons Coordinator Diane Burnham for an appointment at
+      - header: Please call the Brainerd Commons office for an appointment at
         number: (802) 443-3320
       confidential: false
 
@@ -76,7 +76,7 @@ commonsdean:
       address: Battell North 150
       email: isutherland@middlebury.edu
       numbers:
-      - header: Please call Cook Commons Coordinator Linda Schiffer for an appointment at 
+      - header: Please call the Cook Commons office for an appointment at 
         number: (802) 443-3330
       confidential: false
 
@@ -84,9 +84,25 @@ barbara_mccall:
   title: Barbara McCall
   description: Director of Health and Wellness Education
   address: |
-    Service Building 225  
+    Service Building 222  
   email: bmccall@middlebury.edu
   number: (802) 443-5361
+  confidential: false
+
+madeline_hope:
+  title: Madeline Hope
+  description: Assistant Director of Health and Wellness Education
+  address: Service Building 225
+  email: mhope@middlebury.edu
+  number: (802) 443-5389
+  confidential: false
+
+emily_wagner:
+  title: Emily Wagner
+  description: Violence Prevention and Advocacy Specialist
+  address: Service Building 226 
+  email: ewagner@middlebury.edu
+  number: (802) 443-2240
   confidential: false
 
 middpd:
@@ -119,16 +135,19 @@ csac:
   confidential: true
 
 cspchw:
-  title: Counseling Services at Parton Center for Health and Wellness
-  link_text: go/parton
-  link_href: http://go.middlebury.edu/parton
+  title: Middlebury College Counseling
+  link_text: go/counseling
+  link_href: http://go.middlebury.edu/counseling
   address: Centeno House 3rd Floor
   number: (802) 443-5141
   confidential: true
 
 ahc:
-  title: After-Hours Counseling
-  description: Available whenever the Parton counseling office is closed (evenings and weekends)
+  title: Counseling Support Line
+  description: |
+    (855) 465-5013 or call Counseling and follow voicemail prompts.
+
+    Available 24/7/365 whenever the Parton counseling office is closed (evenings and weekends)
   link_text: go/parton
   link_href: http://go.middlebury.edu/parton
   numbers: 
@@ -136,23 +155,31 @@ ahc:
       label: (press 1 to be connected to a counselor if it is after hours)
   confidential: true
 
-judicial_affairs:
-  title: Judicial Affairs Officers
-  people:
-    - name: Karen Guttentag
-      title: Associate Dean for Judicial Affairs and Student Life
-      address: |
-        Service Building 219  
-      email: kguttent@middlebury.edu
-      number: (802) 443-2024
-      confidential: false
-    - name: Brian Lind
-      title: Assoc. Dean of Judicial Affairs and Student Life
-      address: |
-        Service Building 217  
-      email: blind@middlebury.edu
-      number: (802) 443-5385
-      confidential: false
+
+title_ix: 
+  title: Title IX Contacts
+  people: 
+  - name: Marti J. McCaleb
+    address: Service Building 213
+    title: Civil Rights & Title IX Coordinator
+    email: mmccaleb@middlebury.edu
+    number: (802) 443-2147
+    confidential: false
+
+  - name: Eric Lopez
+    title: Human Relations Officer
+    address: Service Building 23516
+    email: el@middlebury.edu
+    number: (802) 443-3324
+    confidential: false
+
+  - name: Thaddeus Watulak
+    title: Human Relations Officer
+    address: Service Building 215
+    email: twatulakscollier@middlebury.edu
+    number: (802) 443-57413474
+    confidential: false
+
     
 hr_officers:
   title: Human Relations Officers 
@@ -172,13 +199,6 @@ hr_officers:
       number: (802) 443-3474
       confidential: false
 
-title_IX:
-  title: Susan Ritter
-  description: Title IX Coordinator and Compliance Officer
-  number: (802) 443-3289
-  email: sritter@middlebury.edu
-  confidential: false
-
 college_chaplains:
   title: College Chaplains
   description: For individuals of all faiths and beliefs
@@ -192,14 +212,7 @@ college_chaplains:
       email: dastillman@middlebury.edu
       number: (802) 443-5762
       confidential: true
-    - name: Laurie Jordan
-      title: Chaplain of the College
-      address: |
-        Scott Center for Spiritual and Religious Life 203  
-        135 South Main Street  
-      email: ljordan@middlebury.edu
-      number: (802) 443-5626
-      confidential: true
+    
     - name: Mark Orten
       title: Dean of Spiritual and Religious Life, Director of Scott Center
       address: |
@@ -209,13 +222,23 @@ college_chaplains:
       number: (802) 443-5626
       confidential: true
 
+    - name: Saifa Hussain
+      title: Associate Chaplain and Muslim Advisor
+      address: |
+        Scott Center for Spiritual and Religious Life 202
+        135 South Main Street
+      email: sthussain@middlebury.edu
+      number: (802) 443-5983
+      confidential: false
+
+
 local_congregations:
   title: Local Congregations
   link_text: go/congregations
   link_href: http://go.middlebury.edu/congregations
 
 phs:
-  title: Parton Health Services
+  title: Middlebury College Health Services
   note: |
     For more information about SANE exams, please visit [www.middlebury.edu/student-life/health-wellness-education-and-safety](http://www.middlebury.edu/student-life/health-wellness-education-and-safety)
   description: SANE exam, STD testing, evidence collection, injury triage
@@ -257,7 +280,7 @@ sfs:
 
 emf:
   title: Emergency Medical Fund
-  description: Please contact your dean for more information.
+  description: Please contact your Commons dean for more information.
 
 economic_services:
   title: Vermont Economic Services Division
@@ -267,7 +290,7 @@ economic_services:
 
 residential_life:
   title: Residential Life
-  description: Your commons’s Commons Residential Advisor (CRA), First-Year Counselor (FYC), Resident Assistant (RA), Community Assistant (CA)
+  description: Your commons’s Commons Residential Director (CRD), First-Year Counselor (FYC), Resident Assistant (RA), Community Assistant (CA)
   link_text: go/commons
   link_href: http://go.middlebury.edu/commons
   confidential: false
@@ -277,18 +300,16 @@ admin_committee:
   description: The Administration Committee hears requests from students and faculty for exceptions to academic policies.
   # people_title: Human Resource Officers
   people:
-    - name: Karen Guttentag
-      title: Associate Dean for Judicial Affairs and Student Life
-      address: |
-        Service Building 219  
-      email: kguttent@middlebury.edu
-      number: (802) 443-2024
+    - name: Matthew Longman
+      title: Dean of Wonnacott Commons
+      email: lomgman@middlebury.edu
+      number: (802) 443-3350
       confidential: false
-    - name: Diane Di Loreto
-      title: Assistant, Student Life Administrator
-      address: Service Building 218
-      email: dmdiloreto@middlebury.edu
-      number: (802) 443-3233
+    - name: Connie Simmons
+      title: Associate in Student Life Administrator
+      address: Service Building, 2nd floor suite
+      email: csimmons@middlebury.edu
+      number: (802) 443-5734
       confidential: false
 
 rainn:

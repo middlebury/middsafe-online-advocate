@@ -9,7 +9,6 @@ var sass = require('gulp-sass');
 var gulpIf = require('gulp-if');
 var autoprefixer = require('gulp-autoprefixer');
 var babelify = require('babelify');
-var ghPages = require('gulp-gh-pages');
 var cssnano = require('gulp-cssnano');
 var cmq = require('gulp-combine-mq');
 var browserSync = require('browser-sync');
@@ -115,13 +114,5 @@ gulp.task('watch', function() {
 });
 
 gulp.task('build', ['jekyll-build', 'scripts', 'styles', 'images']);
-
-gulp.task('deploy', function() {
-  return gulp.src('./_site/**/*').pipe(
-    ghPages({
-      branch: 'site'
-    })
-  );
-});
 
 gulp.task('default', ['build', 'browser-sync', 'watch']);

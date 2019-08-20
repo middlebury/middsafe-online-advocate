@@ -7,7 +7,8 @@
     "start": "gulp",
     "build": "gulp build --production",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "npm run build && gulp deploy",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d _site -b site",
     "deploy:sandcat": "gulp build && npm run copy:sandcat",
     "copy:sandcat": "cp -r _site/ /../../Volumes/middfiles/webroots/comm/middsafe-online-advocate"
   },
@@ -26,7 +27,7 @@
     "gulp-autoprefixer": "^6.1.0",
     "gulp-combine-mq": "^0.4.0",
     "gulp-cssnano": "^2.1.2",
-    "gulp-gh-pages": "^0.5.4",
+    "gh-pages": "^2.1.1",
     "gulp-if": "^2.0.2",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^2.6.5",

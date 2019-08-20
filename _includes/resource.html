@@ -8,6 +8,14 @@
     <p class="resource__url"><a href="{{props.link_href}}" class="resource__link">{{props.link_text}}</a></p>
   {% endif %}
 
+  {% if props.links %}
+    {% for link in props.links %}
+      <p class="resource__url">
+        <a href="{{link.link_href}}" class="resource__link">{{link.link_text}}</a>
+        </p>
+    {% endfor %}
+  {% endif %}
+
   {% if props.address %}
     <div class="resource__address">{{props.address | markdownify}}</div>
   {% endif %}

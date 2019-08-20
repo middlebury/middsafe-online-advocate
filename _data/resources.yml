@@ -338,3 +338,14 @@ safespace:
   link_href: http://www.safespaceonline.org
   number: (802) 863-0003
   confidential: true
+
+cbrt:
+  title: Community Bias Response Team (CBRT)
+  email: cbrt@middlebury.edu
+  description: The CBRT is charged with assessing and communicating an appropriate and comprehensive institutional response to bias incidents and acts of intolerance involving students. 
+  links: 
+  - link_text: go.middlebury.edu/bias (to report)
+    link_href: http://go.middlebury.edu/bias
+  - link_text: go.middlebury.edu/cbrt (for more information)
+    link_href: http://go.middlebury.edu/cbrt
+

@@ -165,7 +165,6 @@
     - emily_wagner
     # - judicial_affairs
     - title_ix
-    - hr_officers
     - college_chaplains
   answers_heading: "If these resources aren’t working for you, would you like to:"  
   answers:
@@ -296,7 +295,6 @@
   resources:
     # - judicial_affairs
     - title_ix
-    - hr_officers
     - dps
     - cbrt
   answers_heading: "If these resources aren’t working for you, would you like to:"  

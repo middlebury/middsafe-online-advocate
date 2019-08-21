@@ -180,25 +180,6 @@ title_ix:
     number: (802) 443-57413474
     confidential: false
 
-    
-hr_officers:
-  title: Human Relations Officers 
-  people:
-    - name: Earl Fetcher
-      description: Human Relations Officer
-      address: |
-        Service Building 216  
-      email: efetcher@middlebury.edu
-      number: (802) 443-3426
-      confidential: false
-    - name: Steven Collier
-      description: Human Relations Officer
-      address: |
-        Service Building 215  
-      email: scollier@middlebury.edu
-      number: (802) 443-3474
-      confidential: false
-
 college_chaplains:
   title: College Chaplains
   description: For individuals of all faiths and beliefs

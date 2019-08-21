@@ -49,7 +49,7 @@ gulp.task('scripts', function() {
   var b = browserify({
     entries: './_js/main.js',
     debug: true,
-    transform: [[babelify, {presets: ['es2015']}]]
+    transform: [[babelify, {presets: ['@babel/preset-env']}]]
   });
 
   return b

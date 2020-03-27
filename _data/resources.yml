@@ -1,6 +1,9 @@
 middsafe:
   title: MiddSafe Confidential Advocates
-  description: Free and confidential support, information, referrals, and advocacy from trained Middlebury students. A 24-hour student-run hotline is available when undergraduate classes are in session on the Middlebury, Vermont, campus.
+  description: |
+    Free and confidential support, information, referrals, and advocacy from trained Middlebury students. A 24-hour student-run hotline is available when undergraduate classes are in session on the Middlebury, Vermont, campus.
+
+    *In Spring 2020, the MiddSafe hotline will be in service as of March 30th at 8:30am and will be answered by confidential staff advocates from Health and Wellness Education during the hours of 8:30am-5:00pm EST Monday through Friday.
   link_text: go/middsafe
   link_href: http://go.middlebury.edu/middsafe
   number: (802) 377-0239
@@ -71,13 +74,14 @@ commonsdean:
           number: (802) 443-3320
       confidential: false
 
-    - name: Ian Sutherland
+    - name: Baishakhi Taylor
       title: Dean of Cook Commons
-      address: Battell North 150
-      email: isutherland@middlebury.edu
-      numbers:
-      - header: Please call the Cook Commons office for an appointment at 
-        number: (802) 443-3330
+      email: taylorb@middlebury.edu
+      confidential: false
+
+    - name: Derek Doucet
+      title: Dean of Cook Commons
+      email: ddoucet@middlebury.edu
       confidential: false
 
 barbara_mccall:
@@ -87,7 +91,7 @@ barbara_mccall:
     Service Building 222
   email: bmccall@middlebury.edu
   number: (802) 443-5361
-  confidential: false
+  confidential: Confidential when serving in an advocacy role
 
 madeline_hope:
   title: Madeline Hope
@@ -95,7 +99,7 @@ madeline_hope:
   address: Service Building 225
   email: mhope@middlebury.edu
   number: (802) 443-5389
-  confidential: false
+  confidential: Confidential when serving in an advocacy role
 
 emily_wagner:
   title: Emily Wagner
@@ -103,7 +107,15 @@ emily_wagner:
   address: Service Building 226
   email: ewagner@middlebury.edu
   number: (802) 443-2240
-  confidential: false
+  confidential: Confidential when serving in an advocacy role
+
+kevin_kareckas:
+  title: Kevin Kareckas
+  description: Alcohol and Other Drug Specialist
+  address: Service Building 224
+  email: kkareckas@middlebury.edu
+  number: (802) 443-2103
+  confidential: Confidential when serving in an advocacy role
 
 middpd:
   title: Middlebury Police Department
@@ -209,7 +221,7 @@ college_chaplains:
         135 South Main Street
       email: sthussain@middlebury.edu
       number: (802) 443-5983
-      confidential: false
+      confidential: true
 
 local_congregations:
   title: Local Congregations
@@ -294,9 +306,7 @@ admin_committee:
 rainn:
   title: Rape, Abuse, and Incest National Network
   description: A nationwide partnership of more than 1,100 local rape treatment hotlines provides survivors with free, confidential services around the clock. RAINN can transfer callers to local hotlines and shelters closest to their current location. There is also a chat function available on their website.
-  numbers:
-    - header: Suicide Prevention Lifeline
-      number: (800) 656-4673
+  number: (800) 656-4673
   link_text: www.rainn.org
   link_href: https://www.rainn.org/index.php
   confidential: true
@@ -308,6 +318,14 @@ nsh:
       number: (800) 273-8255
     - header: National Hopeline
       number: (800) 442-4673
+  confidential: true
+
+ndvh:
+  title: National Domestic Violence Hotline
+  description: A 24/7 free and confidential resource center that has access to service providers and shelters across the U.S. There is also a chat function available on their website.
+  link_href: http://www.thehotline.org
+  link_text: www.thehotline.org
+  number: (800)-799-7233
   confidential: true
 
 safespace:

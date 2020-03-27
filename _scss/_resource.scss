@@ -25,7 +25,13 @@
 }
 
 .resource__description {
-  margin-bottom: 0;
+  p {
+    margin-bottom: 0;
+  }
+
+  p + p {
+    margin-top: 1rem;
+  }
 }
 
 .resource__note {
@@ -51,7 +57,6 @@
 }
 
 .resource__tel-list {
-
 }
 
 .resource__tel {
@@ -70,5 +75,4 @@
 }
 
 .resource__person {
-
 }

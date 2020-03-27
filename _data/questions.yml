@@ -61,6 +61,9 @@
     - vtsp
     - womensafe
     - csac
+    - ndvh
+    - rainn
+    - safespace
   answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
     - title: Explore safety planning resources on campus
@@ -142,6 +145,7 @@
   id: 13
   resources:
     - womensafe
+    - ndvh
     - safespace
     - rainn
   answers_heading: 'If these resources aren’t working for you, would you like to:'
@@ -322,7 +326,9 @@
   id: 28
   content: |
     We hope that you will consider contacting a MiddSafe Confidential Advocate in person or through our 24/7 hotline while classes are in session at 802-377-0239. We are here to listen and help you find resources that feel right to you. You may also refer to the “Resources” tab at the top of each page for a list of contacts that can provide support.
-    
+
+    *In Spring 2020, the MiddSafe hotline will be in service as of March 30th at 8:30am and will be answered by confidential staff advocates from Health and Wellness Education during the hours of 8:30am-5:00pm EST Monday through Friday.
+
 - question: Are you experiencing thoughts of suicide or self-harm?
   id: 30
   answers:

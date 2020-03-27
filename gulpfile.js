@@ -10,7 +10,7 @@ var gulpIf = require('gulp-if');
 var autoprefixer = require('gulp-autoprefixer');
 var babelify = require('babelify');
 var cssnano = require('gulp-cssnano');
-var cmq = require('gulp-combine-mq');
+// var cmq = require("gulp-combine-mq");
 var browserSync = require('browser-sync');
 var cp = require('child_process');
 var beeper = require('beeper');
@@ -24,32 +24,32 @@ if (!production) {
   jekyllOpts.push('--config', '_config.dev.yml');
 }
 
-gulp.task('jekyll-build', function(done) {
+const jekyll = done => {
   return cp
     .spawn('jekyll', jekyllOpts, {
       stdio: 'inherit'
     })
     .on('close', done);
-});
+};
 
-gulp.task('jekyll-rebuild', ['jekyll-build'], function() {
-  browserSync.reload();
-});
+const rebuild = () =>
+  gulp.series(jekyll, function() {
+    browserSync.reload();
+  });
 
-gulp.task('browser-sync', function() {
+const server = () =>
   browserSync({
     open: false,
     server: {
       baseDir: '_site'
     }
   });
-});
 
-gulp.task('scripts', function() {
+const scripts = () => {
   var b = browserify({
     entries: './_js/main.js',
     debug: true,
-    transform: [[babelify, {presets: ['@babel/preset-env']}]]
+    transform: [[babelify, { presets: ['@babel/preset-env'] }]]
   });
 
   return b
@@ -61,44 +61,48 @@ gulp.task('scripts', function() {
     })
     .pipe(source('bundle.js'))
     .pipe(buffer())
-    .pipe(gulpIf(!production, sourcemaps.init({loadMaps: true})))
+    .pipe(gulpIf(!production, sourcemaps.init({ loadMaps: true })))
     .pipe(uglify())
     .on('error', gutil.log)
     .pipe(gulpIf(!production, sourcemaps.write('./')))
     .pipe(gulp.dest('./_site/js'))
     .pipe(browserSync.stream())
     .pipe(gulp.dest('./js'));
-});
+};
 
-gulp.task('images', function() {
+const images = () => {
   return gulp.src('./_img/**/*.{jpg,png,svg}').pipe(gulp.dest('./img')); // TODO: compress images
-});
+};
 
 // TODO: get styles to beep on sass error
-gulp.task('styles', function() {
-  return gulp
-    .src('_scss/main.scss')
-    .pipe(gulpIf(!production, sourcemaps.init({loadMaps: true})))
-    .pipe(
-      sass({
-        includePaths: ['scss'],
-        onError: browserSync.notify
-      })
-    )
-    .on('error', sass.logError)
-    .pipe(autoprefixer(['last 3 versions', '> 2%', 'ie 10'], {cascade: true}))
-    .pipe(gulpIf(!production, sourcemaps.write('./')))
-    .pipe(gulpIf(production, cmq()))
-    .pipe(gulpIf(production, cssnano({zIndex: false})))
-    .pipe(gulp.dest('_site/css'))
-    .pipe(browserSync.stream())
-    .pipe(gulp.dest('./css'));
-});
+const styles = () => {
+  return (
+    gulp
+      .src('./_scss/main.scss')
+      .pipe(gulpIf(!production, sourcemaps.init({ loadMaps: true })))
+      .pipe(
+        sass({
+          includePaths: ['scss'],
+          onError: browserSync.notify
+        })
+      )
+      .on('error', sass.logError)
+      .pipe(
+        autoprefixer(['last 3 versions', '> 2%', 'ie 10'], { cascade: true })
+      )
+      .pipe(gulpIf(!production, sourcemaps.write('./')))
+      // .pipe(gulpIf(production, cmq()))
+      .pipe(gulpIf(production, cssnano({ zIndex: false })))
+      .pipe(gulp.dest('./_site/css'))
+      .pipe(browserSync.stream())
+      .pipe(gulp.dest('./css'))
+  );
+};
 
-gulp.task('watch', function() {
-  gulp.watch('_js/**/*.js', ['scripts']);
-  gulp.watch('_scss/*.scss', ['styles']);
-  gulp.watch('_img/**/*.{jpg,png,svg}', ['images']);
+const watch = () => {
+  gulp.watch('_js/**/*.js', scripts);
+  gulp.watch('_scss/*.scss', styles);
+  gulp.watch('_img/**/*.{jpg,png,svg}', images);
   gulp.watch(
     [
       './_layouts/*.html',
@@ -109,10 +113,15 @@ gulp.task('watch', function() {
       // it causes an infinite rebuild loop
       './{discovery,about,resources}/*.{md,html}'
     ],
-    ['jekyll-rebuild']
+    rebuild
   );
-});
+};
 
-gulp.task('build', ['jekyll-build', 'scripts', 'styles', 'images']);
+const build = gulp.series(jekyll, scripts, styles, images);
 
-gulp.task('default', ['build', 'browser-sync', 'watch']);
+const dev = gulp.parallel(build, server, watch);
+
+module.exports = {
+  dev,
+  build
+};

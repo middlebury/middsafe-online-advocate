@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp",
+    "start": "gulp dev",
     "build": "gulp build --production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build",
@@ -21,13 +21,13 @@
     "beeper": "^2.0.0",
     "browser-sync": "^2.26.7",
     "browserify": "^16.3.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-combine-mq": "^0.4.0",
     "gulp-cssnano": "^2.1.2",
     "gh-pages": "^2.1.1",
-    "gulp-if": "^2.0.2",
-    "gulp-sass": "^2.3.2",
+    "gulp-if": "^3.0.0",
+    "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
@@ -46,5 +46,8 @@
     "js-yaml": "^3.13.0",
     "braces": "^2.3.1",
     "lodash.template": "^4.5.0"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }

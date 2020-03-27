@@ -15,6 +15,7 @@ var browserSync = require('browser-sync');
 var cp = require('child_process');
 var beeper = require('beeper');
 var args = require('yargs').argv;
+var del = require('del');
 
 const production = !!args.production;
 
@@ -24,6 +25,7 @@ if (!production) {
   jekyllOpts.push('--config', '_config.dev.yml');
 }
 
+const clean = () => del('./_site');
 const jekyll = done => {
   return cp
     .spawn('jekyll', jekyllOpts, {
@@ -117,7 +119,7 @@ const watch = () => {
   );
 };
 
-const build = gulp.series(jekyll, scripts, styles, images);
+const build = gulp.series(clean, jekyll, scripts, styles, images);
 
 const dev = gulp.parallel(build, server, watch);
 

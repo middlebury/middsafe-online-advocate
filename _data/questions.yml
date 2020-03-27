@@ -1,44 +1,44 @@
 - question: Do you feel safe right now?
   id: 1
   answers:
-  - title: "Yes"
-    id: 2
-  - title: "No"
-    id: 30
+    - title: 'Yes'
+      id: 2
+    - title: 'No'
+      id: 30
 
 - question: Are you interested in resources for yourself or for someone else?
   id: 2
   answers:
-  - title: Myself
-    id: 3
-  - title: Someone else
-    id: 38
+    - title: Myself
+      id: 3
+    - title: Someone else
+      id: 38
 
-- question: "Would you like to learn more about:"
+- question: 'Would you like to learn more about:'
   id: 3
   answers:
-  - title: Safety planning
-    id: 4
-  - title: Counseling and others to talk to
-    id: 7
-  - title: Medical care
-    id: 18
-  - title: Economic support
-    id: 21
-  - title: Housing and academic support
-    id: 24
-  - title: Making a report
-    id: 25
-  - title: I’m not sure
-    id: 28
+    - title: Safety planning
+      id: 4
+    - title: Counseling and others to talk to
+      id: 7
+    - title: Medical care
+      id: 18
+    - title: Economic support
+      id: 21
+    - title: Housing and academic support
+      id: 24
+    - title: Making a report
+      id: 25
+    - title: I’m not sure
+      id: 28
 
-- question: "Are you interested in safety planning resources:"
+- question: 'Are you interested in safety planning resources:'
   id: 4
   answers:
-  - title: On campus
-    id: 5
-  - title: Off campus
-    id: 6
+    - title: On campus
+      id: 5
+    - title: Off campus
+      id: 6
 
 - question: Do any of these resources feel right to you?
   id: 5
@@ -47,12 +47,12 @@
     - middsafe
     - womensafe
     - commonsdean
-  answers_heading: "If these resources aren’t working for you, would you like to:"
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore safety planning resources off campus
-    id: 6
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore safety planning resources off campus
+      id: 6
+    - title: Explore other options and return to the main menu
+      id: 3
 
 - question: Do any of these resources feel right to you?
   id: 6
@@ -61,67 +61,68 @@
     - vtsp
     - womensafe
     - csac
-  answers_heading: "If these resources aren’t working for you, would you like to:"
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore safety planning resources on campus
-    id: 5
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore safety planning resources on campus
+      id: 5
+    - title: Explore other options and return to the main menu
+      id: 3
 
-- question: "Are you interested in speaking to:"
+- question: 'Are you interested in speaking to:'
   id: 7
   answers:
-  - title: Mental health counselors
-    id: 8
-  - title: Advocates
-    id: 11
-  - title: Faculty, staff, family members, and friends
-    id: 14
-  - title: Spiritual and pastoral leaders
-    id: 15
+    - title: Mental health counselors
+      id: 8
+    - title: Advocates
+      id: 11
+    - title: Faculty, staff, family members, and friends
+      id: 14
+    - title: Spiritual and pastoral leaders
+      id: 15
 
-- question: "Are you interested in speaking to a counselor:"
+- question: 'Are you interested in speaking to a counselor:'
   id: 8
   answers:
-  - title: On campus
-    id: 9
-  - title: Off campus
-    id: 10
+    - title: On campus
+      id: 9
+    - title: Off campus
+      id: 10
 
 - question: Do any of these resources feel right to you?
   id: 9
   resources:
     - cspchw
     - ahc
-  answers_heading: "If these resources aren’t working for you, would you like to:"
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore counselors off campus
-    id: 10
-  - title: Explore others I could talk to
-    id: 7
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore counselors off campus
+      id: 10
+    - title: Explore others I could talk to
+      id: 7
+    - title: Explore other options and return to the main menu
+      id: 3
 
 - question: Does this resource feel right to you?
   id: 10
   resources:
     - csac
-  answers_heading: "If this resource isn’t working for you, would you like to:"
+    - ahc
+  answers_heading: 'If this resource isn’t working for you, would you like to:'
   answers:
-  - title: Explore counselors on campus
-    id: 9
-  - title: Explore others I could talk to
-    id: 7
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore counselors on campus
+      id: 9
+    - title: Explore others I could talk to
+      id: 7
+    - title: Explore other options and return to the main menu
+      id: 3
 
-- question: "Are you interested in speaking with an advocate:"
+- question: 'Are you interested in speaking with an advocate:'
   id: 11
   answers:
-  - title: On campus
-    id: 12
-  - title: Off campus
-    id: 13
+    - title: On campus
+      id: 12
+    - title: Off campus
+      id: 13
 
 - question: Does this resource feel right to you?
   id: 12
@@ -130,12 +131,12 @@
     - womensafe
   answers_heading: "If this resource isn't working for you, would you like to:"
   answers:
-  - title: Explore advocacy resources off campus
-    id: 13
-  - title: Explore others I could talk to
-    id: 7
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore advocacy resources off campus
+      id: 13
+    - title: Explore others I could talk to
+      id: 7
+    - title: Explore other options and return to the main menu
+      id: 3
 
 - question: Do any of these resources feel right to you?
   id: 13
@@ -143,14 +144,14 @@
     - womensafe
     - safespace
     - rainn
-  answers_heading: "If these resources aren’t working for you, would you like to:"
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore advocacy resources on campus
-    id: 12
-  - title: Explore others I could talk to
-    id: 7
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore advocacy resources on campus
+      id: 12
+    - title: Explore others I could talk to
+      id: 7
+    - title: Explore other options and return to the main menu
+      id: 3
 
 - question: It is important to reach out for support.
   content: |
@@ -166,84 +167,84 @@
     # - judicial_affairs
     - title_ix
     - college_chaplains
-  answers_heading: "If these resources aren’t working for you, would you like to:"  
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore others I could talk to
-    id: 7
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore others I could talk to
+      id: 7
+    - title: Explore other options and return to the main menu
+      id: 3
 
-- question: "Are you interested in spiritual and pastoral care:"
+- question: 'Are you interested in spiritual and pastoral care:'
   id: 15
   answers:
-  - title: On campus
-    id: 16
-  - title: Off campus
-    id: 17
+    - title: On campus
+      id: 16
+    - title: Off campus
+      id: 17
 
 - question: Does this resource feel right to you?
   id: 16
   resources:
     - college_chaplains
-  answers_heading: "If this resource isn’t working for you, would you like to:"
+  answers_heading: 'If this resource isn’t working for you, would you like to:'
   answers:
-  - title: Explore spiritual and pastoral care resources off campus
-    id: 17
-  - title: Explore others I could talk to
-    id: 7
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore spiritual and pastoral care resources off campus
+      id: 17
+    - title: Explore others I could talk to
+      id: 7
+    - title: Explore other options and return to the main menu
+      id: 3
 
 - question: Does this resource feel right to you?
   id: 17
   resources:
     - local_congregations
-  answers_heading: "If this resource isn’t working for you, would you like to:"
+  answers_heading: 'If this resource isn’t working for you, would you like to:'
   answers:
-  - title: Explore spiritual and pastoral care resources on campus
-    id: 16
-  - title: Explore others I could talk to
-    id: 7
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore spiritual and pastoral care resources on campus
+      id: 16
+    - title: Explore others I could talk to
+      id: 7
+    - title: Explore other options and return to the main menu
+      id: 3
 
-- question: "Are you interested in medical care:"
+- question: 'Are you interested in medical care:'
   id: 18
   answers:
-  - title: On campus
-    id: 19
-  - title: Off campus
-    id: 20
+    - title: On campus
+      id: 19
+    - title: Off campus
+      id: 20
 
 - question: Does this resource feel right to you?
   id: 19
   resources:
     - phs
-  answers_heading: "If this resource isn’t working for you, would you like to:"
+  answers_heading: 'If this resource isn’t working for you, would you like to:'
   answers:
-  - title: Explore medical care off campus
-    id: 20
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore medical care off campus
+      id: 20
+    - title: Explore other options and return to the main menu
+      id: 3
 
 - question: Does this resource feel right to you?
   id: 20
   resources:
     - pmc
-  answers_heading: "If this resource isn’t working for you, would you like to:"  
+  answers_heading: 'If this resource isn’t working for you, would you like to:'
   answers:
-  - title: Explore medical care on campus
-    id: 19
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore medical care on campus
+      id: 19
+    - title: Explore other options and return to the main menu
+      id: 3
 
-- question: "Are you interested in economic support:"
+- question: 'Are you interested in economic support:'
   id: 21
   answers:
-  - title: On campus
-    id: 22
-  - title: Off campus
-    id: 23
+    - title: On campus
+      id: 22
+    - title: Off campus
+      id: 23
 
 - question: Do any of these resources feel right to you?
   id: 22
@@ -252,24 +253,24 @@
     - commonsdean
     - vvcp
     - sfs
-  answers_heading: "If these resources aren’t working for you, would you like to:"  
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore economic support off campus
-    id: 23
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore economic support off campus
+      id: 23
+    - title: Explore other options and return to the main menu
+      id: 3
 
 - question: Does this resources feel right to you?
   id: 23
   resources:
-  - womensafe  
-  - economic_services
-  answers_heading: "If these resources aren’t working for you, would you like to:"  
+    - womensafe
+    - economic_services
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore economic support resources on campus
-    id: 22
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore economic support resources on campus
+      id: 22
+    - title: Explore other options and return to the main menu
+      id: 3
 
 - question: Does this resource feel right to you?
   id: 24
@@ -277,18 +278,18 @@
     - commonsdean
     - residential_life
     - admin_committee
-  answers_heading: "If these resources aren’t working for you, would you like to:"  
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore other options and return to the main menu
+      id: 3
 
-- question: "Are you interested in making a report:"
+- question: 'Are you interested in making a report:'
   id: 25
   answers:
-  - title: On campus
-    id: 26
-  - title: Off campus
-    id: 27
+    - title: On campus
+      id: 26
+    - title: Off campus
+      id: 27
 
 - question: Do any of these resources feel right to you?
   id: 26
@@ -297,12 +298,12 @@
     - title_ix
     - dps
     - cbrt
-  answers_heading: "If these resources aren’t working for you, would you like to:"  
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore making a report off campus
-    id: 27
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore making a report off campus
+      id: 27
+    - title: Explore other options and return to the main menu
+      id: 3
 
 - question: Do any of these resources feel right to you?
   id: 27
@@ -310,12 +311,12 @@
     - middpd
     - vtsp
     - cbrt
-  answers_heading: "If these resources aren’t working for you, would you like to:"  
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore making a report on campus
-    id: 26
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore making a report on campus
+      id: 26
+    - title: Explore other options and return to the main menu
+      id: 3
 
 - question: It is completely normal to feel unsure.
   id: 28
@@ -325,20 +326,20 @@
 - question: Are you experiencing thoughts of suicide or self-harm?
   id: 30
   answers:
-  - title: "Yes"
-    id: 31
-  - title: "No"
-    id: 34
+    - title: 'Yes'
+      id: 31
+    - title: 'No'
+      id: 34
 
 - question: We care deeply and want to help.
   content: There are many resources that can help you deal with whatever you are experiencing right now. We hope you will reach out to a resource that feels right to you.
   id: 31
-  answers_heading: "Please consider seeking support:"
+  answers_heading: 'Please consider seeking support:'
   answers:
-  - title: On campus
-    id: 32
-  - title: Off campus
-    id: 33
+    - title: On campus
+      id: 32
+    - title: Off campus
+      id: 33
 
 - question: Do any of these resources feel right to you?
   id: 32
@@ -349,12 +350,12 @@
     - womensafe
     - commonsdean
     - dps
-  answers_heading: "If these resources aren’t working for you, would you like to:"
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore support resources off campus
-    id: 33
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore support resources off campus
+      id: 33
+    - title: Explore other options and return to the main menu
+      id: 3
 
 - question: Do any of these resources feel right to you?
   id: 33
@@ -362,28 +363,28 @@
     - csac
     - pmc
     - nsh
-  answers_heading: "If these resources aren’t working for you, would you like to:"
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore support resources on campus
-    id: 32
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore support resources on campus
+      id: 32
+    - title: Explore other options and return to the main menu
+      id: 3
 
-- question: "Are you feeling:"
+- question: 'Are you feeling:'
   id: 34
   answers:
-  - title: Physically unsafe
-    id: 35
-  - title: Mentally/ emotionally unsafe (e.g., panic, thoughts of hurting yourself or hurting someone else)
-    id: 31
+    - title: Physically unsafe
+      id: 35
+    - title: Mentally/ emotionally unsafe (e.g., panic, thoughts of hurting yourself or hurting someone else)
+      id: 31
 
-- question: "Are you interested in safety planning resources:"
+- question: 'Are you interested in safety planning resources:'
   id: 35
   answers:
-  - title: On campus
-    id: 36
-  - title: Off campus
-    id: 37
+    - title: On campus
+      id: 36
+    - title: Off campus
+      id: 37
 
 - question: Do any of these resources feel right to you?
   id: 36
@@ -394,12 +395,12 @@
     - womensafe
     - commonsdean
     - dps
-  answers_heading: "If these resources aren’t working for you, would you like to:"
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore safety planning resources off campus
-    id: 37
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore safety planning resources off campus
+      id: 37
+    - title: Explore other options and return to the main menu
+      id: 3
 
 - question: Do any of these resources feel right to you?
   id: 37
@@ -408,12 +409,12 @@
     - pmc
     - middpd
     - vtsp
-  answers_heading: "If these resources aren’t working for you, would you like to:"
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore safety planning resources on campus
-    id: 36
-  - title: Explore other options and return to the main menu
-    id: 3
+    - title: Explore safety planning resources on campus
+      id: 36
+    - title: Explore other options and return to the main menu
+      id: 3
 
 - question: It can be upsetting to see a friend struggling or in pain.
   content: |
@@ -431,14 +432,14 @@
   id: 38
   answers_heading: What would be most helpful in addressing concerns you have?
   answers:
-  - title: Understanding when and how to seek help
-    id: 39
-  - title: Learning about what your friend might be experiencing
-    id: 45
-  - title: Learning how to communicate with your friend
-    id: 46
-  - title: Taking care of yourself 
-    id: 47
+    - title: Understanding when and how to seek help
+      id: 39
+    - title: Learning about what your friend might be experiencing
+      id: 45
+    - title: Learning how to communicate with your friend
+      id: 46
+    - title: Taking care of yourself
+      id: 47
 
 - question: Friends can serve an important role.
   content: |
@@ -455,16 +456,16 @@
   id: 39
   answers_heading: Are you concerned that you or your friend are experiencing an emergency?
   answers:
-  - title: "Yes"
-    id: 40
-  - title: I’m not sure
-    id: 41
-  - title: No, and explore nonemergent examples of when and how to seek help
-    id: 42
-  - title: No, and explore other resources for helping a friend or taking care of yourself
-    id: 38
-  - title: Explore other options and return to the main menu
-    id: 2
+    - title: 'Yes'
+      id: 40
+    - title: I’m not sure
+      id: 41
+    - title: No, and explore nonemergent examples of when and how to seek help
+      id: 42
+    - title: No, and explore other resources for helping a friend or taking care of yourself
+      id: 38
+    - title: Explore other options and return to the main menu
+      id: 2
 
 - question: Call Public Safety (802-443-5911) or the police (911) immediately.
   content: |
@@ -479,8 +480,8 @@
   id: 41
   resources:
     - commonsdean
- 
-- question: "Examples of nonemergent, but concerning, situations:"
+
+- question: 'Examples of nonemergent, but concerning, situations:'
   content: |
     -  Your friend is using coping mechanisms that concern you but do not seem immediately life threatening.
     -  You are worried your friend may be in an abusive relationship, but you aren’t sure.
@@ -489,13 +490,13 @@
 
     In situations like these, there are confidential and non confidential resources to provide information, help you navigate the complexities of caring for your friend, and assist you with determining if and when you need to take additional steps to support your friend’s safety.
 
-  answers_heading: "Are you interested in exploring these resources:"
+  answers_heading: 'Are you interested in exploring these resources:'
   id: 42
   answers:
-  - title: On campus
-    id: 43
-  - title: Off campus
-    id: 44
+    - title: On campus
+      id: 43
+    - title: Off campus
+      id: 44
 
 - question: Do any of these resources feel right to you?
   id: 43
@@ -506,28 +507,28 @@
     - womensafe
     - commonsdean
     - residential_life
-  answers_heading: "If these resources aren’t working for you, would you like to:"
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore resources off campus
-    id: 44
-  - title: Explore other resources for helping a friend or taking care of yourself
-    id: 38
-  - title: Explore other options and return to the main menu
-    id: 2
+    - title: Explore resources off campus
+      id: 44
+    - title: Explore other resources for helping a friend or taking care of yourself
+      id: 38
+    - title: Explore other options and return to the main menu
+      id: 2
 
 - question: Do any of these resources feel right to you?
   id: 44
   resources:
     - womensafe
     - csac
-  answers_heading: "If these resources aren’t working for you, would you like to:"
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore resources on campus
-    id: 43
-  - title: Explore other resources for helping a friend or taking care of yourself
-    id: 38
-  - title: Explore other options and return to the main menu
-    id: 2
+    - title: Explore resources on campus
+      id: 43
+    - title: Explore other resources for helping a friend or taking care of yourself
+      id: 38
+    - title: Explore other options and return to the main menu
+      id: 2
 
 - question: Understanding Trauma
   content: |
@@ -549,12 +550,12 @@
 
     Survivors also may experience flashbacks, nightmares, frightening thoughts, sleep disturbances, emotional numbness, and/or irritability.
   id: 45
-  answers_heading: "If these resources aren’t working for you, would you like to:" 
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore other resources for helping a friend or taking care of yourself
-    id: 38
-  - title: Explore other options and return to the main menu
-    id: 2
+    - title: Explore other resources for helping a friend or taking care of yourself
+      id: 38
+    - title: Explore other options and return to the main menu
+      id: 2
 
 - question: Listen and Believe
   content: |
@@ -578,12 +579,12 @@
     -  Trying to “fix” or “rescue” her. Instead, support her in charting her own path.
     -  “Investigating” or probing for more information than your friend is willing or able to share. Avoid “why?” questions, as they can imply blame.
   id: 46
-  answers_heading: "If these resources aren’t working for you, would you like to:"
+  answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
-  - title: Explore other resources for helping a friend or taking care of yourself
-    id: 38
-  - title: Explore other options and return to the main menu
-    id: 2
+    - title: Explore other resources for helping a friend or taking care of yourself
+      id: 38
+    - title: Explore other options and return to the main menu
+      id: 2
 
 - question: Taking Care of Yourself
   id: 47
@@ -604,7 +605,7 @@
     It is just as important to care for yourself in times of stress as it is to care for others and to seek support from someone you trust. It is also important to acknowledge your own limits. While you may care deeply for your friend and may be compelled by their trust in you, you are not a trained counselor. We all want to extend ourselves beyond our normal limits when someone is in crisis, but when doing so begins to compromise your own ability to function or leads you into situations for which you are not trained, no one is well served. In these situations, it is best to be honest with yourself and your friend. 
 
     We hope you will consider exploring resources for yourself to support you in the process of helping your friend.
-  answers_heading: "Would you like to learn more about:"
+  answers_heading: 'Would you like to learn more about:'
   answers:
     - title: Safety planning
       id: 4
@@ -620,4 +621,3 @@
       id: 25
     - title: I’m not sure
       id: 28
-

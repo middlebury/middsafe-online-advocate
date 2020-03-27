@@ -26,18 +26,17 @@ if (!production) {
 }
 
 const clean = () => del('./_site');
+
+const reload = () => browserSync.reload();
+
 const jekyll = done => {
   return cp
     .spawn('jekyll', jekyllOpts, {
       stdio: 'inherit'
     })
-    .on('close', done);
+    .on('close', reload)
+    .on('exit', done);
 };
-
-const rebuild = () =>
-  gulp.series(jekyll, function() {
-    browserSync.reload();
-  });
 
 const server = () =>
   browserSync({
@@ -102,9 +101,9 @@ const styles = () => {
 };
 
 const watch = () => {
-  gulp.watch('_js/**/*.js', scripts);
-  gulp.watch('_scss/*.scss', styles);
-  gulp.watch('_img/**/*.{jpg,png,svg}', images);
+  gulp.watch('./_js/**/*.js', scripts);
+  gulp.watch('./_scss/*.scss', styles);
+  gulp.watch('./_img/**/*.{jpg,png,svg}', images);
   gulp.watch(
     [
       './_layouts/*.html',
@@ -115,7 +114,7 @@ const watch = () => {
       // it causes an infinite rebuild loop
       './{discovery,about,resources}/*.{md,html}'
     ],
-    rebuild
+    jekyll
   );
 };
 

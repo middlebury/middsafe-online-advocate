@@ -20,7 +20,7 @@ dps:
   link_text: go/dps
   link_href: http://go.middlebury.edu/dps
   address: |
-    125 South Main Street  
+    125 South Main Street
   numbers:
     - number: (802) 443-5911
       label: (emergency)
@@ -40,8 +40,8 @@ commonsdean:
       address: Allen Hall 1534A
       email: sbarnicl@middelbury.edu
       numbers:
-      - header: Please call the Atwater Commons office for an appointment at 
-        number: (802) 443-3310
+        - header: Please call the Atwater Commons office for an appointment at
+          number: (802) 443-3310
       confidential: false
 
     - name: Matt Longman
@@ -49,8 +49,8 @@ commonsdean:
       address: Battell South 122
       email: longman@middlebury.edu
       numbers:
-      - header: Please call the Wonnacott Commons office for an appointment at 
-        number: (802) 443-3350
+        - header: Please call the Wonnacott Commons office for an appointment at
+          number: (802) 443-3350
       confidential: false
 
     - name: Emily Van Mistri
@@ -58,8 +58,8 @@ commonsdean:
       address: 003 RCD
       email: evanmistri@middlebury.edu
       numbers:
-      - header: Please call the Ross Commons office for an appointment at
-        number: (802) 443-3340
+        - header: Please call the Ross Commons office for an appointment at
+          number: (802) 443-3340
       confidential: false
 
     - name: AJ Place
@@ -67,8 +67,8 @@ commonsdean:
       address: Stewart Hall 216
       email: ajplace@middlebury.edu
       numbers:
-      - header: Please call the Brainerd Commons office for an appointment at
-        number: (802) 443-3320
+        - header: Please call the Brainerd Commons office for an appointment at
+          number: (802) 443-3320
       confidential: false
 
     - name: Ian Sutherland
@@ -84,7 +84,7 @@ barbara_mccall:
   title: Barbara McCall
   description: Director of Health and Wellness Education
   address: |
-    Service Building 222  
+    Service Building 222
   email: bmccall@middlebury.edu
   number: (802) 443-5361
   confidential: false
@@ -100,7 +100,7 @@ madeline_hope:
 emily_wagner:
   title: Emily Wagner
   description: Violence Prevention and Advocacy Specialist
-  address: Service Building 226 
+  address: Service Building 226
   email: ewagner@middlebury.edu
   number: (802) 443-2240
   confidential: false
@@ -127,7 +127,7 @@ csac:
   address: |
     89 Main Street  
     Middlebury, VT 05753
-  numbers: 
+  numbers:
     - number: (802) 388-7641
       label: (emergency)
     - number: (802) 388-6751
@@ -150,35 +150,34 @@ ahc:
     Available 24/7/365 whenever the Parton counseling office is closed (evenings and weekends)
   link_text: go/parton
   link_href: http://go.middlebury.edu/parton
-  numbers: 
+  numbers:
     - number: (802) 443-5141
       label: (press 1 to be connected to a counselor if it is after hours)
   confidential: true
 
-
-title_ix: 
+title_ix:
   title: Title IX Contacts
-  people: 
-  - name: Marti J. McCaleb
-    address: Service Building 213
-    title: Civil Rights & Title IX Coordinator
-    email: mmccaleb@middlebury.edu
-    number: (802) 443-2147
-    confidential: false
+  people:
+    - name: Marti J. McCaleb
+      address: Service Building 213
+      title: Civil Rights & Title IX Coordinator
+      email: mmccaleb@middlebury.edu
+      number: (802) 443-2147
+      confidential: false
 
-  - name: Eric Lopez
-    title: Human Relations Officer
-    address: Service Building 23516
-    email: el@middlebury.edu
-    number: (802) 443-3324
-    confidential: false
+    - name: Eric Lopez
+      title: Human Relations Officer
+      address: Service Building 23516
+      email: el@middlebury.edu
+      number: (802) 443-3324
+      confidential: false
 
-  - name: Thaddeus Watulak
-    title: Human Relations Officer
-    address: Service Building 215
-    email: twatulak@middlebury.edu
-    number: (802) 443-5741
-    confidential: false
+    - name: Thaddeus Watulak
+      title: Human Relations Officer
+      address: Service Building 215
+      email: twatulak@middlebury.edu
+      number: (802) 443-5741
+      confidential: false
 
 college_chaplains:
   title: College Chaplains
@@ -189,16 +188,16 @@ college_chaplains:
       title: Associate Chaplain/Rabbi
       address: |
         Scott Center for Spiritual and Religious Life  
-        135 South Main Street  
+        135 South Main Street
       email: dastillman@middlebury.edu
       number: (802) 443-5762
       confidential: true
-    
+
     - name: Mark Orten
       title: Dean of Spiritual and Religious Life, Director of Scott Center
       address: |
         Scott Center for Spiritual and Religious Life 103  
-        135 South Main Street  
+        135 South Main Street
       email: orten@middlebury.edu
       number: (802) 443-5626
       confidential: true
@@ -211,7 +210,6 @@ college_chaplains:
       email: sthussain@middlebury.edu
       number: (802) 443-5983
       confidential: false
-
 
 local_congregations:
   title: Local Congregations
@@ -244,7 +242,7 @@ vvcp:
   link_text: www.ccvs.state.vt.us/compensation
   link_href: http://www.ccvs.state.vt.us/compensation
   people:
-    - name: Sandy Robinson 
+    - name: Sandy Robinson
       title: Managing Nurse Practitioner
       description: Contact Sandy Robinson via Parton Health Services to learn more about the Vermont Victims Compensation Program
       address: Centeno House
@@ -254,7 +252,7 @@ vvcp:
 sfs:
   title: Student Financial Services
   address: |
-    Service Building  
+    Service Building
   email: sfs@middlebury.edu
   number: (802) 443-5158
   confidential: false
@@ -294,11 +292,11 @@ admin_committee:
       confidential: false
 
 rainn:
-  title: Rape, Abuse, and Incest National Network 
+  title: Rape, Abuse, and Incest National Network
   description: A nationwide partnership of more than 1,100 local rape treatment hotlines provides survivors with free, confidential services around the clock. RAINN can transfer callers to local hotlines and shelters closest to their current location. There is also a chat function available on their website.
   numbers:
-  - header: Suicide Prevention Lifeline
-    number: (800) 656-4673
+    - header: Suicide Prevention Lifeline
+      number: (800) 656-4673
   link_text: www.rainn.org
   link_href: https://www.rainn.org/index.php
   confidential: true
@@ -323,11 +321,10 @@ safespace:
 cbrt:
   title: Community Bias Response Team (CBRT)
   email: cbrt@middlebury.edu
-  description: The CBRT is charged with assessing and communicating an appropriate and comprehensive institutional response to bias incidents and acts of intolerance involving students. 
+  description: The CBRT is charged with assessing and communicating an appropriate and comprehensive institutional response to bias incidents and acts of intolerance involving students.
   confidential: false
-  links: 
-  - link_text: go.middlebury.edu/bias (to report)
-    link_href: http://go.middlebury.edu/bias
-  - link_text: go.middlebury.edu/cbrt (for more information)
-    link_href: http://go.middlebury.edu/cbrt
-
+  links:
+    - link_text: go.middlebury.edu/bias (to report)
+      link_href: http://go.middlebury.edu/bias
+    - link_text: go.middlebury.edu/cbrt (for more information)
+      link_href: http://go.middlebury.edu/cbrt

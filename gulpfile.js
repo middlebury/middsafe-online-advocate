@@ -14,10 +14,9 @@ var cssnano = require('gulp-cssnano');
 var browserSync = require('browser-sync');
 var cp = require('child_process');
 var beeper = require('beeper');
-var args = require('yargs').argv;
 var del = require('del');
 
-const production = !!args.production;
+const production = process.env.NODE_ENV === 'production'
 
 const jekyllOpts = ['build'];
 

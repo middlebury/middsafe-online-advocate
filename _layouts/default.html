@@ -20,7 +20,7 @@
     {% include footer.html %}
     {% include modals.html %}
     <script src="{{ "/js/bundle.js" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}"></script>
-    {% unless site.development %}
+    {% if jekyll.environment == 'production' %}
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -29,6 +29,6 @@
         ga('create', 'UA-993303-56', 'auto');
         ga('send', 'pageview');
       </script>
-    {% endunless %}
+    {% endif %}
   </body>
 </html>

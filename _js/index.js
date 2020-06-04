@@ -8,8 +8,8 @@ if (!('ontouchstart' in html)) {
   html.classList.add('no-touch');
 }
 
-require('./decision-tree');
-require('./modals');
+import './decision-tree';
+import './modals';
 
 // add top padding to header since it is fixed position and needs content
 // under it to be pushed down

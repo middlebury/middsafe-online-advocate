@@ -1,4 +1,4 @@
-const forEach = require('./forEach');
+import forEach from './forEach';
 
 const questions = document.querySelectorAll('.discovery__item');
 const answerLinks = document.querySelectorAll('.answers-list__link');
@@ -21,7 +21,7 @@ function handleBackButtonClick(e) {
 }
 
 function hideQuestions() {
-  forEach(questions, item => {
+  forEach(questions, (item) => {
     item.classList.remove(activeClass);
     item.setAttribute('aria-hidden', true);
   });
@@ -53,7 +53,7 @@ function showQuestion(id) {
 function handleAnswerClick(e) {
   e.preventDefault();
 
-  const {href} = e.target;
+  const { href } = e.target;
   const id = href.split('#')[1];
 
   previousIds.push(activeId);
@@ -68,7 +68,7 @@ function main() {
     return false;
   }
 
-  forEach(answerLinks, link => {
+  forEach(answerLinks, (link) => {
     link.addEventListener('click', handleAnswerClick);
   });
 

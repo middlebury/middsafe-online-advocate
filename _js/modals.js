@@ -1,5 +1,5 @@
-const anime = require('animejs');
-const forEach = require('./forEach');
+import anime from 'animejs';
+import forEach from './forEach';
 
 const header = document.querySelector('.site-header');
 
@@ -39,7 +39,7 @@ function openModal(id) {
   document.body.classList.add(modalBodyClass);
 
   // remove is-top class from all modals
-  forEach(modals, modal => modal.classList.remove(modalTopClass));
+  forEach(modals, (modal) => modal.classList.remove(modalTopClass));
 
   // add the modal open class
   modal.classList.add(modalOpenClass);
@@ -70,7 +70,7 @@ function handleModalCloseButtonClick(e) {
 }
 
 function closeAllModals() {
-  forEach(modals, modal => {
+  forEach(modals, (modal) => {
     // only animate close the top most modal
     if (modal.id === activeModalId) {
       return closeModal(modal.id);
@@ -116,7 +116,7 @@ function closeModal(id) {
 
 // removes the active link class from all page fetcher links
 function removeActiveLinkClass() {
-  forEach(navLinks, link => {
+  forEach(navLinks, (link) => {
     link.classList.remove(activeLinkClass);
   });
 }
@@ -150,18 +150,18 @@ function handleLinkClick(e) {
 }
 
 function main() {
-  forEach(navLinks, link => {
+  forEach(navLinks, (link) => {
     link.addEventListener('click', handleLinkClick);
   });
 
-  forEach(modals, modal => {
+  forEach(modals, (modal) => {
     const btn = modal.querySelector('[data-modal-close-button]');
     btn.addEventListener('click', handleModalCloseButtonClick);
   });
 
   const headerHeight = header.offsetHeight + 'px';
 
-  forEach(modals, m => m.style.paddingTop = headerHeight);
+  forEach(modals, (m) => (m.style.paddingTop = headerHeight));
 }
 
 main();

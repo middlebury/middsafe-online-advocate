@@ -95,7 +95,7 @@
   id: 9
   resources:
     - cspchw
-    - ahc
+    - mth
   answers_heading: 'If these resources aren’t working for you, would you like to:'
   answers:
     - title: Explore counselors off campus
@@ -109,7 +109,7 @@
   id: 10
   resources:
     - csac
-    - ahc
+    - mth
   answers_heading: 'If this resource isn’t working for you, would you like to:'
   answers:
     - title: Explore counselors on campus

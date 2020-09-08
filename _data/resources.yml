@@ -2,8 +2,6 @@ middsafe:
   title: MiddSafe Confidential Advocates
   description: |
     Free and confidential support, information, referrals, and advocacy from trained Middlebury students. A 24-hour student-run hotline is available when undergraduate classes are in session on the Middlebury, Vermont, campus.
-
-    *In Summer 2020, the MiddSafe Hotline will be on hiatus beginning May 20th at noon. Advocacy services can be accessed by contacting Emily Wagner, Middlebury’s Violence Prevention and Advocacy Specialist directly.  Emily can be reached at [ewagner@middlebury.edu](mailto:ewagner@middlebury.edu), [go/schedulewithemily](http://go.middlebury.edu/schedulewithemily), or [802-443-2240](tel:+18024432240)
   link_text: go/middsafe
   link_href: http://go.middlebury.edu/middsafe
   number: (802) 377-0239
@@ -39,67 +37,41 @@ commonsdean:
   confidential: false
   people:
     - name: Scott Barnicle
-      title: Dean of Atwater Commons
-      address: Allen Hall 1534A
+      title: Dean
       email: sbarnicl@middelbury.edu
-      numbers:
-        - header: Please call the Atwater Commons office for an appointment at
-          number: (802) 443-3310
       confidential: false
 
     - name: Matt Longman
-      title: Dean of Wonnacott Commons
-      address: Battell South 122
+      title: Dean
       email: longman@middlebury.edu
-      numbers:
-        - header: Please call the Wonnacott Commons office for an appointment at
-          number: (802) 443-3350
       confidential: false
 
     - name: Emily Van Mistri
-      title: Dean of Ross Commons
-      address: 003 RCD
+      title: Dean
       email: evanmistri@middlebury.edu
-      numbers:
-        - header: Please call the Ross Commons office for an appointment at
-          number: (802) 443-3340
       confidential: false
 
-    - name: AJ Place
-      title: Dean of Brainerd Commons
-      address: Stewart Hall 216
-      email: ajplace@middlebury.edu
-      numbers:
-        - header: Please call the Brainerd Commons office for an appointment at
-          number: (802) 443-3320
-      confidential: false
-
-    - name: Baishakhi Taylor
-      title: Dean of Cook Commons
-      email: taylorb@middlebury.edu
-      confidential: false
-
-    - name: Derek Doucet
-      title: Dean of Cook Commons
-      email: ddoucet@middlebury.edu
+    - name: Jennifer Sellers
+      title: Dean
+      email: jsellers@middlebury.edu
       confidential: false
 
 barbara_mccall:
   title: Barbara McCall
-  description: Director of Health and Wellness Education
-  address: |
-    Service Building 222
+  description: Associate Executive Director, Center for Health and Wellness
+  # address: |
+  #   Service Building 222
   email: bmccall@middlebury.edu
   number: (802) 443-5361
-  confidential: Confidential when serving in an advocacy role
+  confidential: true
 
 madeline_hope:
   title: Madeline Hope
   description: Assistant Director of Health and Wellness Education
-  address: Service Building 225
+  # address: Service Building 225
   email: mhope@middlebury.edu
   number: (802) 443-5389
-  confidential: Confidential when serving in an advocacy role
+  confidential: true
 
 emily_wagner:
   title: Emily Wagner
@@ -107,15 +79,15 @@ emily_wagner:
   address: Service Building 226
   email: ewagner@middlebury.edu
   number: (802) 443-2240
-  confidential: Confidential when serving in an advocacy role
+  confidential: true
 
 kevin_kareckas:
   title: Kevin Kareckas
   description: Alcohol and Other Drug Specialist
-  address: Service Building 224
+  # address: Service Building 224
   email: kkareckas@middlebury.edu
   number: (802) 443-2103
-  confidential: Confidential when serving in an advocacy role
+  confidential: true
 
 middpd:
   title: Middlebury Police Department
@@ -152,6 +124,12 @@ cspchw:
   link_href: http://go.middlebury.edu/counseling
   address: Centeno House 3rd Floor
   number: (802) 443-5141
+  confidential: true
+
+mth:
+  title: MiddTelehealth
+  description: |
+    Visit [https://www.timely.md/faq/middtelehealth/](https://www.timely.md/faq/middtelehealth/) or use the MiddTelehealth app to be connected to a counselor 24/7 through the TalkNow program or to schedule an appointment for Scheduled Counseling
   confidential: true
 
 ahc:
@@ -198,27 +176,27 @@ college_chaplains:
   people:
     - name: Danielle Stillman
       title: Associate Chaplain/Rabbi
-      address: |
-        Scott Center for Spiritual and Religious Life  
-        135 South Main Street
+      # address: |
+      #   Scott Center for Spiritual and Religious Life
+      # 135 South Main Street
       email: dastillman@middlebury.edu
       number: (802) 443-5762
       confidential: true
 
     - name: Mark Orten
       title: Dean of Spiritual and Religious Life, Director of Scott Center
-      address: |
-        Scott Center for Spiritual and Religious Life 103  
-        135 South Main Street
+      # address: |
+      #   Scott Center for Spiritual and Religious Life 103
+      #   135 South Main Street
       email: orten@middlebury.edu
       number: (802) 443-5626
       confidential: true
 
     - name: Saifa Hussain
       title: Associate Chaplain and Muslim Advisor
-      address: |
-        Scott Center for Spiritual and Religious Life 202
-        135 South Main Street
+      # address: |
+      #   Scott Center for Spiritual and Religious Life 202
+      #   135 South Main Street
       email: sthussain@middlebury.edu
       number: (802) 443-5983
       confidential: true
@@ -295,12 +273,6 @@ admin_committee:
       title: Dean of Wonnacott Commons
       email: lomgman@middlebury.edu
       number: (802) 443-3350
-      confidential: false
-    - name: Connie Simmons
-      title: Associate in Student Life Administrator
-      address: Service Building, 2nd floor suite
-      email: csimmons@middlebury.edu
-      number: (802) 443-5734
       confidential: false
 
 rainn:

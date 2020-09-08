@@ -30,7 +30,7 @@ dps:
   confidential: false
 
 commonsdean:
-  title: Commons Dean
+  title: Student Life Deans
   description: Dean's excuses, room changes, holistic institutional support
   link_text: go/commons
   link_href: http://go.middlebury.edu/commons
@@ -76,7 +76,7 @@ madeline_hope:
 emily_wagner:
   title: Emily Wagner
   description: Violence Prevention and Advocacy Specialist
-  address: Service Building 226
+  # address: Service Building 226
   email: ewagner@middlebury.edu
   number: (802) 443-2240
   confidential: true

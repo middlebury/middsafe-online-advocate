@@ -164,7 +164,7 @@
   resources:
     - commonsdean
     - cspchw
-    - ahc
+    # - ahc
     - barbara_mccall
     - madeline_hope
     - emily_wagner

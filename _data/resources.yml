@@ -81,14 +81,6 @@ emily_wagner:
   number: (802) 443-2240
   confidential: true
 
-kevin_kareckas:
-  title: Kevin Kareckas
-  description: Alcohol and Other Drug Specialist
-  # address: Service Building 224
-  email: kkareckas@middlebury.edu
-  number: (802) 443-2103
-  confidential: true
-
 middpd:
   title: Middlebury Police Department
   address: |
@@ -132,24 +124,10 @@ mth:
     Visit [https://www.timely.md/faq/middtelehealth/](https://www.timely.md/faq/middtelehealth/) or use the MiddTelehealth app to be connected to a counselor 24/7 through the TalkNow program or to schedule an appointment for Scheduled Counseling
   confidential: true
 
-ahc:
-  title: Counseling Support Line
-  description: |
-    (855) 465-5013 or call Counseling and follow voicemail prompts.
-
-    Available 24/7/365 whenever the Parton counseling office is closed (evenings and weekends)
-  link_text: go/parton
-  link_href: http://go.middlebury.edu/parton
-  numbers:
-    - number: (802) 443-5141
-      label: (press 1 to be connected to a counselor if it is after hours)
-  confidential: true
-
 title_ix:
   title: Title IX Contacts
   people:
     - name: Marti J. McCaleb
-      address: Service Building 213
       title: Civil Rights & Title IX Coordinator
       email: mmccaleb@middlebury.edu
       number: (802) 443-2147
@@ -157,14 +135,12 @@ title_ix:
 
     - name: Eric Lopez
       title: Human Relations Officer
-      address: Service Building 23516
       email: el@middlebury.edu
       number: (802) 443-3324
       confidential: false
 
     - name: Thaddeus Watulak
       title: Human Relations Officer
-      address: Service Building 215
       email: twatulak@middlebury.edu
       number: (802) 443-5741
       confidential: false
@@ -257,19 +233,12 @@ economic_services:
   number: (800) 479-6151
   confidential: false
 
-residential_life:
-  title: Residential Life
-  description: Your commons’s Commons Residential Director (CRD), First-Year Counselor (FYC), Resident Assistant (RA), Community Assistant (CA)
-  link_text: go/commons
-  link_href: http://go.middlebury.edu/commons
-  confidential: false
-
 admin_committee:
   title: Administration Committee
   description: The Administration Committee hears requests from students and faculty for exceptions to academic policies.
   # people_title: Human Resource Officers
   people:
-    - name: Matthew Longman
+    - name: Matthew Longman, Dean
       title: Dean of Wonnacott Commons
       email: lomgman@middlebury.edu
       number: (802) 443-3350

@@ -30,3 +30,26 @@ npm run deploy
 1. This will compile jekyll, process and minify CSS and JS, and compress images
 2. It will commit the contents of the `_site` directory to the `site` branch and push it to GitHub
 3. IT has automated scripts to deploy the contents of the `site` branch on change. Your changes should now be live at its assigned domain.
+
+## Temporary Build Process
+
+If the above instructions don't work, you can manually deploy the project with these steps:
+
+```
+git clone git@github.com:middlebury/middsafe-online-advocate.git
+cd middsafe-online-advocate
+npm cache clear --force
+rm package-lock.json
+npm install
+npm run deploy
+cp -r _site ../
+git stash
+git checkout --track -b site origin/site
+cp -r ../_site/* .
+git add -u
+git commit -m "Deploy changes for #ISSUE"
+git push
+git checkout master
+git stash pop
+git reset --hard
+```

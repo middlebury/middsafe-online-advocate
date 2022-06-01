@@ -66,8 +66,8 @@ barbara_mccall:
   confidential: true
 
 madeline_hope:
-  title: Madeline Hope
-  description: Assistant Director of Health and Wellness Education
+  title: Madeline Hope-Lyng
+  description: Director of Health and Wellness Education
   # address: Service Building 225
   email: mhope@middlebury.edu
   number: (802) 443-5389
@@ -75,10 +75,26 @@ madeline_hope:
 
 emily_wagner:
   title: Emily Wagner
-  description: Violence Prevention and Advocacy Specialist
+  description: Assistant Director of Health and Wellness Education
   # address: Service Building 226
   email: ewagner@middlebury.edu
   number: (802) 443-2240
+  confidential: true
+
+liam_lawlor:
+  title: Liam Lawlor
+  description: Alcohol and Other Drug Education Specialist
+  # address: Service Building 226
+  email: llawlor@middlebury.edu
+  number: (802) 443-2103
+  confidential: true
+
+karly_beavers:
+  title: Karly Beavers
+  description: Health Promotion Specialist
+  # address: Service Building 226
+  email: kbeavers@middlebury.edu
+  number: (802) 443-3055
   confidential: true
 
 middpd:
@@ -127,15 +143,15 @@ mth:
 title_ix:
   title: Title IX Contacts
   people:
-    - name: Marti J. McCaleb
-      title: Civil Rights & Title IX Coordinator
-      email: mmccaleb@middlebury.edu
+    - name: Butterfly Blaise Boire
+      title: Civil Rights and Title IX Coordinator
+      email: bboire@middlebury.edu
       number: (802) 443-2147
       confidential: false
 
-    - name: Eric Lopez
+    - name: Cameron Connah
       title: Human Relations Officer
-      email: el@middlebury.edu
+      email: cconnah@middlebury.edu
       number: (802) 443-3324
       confidential: false
 
@@ -238,8 +254,8 @@ admin_committee:
   description: The Administration Committee hears requests from students and faculty for exceptions to academic policies.
   # people_title: Human Resource Officers
   people:
-    - name: Matthew Longman, Dean
-      title: Dean of Wonnacott Commons
+    - name: Matthew Longman
+      title: Dean
       email: lomgman@middlebury.edu
       number: (802) 443-3350
       confidential: false

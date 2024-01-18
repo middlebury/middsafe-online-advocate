@@ -1,4 +1,4 @@
 source "https://rubygems.org"
-ruby "3.1.3"
+ruby "~> 3"
 
 gem "jekyll"

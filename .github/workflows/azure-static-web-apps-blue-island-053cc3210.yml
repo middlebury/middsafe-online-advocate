@@ -23,8 +23,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: 3.1.3
-      - name: Install Jekyll
+          ruby-version: '3.1'
         run: gem install jekyll bundler
       - name: Build And Deploy
         id: builddeploy
@@ -35,6 +34,7 @@ jobs:
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
+          ruby-version: '3.1'
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
           output_location: "_site" # Built app content directory - optional

@@ -26,8 +26,6 @@ jobs:
           ruby-version: '3.1'
       - name: Install Jekyll
         run: gem install jekyll bundler
-        with:
-          ruby-version: '3.1'
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1

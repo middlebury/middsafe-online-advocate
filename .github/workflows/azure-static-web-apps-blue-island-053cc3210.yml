@@ -28,8 +28,6 @@ jobs:
         run: gem install bundler
       - name: Install Jekyll
         run: gem install jekyll
-      - name: Install Dependencies
-        run: bundle install --jobs 4 --retry 3
       - name: NPM Install
         run: npm install
       - name: NPM Build

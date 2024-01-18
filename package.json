@@ -6,6 +6,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d _site -b site"
   },
+  "engines": {
+    "node": ">=18.16.0"
+  },
   "private": true,
   "author": "Zeb Pykosz <zpykosz@middlebury.edu>",
   "devDependencies": {

@@ -24,7 +24,7 @@ jobs:
         with:
           bundler-cache: true
       - name: Jekyll build
-        run: bundle exec jekyll build
+        run: npm run build
         env:
           JEKYLL_ENV: production
       - name: Build And Deploy

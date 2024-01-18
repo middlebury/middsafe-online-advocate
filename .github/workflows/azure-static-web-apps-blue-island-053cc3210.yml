@@ -39,8 +39,6 @@ jobs:
           app_location: "/_site" # App source code path
           skip_app_build: true
           ###### End of Repository/Build Configurations ######
-        env:
-          JEKYLL_ENV: production
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
